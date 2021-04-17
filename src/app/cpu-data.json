@@ -16,6 +16,7 @@
       "articleauthor": "Vishal Thakur",
       "articledate": "14-04-2021",
       "productlink": "",
+      "imgurl": "../../assets/img/CPU/Intel/i911.jpg",
       "id": 1
     },
     {
@@ -35,6 +36,7 @@
       "articleauthor": "Vishal Thakur",
       "articledate": "14-04-2021",
       "productlink": "",
+      "imgurl": "../../assets/img/CPU/Intel/i711.jpg",
       "id": 2
     },
     {
@@ -54,6 +56,7 @@
       "articleauthor": "Vishal Thakur",
       "articledate": "14-04-2021",
       "productlink": "",
+      "imgurl": "../../assets/img/CPU/Intel/i511.jpg",
       "id": 3
     },
     {
@@ -73,6 +76,7 @@
       "articleauthor": "Vishal Thakur",
       "articledate": "14-04-2021",
       "productlink": "",
+      "imgurl": "../../assets/img/CPU/Intel/i910.jpg",
       "id": 4
     },
     {
@@ -92,6 +96,7 @@
       "articleauthor": "Vishal Thakur",
       "articledate": "14-04-2021",
       "productlink": "",
+      "imgurl": "../../assets/img/CPU/Intel/i710.jpg",
       "id": 5
     },
     {
@@ -110,6 +115,7 @@
       "articlecontents": "The reality of AMD's chip shortage has proven to be an Achilles heel, as you can't find its $300 Ryzen 5 5600X reliably in stock, which often leads to price gouging. That's where Intel's Core i5-10600K steps in. At $270, this speedy little chip doesn't claim outright benchmark supremacy over the Ryzen 5 5600X. Still, you probably won't notice the relatively slight differences in gaming when you pair the chip with a mid-range GPU or play at heightened fidelity settings. \n\nThe Core i5-10600K is incredibly competitive in both gaming and multi-threaded work, and given its friendly price tag, this chip takes our list as the top recommendation for gaming. Also, keep your eye out for the $237 version, the Core i5-10600KF, which comes without integrated graphics. If you plan to use a discrete GPU, this is your chip, as it is functionally the same as the standard model but comes at an absolute steal at $237. That is if you can't find a Ryzen 5 5600X in stock, of course. \n\nThe 10600K boosts to a peak of 4.9 GHz on two cores and can maintain a 4.6 GHz all-core frequency. The chip drops readily into either Z490 or 500-series motherboards and comes with an unlocked multiplier, meaning you are free to overclock. In fact, after tuning, the 10600K matches the Ryzen 5 5600X in gaming. It also supports PCIe 4.0 for the graphics card and a single M.2 slot. \n\nThe catch? The 10600K comes with a 125W PL1 rating, the same as the previous-gen 10600K, but has a 251W PL2, a whopping 69W increase compared to the previous 182W limit. That means you'll need a capable cooler to deal with the extra heat. Intel's K-series chips don't come with a cooler, so you'll have to budget one in if you pick the 11600K and also be willing to overlook its comparatively high power consumption.",
       "articleauthor": "Vishal Thakur",
       "articledate": "14-04-2021",
+      "imgurl": "../../assets/img/CPU/Intel/i510.jpg",
       "productlink": "",
       "id": 6
     },
@@ -130,6 +136,7 @@
     "articleauthor": "Vishal Thakur",
     "articledate": "14-04-2021",
     "productlink": "",
+    "imgurl": "../../assets/img/CPU/Amd/5950.jpg",
     "id": 7
   },
   {
@@ -149,6 +156,7 @@
     "articleauthor": "Vishal Thakur",
     "articledate": "14-04-2021",
     "productlink": "",
+    "imgurl": "../../assets/img/CPU/Amd/5900.jpg",
     "id": 8
   },
   {
@@ -168,6 +176,7 @@
     "articleauthor": "Vishal Thakur",
     "articledate": "14-04-2021",
     "productlink": "",
+    "imgurl": "../../assets/img/CPU/Amd/5800.jpg",
     "id": 9
   },
   {
@@ -186,6 +195,7 @@
     "articlecontents": "The AMD Ryzen 5 5600X takes the top spot in the gaming PC market with a solid blend of Intel-beating performance in both gaming and application workloads. The six-core 12-thread chip lands at $299, a $50 price hike over its previous-gen counterpart, but brings more than enough extra gaming and application performance to justify the premium. The Ryzen 5 5600X even beats the Intel Core i9-10900K at gaming, which is an incredible feat given its price point. Not to mention that it's the most power-efficient desktop PC processor we've ever tested. \n\nAMD's Zen 3 microarchitecture results in a stunning 19% increase in IPC, which floats all boats in terms of performance in gaming, single-threaded, and multi-threaded applications. In fact, the chip generally matches the gaming performance of its more-expensive sibling, the $449 Ryzen 7 5800X. That makes the 5600X an incredibly well-rounded chip that can handle any type of gaming, from competitive-class performance with high refresh rate monitors to streaming, while also serving up more than enough performance for day-to-day application workloads. \n\nThe Ryzen 5 5600X has a 3.7 GHz base and 4.6 GHz boost clock, but with the right cooling and motherboard, you can expect higher short-term boosts. The chip also has a 65W TDP rating, meaning it runs exceptionally cool and quiet given its capabilities (the previous-gen model was 95W). Existing AMD owners with a 500-series motherboard will breathe a sigh of relief as the 5600X drops right into existing 500-series motherboards. You can also drop the chips right into 400-series motherboards. If you need a new motherboard to support the chip, both 400- and 500-series motherboards are plentiful and relatively affordable, with the B550 lineup offering the best overall value for this class of chip.",
     "articleauthor": "Vishal Thakur",
     "articledate": "14-04-2021",
+    "imgurl": "../../assets/img/CPU/Amd/5600.jpg",
     "productlink": "",
     "id": 10
   },
@@ -205,6 +215,7 @@
     "articlecontents": "AMD's Ryzen 9 3950X lands today, bringing the ultimate threaded performance to the mainstream desktop with an industry-leading and unprecedented 16 cores and 32 threads, paired with the bandwidth-doubling PCIe 4.0 interface for $749. The CPU upsets Intel's positioning in mainstream desktops and disrupts it's vaunted high-end desktop (HEDT) lineup in the process. \n\nAMD's Ryzen family has completely redefined our expectations for desktop processors, and Intel has struggled to respond. The company has slowly dialed up the frequency of its aging 14nm process and added more cores, but those tweaks can't offset the reality that AMD has moved onto a denser and more efficient 7nm process that enables higher core counts. Of course, process technology doesn't solve all the challenges of fielding a competitive chip, but that advantage is hard to beat when paired with a solid microarchitecture like AMD's Zen 2. \n\nCooling comes into play, though. The 3950X comes with an AMD-defined 105W TDP just like the 3900X, but the four extra active cores require a more robust cooling solution. As a result, the 3950X doesn't come with a bundled cooler, a first for AMD's mainstream Ryzen chips in this generation. AMD recommends a beefy 280mm AIO cooler as the entry-level solution, but as you'll see, better cooling yields better performance.",
     "articleauthor": "Vishal Thakur",
     "articledate": "14-04-2021",
+    "imgurl": "../../assets/img/CPU/Amd/3950.jpg",
     "productlink": "",
     "id": 11
   },
@@ -225,6 +236,7 @@
     "articleauthor": "Vishal Thakur",
     "articledate": "14-04-2021",
     "productlink": "",
+    "imgurl": "../../assets/img/CPU/Amd/3600.jpg",
     "id": 12
   },
   {
@@ -244,6 +256,7 @@
     "articleauthor": "Vishal Thakur",
     "articledate": "14-04-2021",
     "productlink": "",
+    "imgurl": "../../assets/img/m1.jpg",
     "id": 13
   }
 ]
