@@ -1,0 +1,27 @@
+.indexbox{
+  height: 450px;
+  width:500px;
+  background-position: center center;
+  background-size: cover;
+}
+.indexdirect{
+  display: flex;
+  background-color: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.indexdirect:hover{
+  background-color: rgba(0,0,0,0.9);
+}
+.cpuside{
+  background-image: url('../../assets/img/indexcpu.png');
+}
+.gpuside{
+  background-image: url('../../assets/img/indexgpu.png');
+}
+.sj{
+  justify-content: center;
+  align-items: center;
+}

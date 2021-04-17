@@ -1,0 +1,83 @@
+<main class="bg-black">
+  <div class="pa5">
+    <!-- Spacer -->
+  </div>
+  <div class="pa2 flex justify-center">
+    <span class="white fjalla f-5-ns f1">Pick Your Poison.</span>
+  </div>
+  <div class="flex flex-wrap justify-center">
+    <div class="pa1">
+      <a href="cpu#Intel-Section"
+         class="f1 w5 white link fjalla intel pa4 flex justify-center">
+        Intel
+      </a>
+    </div>
+    <div class="pa1">
+      <a href="cpu#Amd-Section"
+         class="f1 w5 white link fjalla AMD pa4 flex justify-center ">
+        AMD
+      </a>
+    </div>
+    <div class="pa1">
+      <a href="cpu#Apple-Section"
+         class="f1 w5 white link fjalla Apple pa4 flex justify-center ">
+        Apple
+      </a>
+    </div>
+  </div>
+  <div class="pa5-ns pa4">
+    <!-- Spacer -->
+  </div>
+
+
+  <!-- Intel Section-->
+  <div id="Intel-Section" style="background-color: #001b44">
+    <div class="pt5 pb5 w-100">
+      <div class="flex flex-wrap w-100 pl5-ns pr5-ns justify-center">
+        <div *ngFor="let cpublog of cpublogs">
+          <div class="w5 h5 cover flex ma3 bg-center" style="background-image: url('../../assets/img/CPU/Intel/i711.jpg')" *ngIf="cpublog.productbrand == 'Intel'">
+            <a class="f1 white link fjalla h-100 w-100 bg-black-70 hover-bg-black-90 flex justify-center items-center"
+               [routerLink]="['/cpu', cpublog.id]">
+              {{ cpublog.shortname}}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AMD Section-->
+  <div id="Amd-Section" style="background-color: firebrick">
+    <div class="pt5 pb5 w-100">
+      <div class="flex flex-wrap w-100 pl5-ns pr5-ns justify-center">
+        <div *ngFor="let cpublog of cpublogs">
+          <div class="w5 h5 cover flex ma3 bg-center" style="background-image: url('../../assets/img/CPU/Amd/5950.jpg')" *ngIf="cpublog.productbrand == 'AMD'">
+            <a
+              class="f1 white link fjalla h-100 w-100 bg-black-70 hover-bg-black-90 flex justify-center items-center"
+              [routerLink]="['/cpu', cpublog.id]">
+              {{cpublog.shortname}}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Apple Section-->
+  <div id="Apple-Section" style="background-color: dimgray">
+    <div class="pt5 pb5 w-100">
+      <div class="flex flex-wrap w-100 pl5-ns pr5-ns justify-center">
+        <div *ngFor="let cpublog of cpublogs">
+          <div class="w5 h5 cover flex ma3 bg-center" style="background-image: url('../../assets/img/m1.jpg')" *ngIf="cpublog.productbrand == 'Apple'">
+            <a class="f1 white link fjalla h-100 w-100 bg-black-70 hover-bg-black-90 flex justify-center items-center"
+               [routerLink]="['/cpu', cpublog.id]">
+              {{cpublog.shortname}}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</main>
