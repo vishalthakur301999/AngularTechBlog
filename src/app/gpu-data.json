@@ -1,0 +1,214 @@
+[
+  {
+    "productbrand": "Nvidia",
+    "productname": "Nvidia RTX 3090",
+    "shortname": "RTX 3090",
+    "articletitle": "The Beast among Graphic Cards.",
+    "productspecifications": {
+      "VRAM": "24GB DDR6X",
+      "cores": "10,496 Cuda, 82 RT, 328 Tensor Cores",
+      "TDP": "350W"
+    },
+    "articlecontents": {
+      "pros": "The performance is amazing! Coming from a Asus Strix 2080ti it is about 50%-60% performance uplift in games. More with ray tracing enabled. - The cooler on the FTW3 version is the highest quality cooler of the EVGA 3090 cards and it SHOWS! I overclocked this thing to 2.1ghz and it stays below 74 degrees! ( Make sure you have a good airflow case!)",
+      "cons":"About a 3 slot card! - Requires ALOT of power. This card requires 3 SEPERATE PCIE power cables running from your PSU. You CAN NOT daisy chain. I have a UPS and I can read that this card sometimes spikes up to 600WATTS while under load! I have a Corsair HXI1200W Platinum PSU so I have the headroom. Make sure you do as well or your PSU will not make it.",
+      "overall": "Better performance than I ever expected! I run an ROG SWIFT 1440P 165hz monitor and games like Cyberpunk 2077 with EVERYTHING maxed out runs 65-100 FPS! I was also able to overclock this thing fairly high. Around 2ghz and 2.01ghz are the max STABLE that I got. That was 150 core/800 on the memory. Your mileage my vary of course. Overall this card seems overkill for even 1440p/165hz gaming as every other game I've played is maxed and not dropping below 60hz FULLY maxed! At 4K this card also kills everything. This is the best of the best! Hell it can play Doom eternal at 8K!!!"
+    },
+    "articleauthor": "Vishal Thakur",
+    "articledate": "14-04-2021",
+    "productlink": "https://www.nvidia.com/en-in/geforce/graphics-cards/30-series/rtx-3090/",
+    "imgurl": "../../assets/img/GPU/Nvidia/3090.jpg",
+    "id": 1
+  },
+  {
+    "productbrand": "Nvidia",
+    "productname": "Nvidia RTX 3080",
+    "shortname": "RTX 3080",
+    "articletitle": "The Real Deal!",
+    "productspecifications": {
+      "VRAM": "10GB DDR6X",
+      "cores": "8704 Cuda, 68 RT, 272 Tensor Cores",
+      "TDP": "320W"
+    },
+    "articlecontents": {
+      "pros": "Runs exceptionally cool and quiet with great OC support - People complain about the massive RGB strip on the card but honestly it looks really cool and if it bothers you, Precision X1 software can be used to disable it completely ",
+      "cons": "Slightly on the heavier side because of the massive cooler but that is really not a con. If you are too concerned about the weight and GPU sag, you can get a vertical support bracket for it. ",
+      "overall": "I waited patiently for my 3080 for close to 2 months after I had the rest of my brand new 2020 build ready and just sitting there waiting for a GPU. The frustration of not getting a GPU is real and I must admit my patience was wearing thin so in the end I never really had a particular 3080 card in mind, it was get what you can. And I was lucky enough to snag this baby one evening just randomly refreshing on Newegg and boy am I glad I got this one! FTW3 Ultra is top of the line without a doubt. I have had no problems with this card whatsoever. My card shipped without with ugly red lip which was an added bonus"
+    },
+    "articleauthor": "Vishal Thakur",
+    "articledate": "14-04-2021",
+    "productlink": "https://www.nvidia.com/en-in/geforce/graphics-cards/30-series/rtx-3080/",
+    "imgurl": "../../assets/img/GPU/Nvidia/3080.jpg",
+    "id": 2
+  },
+  {
+    "productbrand": "Nvidia",
+    "productname": "Nvidia RTX 3070",
+    "shortname": "RTX 3070",
+    "articletitle": "The Real Deal!",
+    "productspecifications": {
+      "VRAM": "8GB DDR6",
+      "cores": "5888 Cuda, 46 RT, 184 Tensor Cores",
+      "TDP": "220W"
+    },
+    "articlecontents": {
+      "pros": "When I got the RTX 3070 I decided to stick it in an older system that has an i5-6600k with 16gb of RAM, 1080p 144hz monitor. Man.... did the 6600k ever BOTTLENECK. I tried playing FFXV and not only was the CPU usage pegged at or near 100% constantly, but the framerates would drop about every 30 seconds. After seeing a few other games suffer with the 6600k, I put the 3070 in another system with an i7-8086k @ 5.2ghz -2 AVX. Most of the time the GPU usage was around 60% to 70%. Intel's illustrious Quad-Core era is truly DEAD. \nEVGA card with the famous EVGA warranty. I've had to file a few RMA's with multiple companies over the years and EVGA is probably the best company to deal with. Lays waste to 1080p gaming. There's not really a better card for the job. \nThe cooler is probably overkill for the GPU..... but that's the way I like it. When I buy Graphics cards I tend to keep them around for a very long time and I'll pass them off to other family members. \nNvidia drivers are always stable for the most part. I don't mind AMD cards, but if I put an AMD card in my brother's computer then the drivers will eventually mess up and I have to go over to his place and fix the drivers. We don't live in the same city so having to do this is a PITA. ",
+      "cons": "The one thing I don't like about the RTX 3070 in general is the GTX/RTX XX70 series is usually within a good range of value for the dollar, but the RTX 3070 isn't. Oddly, This time around the RTX 3060ti is the better value. The RTX 3070 is kinda like the old GTX 580, 680, and 980 where paying the extra money for it didn't make sense from a value perspective. In a perfect world, or the old world that lacked miners and stock was abundant, I would tell anyone to either pay more for the RTX 3080 or get the RTX 3060ti. Right now it's every man for himself and get whatever you can get. \nI really don't think 8gb of VRAM is enough for the long term. Just look at the 3gb GTX 1060 if you want an example because that card was obsolete 2 years ago. In many ways the RX 6800 might be the better card, but at least the RTX 3070 is better with Ray Tracing and DLSS. ",
+      "overall": "The cooler is overkill and I'm backed by the EVGA warranty so I give the product itself a 5 star rating. The RTX 3070 by itself I give a 3.5 out of 5 star for the lack of VRAM and being a poor value in comparison to the 3060ti. I'll betcha that by the end of the Ampere run in 2022, the early adopters will be laughed because 8gb of VRAM will only be enough for 1080p and there will be a Super series that has 16gb of VRAM in the 3070. The people who say 8gb or 10gb is enough will be eating their words.....Nom, Nom, Nom"
+    },
+    "articleauthor": "Vishal Thakur",
+    "articledate": "14-04-2021",
+    "productlink": "https://www.nvidia.com/en-in/geforce/graphics-cards/30-series/rtx-3070/",
+    "imgurl": "../../assets/img/GPU/Nvidia/3070.jpg",
+    "id": 3
+  }
+,
+  {
+    "productbrand": "Nvidia",
+    "productname": "Nvidia RTX 3060 Ti",
+    "shortname": "RTX 3060Ti",
+    "articletitle": "Good Card, Worth The Money.",
+    "productspecifications": {
+      "VRAM": "8GB DDR6",
+      "cores": "4864 Cuda, 38 RT, 152 Tensor Cores",
+      "TDP": "200W"
+    },
+    "articlecontents": {
+      "pros": " I really enjoyed the box opening process (as everyone does), I got this card back in late November, just never got around to writing a review. Another good thing about the card is the noise level. It is a very quiet card with great performance and no technical issues upon putting it in my system, running games and applications, and installing drivers, as long as you uninstall all of your previous drivers before installation you should experience the same thing. ",
+      "cons": "Not really much of a con but there's no LED or RGB on the card. Not sure if that's a dealbreaker for you, but if it is then I wouldn't recommend this one. ",
+      "overall": "I think it's a great card with a sleek look, not excessively large like a lot of others. It can most likely fit in most cases, considering my case is between small and medium sized. But I would definitely say to purchase this card as it has a great value and great performance to match. (If you can get your hands on it that is)"
+    },
+    "articleauthor": "Vishal Thakur",
+    "articledate": "14-04-2021",
+    "productlink": "https://www.nvidia.com/en-in/geforce/graphics-cards/30-series/rtx-3060-3060ti/",
+    "imgurl": "../../assets/img/GPU/Nvidia/3060ti.jpg",
+    "id": 4
+  },
+  {
+    "productbrand": "Nvidia",
+    "productname": "Nvidia RTX 3060",
+    "shortname": "RTX 3060",
+    "articletitle": "A Truly Impressive Little Package",
+    "productspecifications": {
+      "VRAM": "12GB DDR6",
+      "cores": "3584 Cuda, 28 RT, 112 Tensor Cores",
+      "TDP": "170W"
+    },
+    "articlecontents": {
+      "pros": "You get the performance of a 2060 Super and don't have to pay nearly as much for it. -Small form factor so it fits in just about every build.-I will always recommend EVGA products, they have perhaps the best customer support and warranty track record of any company I've dealt with in the PC component arena.-A great over clocker with plenty of headroom for enthusiasts-They blacked out the 'red clown lips' these cards came with initially (thank you for listening EVGA) looks so much better this way. ",
+      "cons": "Thermals are bit higher than Iâ€™d like to see, even without an overclock, it's going to need really good airflow to keep those temps down (in-game it was common to see 70C-75C without an overclock) my case has below average airflow so something like a meshify or similar will most definitely see better temps-No RGB anywhere on the card (this may be a pro in some people's eyes but I prefer having the option and itâ€™s a shame it wasn't available on this model) ",
+      "overall": "Aside from a few nit-picky things (see cons) it's an absolute bargain if you can get it at around MSRP. Granted this particular EVGA models price is a bit inflated, I consider it worth it due to the fact that EVGA is so good at resolving any potential issues you might experience down the road and paying EVGAs asking price is much more palatable than paying a scalper"
+    },
+    "articleauthor": "Vishal Thakur",
+    "articledate": "14-04-2021",
+    "productlink": "https://www.nvidia.com/en-in/geforce/graphics-cards/30-series/rtx-3060-3060ti/",
+    "imgurl": "../../assets/img/GPU/Nvidia/3060.jpg",
+    "id": 5
+  },
+  {
+    "productbrand": "Nvidia",
+    "productname": "Nvidia RTX 2080 Ti",
+    "shortname": "RTX 2060Ti",
+    "articletitle": "Great Performance, But Last Gen Performance",
+    "productspecifications": {
+      "VRAM": "11GB DDR6",
+      "cores": "4352 Cuda, 68 RT, 544 Tensor Cores",
+      "TDP": "260W"
+    },
+    "articlecontents": {
+      "pros": "Cannot push this card to exceed 65c. Granted, it is cold here yet the cooler is remarkable, this is my first GPU to routinely idle in the high 20's. If you have an AIO on your CPU, the noise from the GPU will blend in with your case fans, only at very high fan speed does it become audible, in my case at least. It will stay just above 2GHz under load, the cooler it is, the higher it goes above 2GHz. My card peaks at 2160 MHz but continuously it can't hold past 2.1 GHz. ",
+      "cons": "All of the 3rd party GPU utilities lack in area or another. To perfectly adjust the settings and appearance, one would have to mix and match between 3 different apps. -Docking a point for the price. Above MSRP gouging needs to stop. ",
+      "overall": "At this price point, this card will be obsolete long before it becomes affordable or starts offering value to anyone, even on a sizable budget."
+    },
+    "articleauthor": "Vishal Thakur",
+    "articledate": "14-04-2021",
+    "productlink": "https://www.nvidia.com/en-in/geforce/graphics-cards/rtx-2080-ti/",
+    "imgurl": "../../assets/img/GPU/Nvidia/3060.jpg",
+    "id": 6
+  },
+  {
+    "productbrand": "AMD",
+    "productname": "AMD RX 6900 XT",
+    "shortname": "RX 6900XT",
+    "articletitle": "It is big, powerful, and surprisingly quiet",
+    "productspecifications": {
+      "VRAM": "16GB DDR6",
+      "cores": "5120 Stream, 80 Ray, 80 Compute",
+      "TDP": "300W"
+    },
+    "articlecontents": {
+      "pros": "The current top end of AMD GPUs. In many games this card trades blows with the RTX 3090.\n- This XFX card is one of the fastest out of the box 6900xts.\n- This card's fans are surprisingly quiet. I had a EVGA RTX 2080 Ti before this and that card's fans were much louder. The RTX fans would spool up and make a loud whooshing sound when starting up the PC. The XFX 6900xt was silent to the point I thought the card was DOA. \n- The card does look pretty cool. The shroud, fans, and backplate are also very solid. \n- The AMD drivers have come a long way since the last time I had an AMD card. These drivers were smart enough to automatically detect and set the proper screen resolution and refresh rate for my monitor. \n- The AMD Radeon Software can do neat things like tell you average FPS in each game you play, grade how good the card performs, and advise you to turn up the settings or dial them back. You can also overclock the card, and monitor temperatures with AMD's own software.. ",
+      "cons": "The card is quite long. The case I have has two fans in the front, I had to remove one to fit this card. \n- Not as fast as Nvidia's RTX cards in games that utilize ray tracing. \n- Like other cards this one is not easy to obtain. \n- A bit on the pricey side. ",
+      "overall": "Overall Review: In the current market where cards are hard to come by it is hard to be choosy. I was looking to upgrade to either the RTX 3090, 3080, AMD 6900xt, and 6800xt. When this one popped up as available I quickly jumped on it. So far I am not regretting my decision."
+    },
+    "articleauthor": "Vishal Thakur",
+    "articledate": "14-04-2021",
+    "productlink": "https://www.amd.com/en/products/graphics/amd-radeon-rx-6900-xt",
+    "imgurl": "../../assets/img/GPU/AMD/6900.png",
+    "id": 7
+  },
+  {
+    "productbrand": "AMD",
+    "productname": "AMD RX 6800 XT",
+    "shortname": "RX 6800XT",
+    "articletitle": "Great Overall Card, But lags behind in RT",
+    "productspecifications": {
+      "VRAM": "16GB DDR6",
+      "cores": "4608 Stream, 72 Ray, 72 Compute",
+      "TDP": "300W"
+    },
+    "articlecontents": {
+      "pros": "this card is a absolute monster and looks pretty nice. got it boosting over 24000mhz. I am getting on average 90 to 100 fps on cyberpunk with setting everything to high in 1440p. Over the 155 fps I can display on my 155hz on apex and valorant. I have literally cranked every game to max settings and this card with a 5800x absolutely power through anything I throw at it. ",
+      "cons": "the RGB software you have to use to change the led and colors on the card can be a little glitchy and at times not even recognize the card. ",
+      "overall": "amazing card , But only buy if you can't get the 3080."
+    },
+    "articleauthor": "Vishal Thakur",
+    "articledate": "14-04-2021",
+    "productlink": "https://www.amd.com/en/products/graphics/amd-radeon-rx-6800-xt",
+    "imgurl": "../../assets/img/GPU/AMD/6800xt.png",
+    "id": 8
+  },
+  {
+    "productbrand": "AMD",
+    "productname": "AMD RX 6800",
+    "shortname": "RX 6800",
+    "articletitle": "Good at everything except Ray Tracing",
+    "productspecifications": {
+      "VRAM": "16GB DDR6",
+      "cores": "3840 Stream, 60 Ray, 60 Compute",
+      "TDP": "250W"
+    },
+    "articlecontents": {
+      "pros": "Shipped within a day, arrived within 3 Days \n- Very good performance out of the box and with a mild OC on top of that able to get very good performance out of this card \n- runs very cool, no thermal issues \n- solid build quality ",
+      "cons": "Fans get very loud at high speeds \n- I'm not a hug fan of the aesthetics \n- very thick card, basically a triple slot design, ended up blocking 2 of my SATA ports ",
+      "overall": "I would recommend this to anyone looking to game 1440p 60 ultra on current AAA SP titles and 144hz on AAA multiplayer titles at High settings. \n- Esports games (CSGO, valorant, RL) easily hitting 1440p 144hz max settings \n- I am honestly surprised at how well this card performs, I was originally looking for a 6800XT or 3080, but this was what I actually got ordered and delivered and I am not disappointed. The card is a beast, especially coming from a RX 480."
+    },
+    "articleauthor": "Vishal Thakur",
+    "articledate": "14-04-2021",
+    "productlink": "https://www.amd.com/en/products/graphics/amd-radeon-rx-6800",
+    "imgurl": "../../assets/img/GPU/AMD/6800.png",
+    "id": 9
+  },
+  {
+    "productbrand": "AMD",
+    "productname": "AMD RX 6700 XT",
+    "shortname": "RX 6700XT",
+    "articletitle": "Good 1440p Mid-Range Card but Bit Overpriced.",
+    "productspecifications": {
+      "VRAM": "12GB DDR6",
+      "cores": "2560 Stream, 40 Ray, 40 Compute",
+      "TDP": "230W"
+    },
+    "articlecontents": {
+      "pros": "Runs smoother than my 5700xt and higher frames. -12gb memory for those AAA games that are coming soon. Battlefield, FarCry, etc.-Runs 1440p great. ",
+      "cons": "Raytracing is not really optimal, and not worth purchasing this card just to have raytracing. -temps can run high but no shut downs/crashes with this card yet.-Streaming on this thing is better than my 5700xt, but it still has problems when the final output is put on twitch. It can have blocky, or pixelated anomalies. (could be my CPU)-2.9 slots used in PC, so you need a large case and I recommend a ATX vs ITX board. -I don't know how to use RGB software from ASUS, usually the program cannot detect the card and will not allow me to change the default RGB settings. -If you want to run this card in Crossfire with the same exact card, you may not be able to fit second card on to motherboard due to headers and wiring near 2nd PCIE slot and bottom of mother board. -Price is too high",
+      "overall": "So I bought this GPU to see what this thing offers over the 5700xt. It is a upgrade when it comes down to Frame Rates, and 1440p gaming. The Ray Tracing causes loss in frame rate and not really a useful thing in this card. I think of it as, a way to see whether you like raytracing or not. IDK. I play a lot of Rainbow Six Siege, and it was running a lot smoother and faster then my 5700xt. My mouse feels like I have changed my DPI or sensitivity settings. Feels good. I would also like to mention that Newegg did say the memory had a bandwidth of 256bit, but it is 192bit like every other 6700xt. I threw my 5700xt in my rig to see if it fits and I was able to have 2 GPU's running in my system, but not in Crossfire. Everything ran but it was a close fit. I would recommend this card to a friend if the price was right. But not for the current MSRP. But for other brand 6700xt's, buy it, if that is what you can get right now."
+    },
+    "articleauthor": "Vishal Thakur",
+    "articledate": "14-04-2021",
+    "productlink": "https://www.amd.com/en/products/graphics/amd-radeon-rx-6700-xt",
+    "imgurl": "../../assets/img/GPU/AMD/6700xt.jpg",
+    "id": 10
+  }
+
+]

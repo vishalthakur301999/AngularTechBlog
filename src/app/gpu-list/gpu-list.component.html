@@ -1,0 +1,61 @@
+<main class="bg-black">
+  <div class="pa5">
+    <!-- Spacer -->
+  </div>
+  <div class="pa2 flex justify-center">
+    <span class="white fjalla f-5-ns f1">Pick Your Poison.</span>
+  </div>
+  <div class="flex flex-wrap justify-center">
+    <div class="pa1">
+      <a href="gpu#Nvidia-Section"
+         class="f1 w5 white link fjalla nvidia pa4 flex justify-center">
+        Nvidia
+      </a>
+    </div>
+    <div class="pa1">
+      <a href="gpu#Amd-Section"
+         class="f1 w5 white link fjalla AMD pa4 flex justify-center ">
+        AMD
+      </a>
+    </div>
+  </div>
+  <div class="pa5-ns pa4">
+    <!-- Spacer -->
+  </div>
+
+
+  <!-- Intel Section-->
+  <div id="Nvidia-Section" style="background-color: green">
+    <div class="pt5 pb5 w-100">
+      <div class="flex flex-wrap w-100 pl5-ns pr5-ns justify-center">
+        <div *ngFor="let gpublog of gpublogs">
+          <div class="w5 h5 cover flex ma3 bg-center" [ngStyle]="{'background-image': 'url(' + gpublog.imgurl + ')'}" *ngIf="gpublog.productbrand == 'Nvidia'">
+            <a class="f1 white link fjalla h-100 w-100 bg-black-70 hover-bg-black-90 flex justify-center items-center"
+               [routerLink]="['/gpu', gpublog.id]">
+              {{ gpublog.shortname}}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- AMD Section-->
+  <div id="Amd-Section" style="background-color: firebrick">
+    <div class="pt5 pb5 w-100">
+      <div class="flex flex-wrap w-100 pl5-ns pr5-ns justify-center">
+        <div *ngFor="let gpublog of gpublogs">
+          <div class="w5 h5 cover flex ma3 bg-center" [ngStyle]="{'background-image': 'url(' + gpublog.imgurl + ')'}" *ngIf="gpublog.productbrand == 'AMD'">
+            <a
+              class="f1 white link fjalla h-100 w-100 bg-black-70 hover-bg-black-90 flex justify-center items-center"
+              [routerLink]="['/gpu', gpublog.id]">
+              {{gpublog.shortname}}
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+</main>

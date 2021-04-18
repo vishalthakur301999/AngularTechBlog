@@ -1,4 +1,4 @@
-<main class="min-vh-100 pl6-ns pr6-ns pl2 pr2 bg-black">
+<main class="min-vh-100 pl6-ns pr6-ns pl3-m pr3-m pl2 pr2 bg-black">
   <div *ngFor="let cpublog of cpublogs">
     <div class="pa3" *ngIf="cpublog.id == blogid">
       <div style="height: 15vh"></div>
@@ -8,13 +8,19 @@
         <div class="mt3 mb3 bg-center cover h6 w6" [ngStyle]="{'background-image': 'url(' + cpublog.imgurl + ')'}"></div>
       </div>
       <div class="white sans-serif flex flex-wrap justify-center pa3">
-            <span class="ba pa3">Cores- {{cpublog.productspecifications.cores}}</span>
-            <span class="ba pa3">Threads- {{cpublog.productspecifications.threads}}</span>
-            <span class="ba pa3">Base Frequency- {{cpublog.productspecifications.basefrequency}}</span>
-            <span class="ba pa3">Boost Frequency- {{cpublog.productspecifications.boostfrequency}}</span>
+            <span class="pa3">Cores- {{cpublog.productspecifications.cores}}</span>
+            <span class="pa3">Threads- {{cpublog.productspecifications.threads}}</span>
+            <span class="pa3">Base Frequency- {{cpublog.productspecifications.basefrequency}}</span>
+            <span class="pa3">Boost Frequency- {{cpublog.productspecifications.boostfrequency}}</span>
       </div>
       <div class="white sans-serif f5">
         {{cpublog.articlecontents}}
+      </div>
+      <div class="flex justify-center">
+        <a class="f4 fjalla pa3 ma4 link ba white"
+           href="{{cpublog.productlink}}">
+          Buy / Learn More
+        </a>
       </div>
     </div>
   </div>

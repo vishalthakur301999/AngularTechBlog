@@ -7,6 +7,8 @@ import { JumbotronComponent } from './home-page/jumbotron/jumbotron.component';
 import { HomePageComponent } from './home-page/home-page.component';
 import { CpuListComponent } from './cpu-list/cpu-list.component';
 import { CpuDetailsComponent } from './cpu-details/cpu-details.component';
+import { GpuListComponent } from './gpu-list/gpu-list.component';
+import { GpuDetailsComponent } from './gpu-details/gpu-details.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +17,9 @@ import { CpuDetailsComponent } from './cpu-details/cpu-details.component';
     JumbotronComponent,
     HomePageComponent,
     CpuListComponent,
-    CpuDetailsComponent
+    CpuDetailsComponent,
+    GpuListComponent,
+    GpuDetailsComponent
   ],
   imports: [
     BrowserModule,

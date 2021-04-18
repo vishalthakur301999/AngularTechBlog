@@ -1,0 +1,33 @@
+<main class="min-vh-100 pl6-ns pr6-ns pl3-m pr3-m pl2 pr2 bg-black">
+  <div *ngFor="let gpublog of gpublogs">
+    <div class="pa3" *ngIf="gpublog.id == blogid">
+      <div style="height: 15vh"></div>
+      <span class="fjalla white f-5-ns f1">{{gpublog.productname}}. {{gpublog.articletitle}}</span><br><br>
+      <span class="sans-serif f6 light-gray">Posted by {{gpublog.articleauthor}} on {{gpublog.articledate}}</span>
+      <div class="flex justify-center">
+        <div class="mt3 mb3 bg-center cover">
+          <img src="{{gpublog.imgurl}}" alt="{{gpublog.productname}}">
+        </div>
+      </div>
+      <div class="white sans-serif flex flex-wrap justify-center pa3">
+        <span class="pa3">VRAM- {{gpublog.productspecifications.VRAM}}</span>
+        <span class="pa3">Cores- {{gpublog.productspecifications.cores}}</span>
+        <span class="pa3">TDP- {{gpublog.productspecifications.TDP}}</span>
+      </div>
+      <div class="white sans-serif f5">
+        <span class="fjalla white f1-ns f3">Pros</span><br>
+        {{gpublog.articlecontents.pros}}<br><br>
+        <span class="fjalla white f1-ns f3">Cons</span><br>
+        {{gpublog.articlecontents.cons}}<br><br>
+        <span class="fjalla white f1-ns f3">OverAll</span><br>
+        {{gpublog.articlecontents.overall}}<br><br>
+      </div>
+      <div class="flex justify-center">
+        <a class="f4 fjalla pa3 ma4 link ba white"
+           href="{{gpublog.productlink}}">
+          Buy / Learn More
+        </a>
+      </div>
+    </div>
+  </div>
+</main>

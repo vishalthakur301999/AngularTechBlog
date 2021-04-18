@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import * as data from '../cpu-data.json';
 
 @Component({
@@ -6,8 +6,13 @@ import * as data from '../cpu-data.json';
   templateUrl: './cpu-list.component.html',
   styleUrls: ['./cpu-list.component.css', '../tachyons/tachyons.min.css']
 })
-export class CpuListComponent{
+export class CpuListComponent implements OnInit{
   cpublogs = (data as any).default;
+  constructor() {
+  }
+  ngOnInit(): void {
+    window.scrollTo(0, 0);
+  }
 }
 
 
