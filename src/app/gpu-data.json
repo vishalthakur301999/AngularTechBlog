@@ -6,7 +6,7 @@
     "articletitle": "The Beast among Graphic Cards.",
     "productspecifications": {
       "VRAM": "24GB DDR6X",
-      "cores": "10,496 Cuda, 82 RT, 328 Tensor Cores",
+      "cores": "10,496 Cuda, 82 RT, 328 Tensor",
       "TDP": "350W"
     },
     "articlecontents": {
@@ -27,7 +27,7 @@
     "articletitle": "The Real Deal!",
     "productspecifications": {
       "VRAM": "10GB DDR6X",
-      "cores": "8704 Cuda, 68 RT, 272 Tensor Cores",
+      "cores": "8704 Cuda, 68 RT, 272 Tensor",
       "TDP": "320W"
     },
     "articlecontents": {
@@ -48,7 +48,7 @@
     "articletitle": "The Real Deal!",
     "productspecifications": {
       "VRAM": "8GB DDR6",
-      "cores": "5888 Cuda, 46 RT, 184 Tensor Cores",
+      "cores": "5888 Cuda, 46 RT, 184 Tensor",
       "TDP": "220W"
     },
     "articlecontents": {
@@ -70,7 +70,7 @@
     "articletitle": "Good Card, Worth The Money.",
     "productspecifications": {
       "VRAM": "8GB DDR6",
-      "cores": "4864 Cuda, 38 RT, 152 Tensor Cores",
+      "cores": "4864 Cuda, 38 RT, 152 Tensor",
       "TDP": "200W"
     },
     "articlecontents": {
@@ -91,7 +91,7 @@
     "articletitle": "A Truly Impressive Little Package",
     "productspecifications": {
       "VRAM": "12GB DDR6",
-      "cores": "3584 Cuda, 28 RT, 112 Tensor Cores",
+      "cores": "3584 Cuda, 28 RT, 112 Tensor",
       "TDP": "170W"
     },
     "articlecontents": {
@@ -108,11 +108,11 @@
   {
     "productbrand": "Nvidia",
     "productname": "Nvidia RTX 2080 Ti",
-    "shortname": "RTX 2060Ti",
+    "shortname": "RTX 2080Ti",
     "articletitle": "Great Performance, But Last Gen Performance",
     "productspecifications": {
       "VRAM": "11GB DDR6",
-      "cores": "4352 Cuda, 68 RT, 544 Tensor Cores",
+      "cores": "4352 Cuda, 68 RT, 544 Tensor",
       "TDP": "260W"
     },
     "articlecontents": {
