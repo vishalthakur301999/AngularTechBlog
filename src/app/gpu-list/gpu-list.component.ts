@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import * as data from '../gpu-data.json';
+import {Router} from '@angular/router';
 
 @Component({
   selector: 'app-gpu-list',
@@ -8,8 +9,15 @@ import * as data from '../gpu-data.json';
 })
 export class GpuListComponent implements OnInit {
   gpublogs = (data as any).default;
-  constructor() { }
+  constructor( private router: Router) { }
   ngOnInit(): void {
     window.scrollTo(0, 0);
+  }
+  navigate(): void {
+    let x: string;
+    // @ts-ignore
+    x = document.getElementById('gpulist').value;
+    const y = x.split(':');
+    this.router.navigate(['/gpu/' + y[0]]);
   }
 }

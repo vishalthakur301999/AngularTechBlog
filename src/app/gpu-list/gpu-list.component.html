@@ -22,6 +22,20 @@
   <div class="pa5-ns pa4">
     <!-- Spacer -->
   </div>
+  <div class="flex flex-wrap justify-center white">
+    <span class="f2 fjalla pa1 pl3 pr3">Or Search for CPU</span>
+    <input class="ba bg-black white pl4 ma2 ml3 pr4 mr3 pt1-ns pt2-m pt3 pb1-ns pb2-m pb3 ma1-ns" list="gpus" name="gpulist" id="gpulist">
+    <datalist id="gpus">
+      <option *ngFor="let g of gpublogs" [value]="g.id+':'+g.productname"></option>
+    </datalist>
+    <button (click)="navigate()"
+            class="ba fjalla bg-black white hover-black hover-bg-white pl4 ma2 ml3 pr4 mr3 pt1-ns pt2-m pt3 pb1-ns pb2-m pb3 ma1-ns">
+      GO
+    </button>
+  </div>
+  <div class="pa5-ns pa4">
+    <!-- Spacer -->
+  </div>
 
 
   <!-- Intel Section-->
