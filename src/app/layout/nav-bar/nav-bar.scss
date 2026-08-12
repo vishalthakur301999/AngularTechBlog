@@ -30,6 +30,26 @@
   background: color-mix(in srgb, var(--bg) 88%, transparent);
   backdrop-filter: blur(16px);
   border-bottom: 1px solid var(--border);
+  transition:
+    background 0.25s var(--ease),
+    border-color 0.25s var(--ease),
+    backdrop-filter 0.25s var(--ease);
+}
+
+/* Sitting directly on the home hero: no fill, no rule. The hero is dark in
+   both themes, so the bar's own colours are pinned light here rather than
+   following the theme. */
+.nav--overlay {
+  background: transparent;
+  backdrop-filter: none;
+  border-bottom-color: transparent;
+  --text: #f6f8fb;
+  --text-muted: #c2cbd9;
+  --border: rgb(255 255 255 / 22%);
+  --border-strong: rgb(255 255 255 / 40%);
+  /* Declared explicitly: descendants inherit body's already-computed colour,
+     so redefining --text alone would not reach the wordmark. */
+  color: var(--text);
 }
 
 .nav__brand {

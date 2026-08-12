@@ -8,10 +8,13 @@
 
 .hero {
   position: relative;
-  min-height: min(86vh, 50rem);
+  /* One full viewport height, as the original site's jumbotron was. `dvh`
+     rather than `vh` so mobile browser chrome doesn't crop the ticker. */
+  min-height: 100dvh;
+  /* Cancels the shell's nav offset so the artwork runs under the bar. */
+  margin-top: calc(-1 * var(--nav-height));
   display: flex;
   flex-direction: column;
-  justify-content: center;
   overflow: hidden;
   border-bottom: 1px solid var(--border-strong);
   color: #f4f6fa;
@@ -32,10 +35,13 @@
 .hero__inner {
   position: relative;
   z-index: 1;
+  /* Takes the space between the bar and the ticker, and centres in it. */
+  flex: 1;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: var(--space-m);
-  padding-block: var(--space-2xl);
+  padding-block: calc(var(--nav-height) + var(--space-l)) var(--space-l);
 }
 
 .hero__kicker {
