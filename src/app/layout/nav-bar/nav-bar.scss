@@ -59,12 +59,14 @@
   margin-right: auto;
 }
 
-/* Die-shaped mark: a square with a notched corner, like a chip's pin-1 marker. */
 .nav__mark {
-  width: 1.15rem;
-  height: 1.15rem;
-  background: linear-gradient(135deg, var(--accent), hsl(280 80% 62%));
-  clip-path: polygon(0 0, 100% 0, 100% 72%, 72% 100%, 0 100%);
+  width: 1.55rem;
+  flex: none;
+  transition: transform 0.3s var(--ease);
+
+  .nav__brand:hover & {
+    transform: rotate(-8deg) scale(1.06);
+  }
 }
 
 .nav__wordmark {

@@ -1,6 +1,10 @@
 @if (article(); as post) {
   <article class="post">
     <header class="shell post__header">
+      <button class="post__back" type="button" (click)="goBack()">
+        <span class="post__back-arrow" aria-hidden="true">←</span>
+        {{ backLabel() }}
+      </button>
       <p class="eyebrow">
         <a [routerLink]="['/', post.category]">{{ meta().label }}</a>
         <span aria-hidden="true">/</span>

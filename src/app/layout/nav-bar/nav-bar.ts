@@ -12,10 +12,11 @@ import { filter, map } from 'rxjs';
 
 import { CATEGORIES } from '../../core/models/article';
 import { Theme } from '../../core/theme';
+import { Logo } from '../../shared/logo/logo';
 
 @Component({
   selector: 'app-nav-bar',
-  imports: [RouterLink, RouterLinkActive],
+  imports: [RouterLink, RouterLinkActive, Logo],
   templateUrl: './nav-bar.html',
   styleUrl: './nav-bar.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
