@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "techblog": {
+    "etch": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -61,10 +61,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "techblog:build:production"
+              "buildTarget": "etch:build:production"
             },
             "development": {
-              "buildTarget": "techblog:build:development"
+              "buildTarget": "etch:build:development"
             }
           },
           "defaultConfiguration": "development"

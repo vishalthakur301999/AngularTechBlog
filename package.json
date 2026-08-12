@@ -1,7 +1,7 @@
 {
-  "name": "techblog",
+  "name": "etch",
   "version": "1.0.0",
-  "description": "We Love Silicon — a concise tech blog about CPUs, GPUs and AI.",
+  "description": "Etch \u2014 concise tech writing about CPUs, GPUs and AI.",
   "private": true,
   "packageManager": "npm@11.17.0",
   "engines": {

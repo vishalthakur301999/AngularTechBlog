@@ -4,7 +4,7 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
 let nextId = 0;
 
 /**
- * The site mark: a chip package with a heart knocked out of the die.
+ * The Etch mark: a chip package with a heart etched out of the die.
  * Kept in sync with `public/icon.svg`, which is the same artwork shipped as
  * the favicon — edit both, then re-run the icon script.
  */

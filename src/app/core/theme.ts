@@ -2,7 +2,7 @@ import { effect, Injectable, signal } from '@angular/core';
 
 export type ThemeName = 'dark' | 'light';
 
-const STORAGE_KEY = 'techblog-theme';
+const STORAGE_KEY = 'etch-theme';
 
 /**
  * Theme preference, persisted to localStorage and reflected onto

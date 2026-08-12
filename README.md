@@ -1,7 +1,10 @@
-# We Love Silicon
+# Etch
 
 A concise tech blog about CPUs, GPUs and AI. Originally built on Angular 11 in 2021,
 rebuilt on Angular 22.
+
+The masthead is **Etch**; _"We Love Silicon."_ is the hero line, carried over from the
+original site.
 
 ## Requirements
 
@@ -18,7 +21,7 @@ npm install
 | Command          | What it does                                        |
 | ---------------- | --------------------------------------------------- |
 | `npm start`      | Dev server on http://localhost:4200                 |
-| `npm run build`  | Production build into `dist/techblog`               |
+| `npm run build`  | Production build into `dist/etch`                   |
 | `npm test`       | Unit tests (Vitest)                                 |
 | `npm run lint`   | ESLint over TypeScript and templates                |
 | `npm run format` | Prettier over `src`                                 |

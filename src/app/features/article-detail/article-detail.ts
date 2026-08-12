@@ -79,7 +79,7 @@ export class ArticleDetail {
   constructor() {
     effect(() => {
       const post = this.article();
-      this.title.setTitle(post ? `${post.productName} — We Love Silicon` : 'We Love Silicon');
+      this.title.setTitle(post ? `${post.productName} — Etch` : 'Etch');
     });
   }
 }

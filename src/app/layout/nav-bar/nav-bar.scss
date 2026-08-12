@@ -71,8 +71,9 @@
 
 .nav__wordmark {
   font-family: var(--font-display);
-  font-size: var(--step-0);
-  letter-spacing: 0.14em;
+  /* A four-letter mark can carry more size than the old five-word one. */
+  font-size: var(--step-1);
+  letter-spacing: 0.18em;
   text-transform: uppercase;
   white-space: nowrap;
 }

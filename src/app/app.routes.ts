@@ -12,7 +12,7 @@ const categoryRoutes: Routes = CATEGORIES.flatMap((meta) => [
     path: meta.id,
     loadComponent: () => import('./features/catalog/catalog').then((m) => m.Catalog),
     data: { category: meta.id },
-    title: `${meta.label} — We Love Silicon`,
+    title: `${meta.label} — Etch`,
   },
   {
     path: `${meta.id}/:slug`,
@@ -26,12 +26,12 @@ export const routes: Routes = [
   {
     path: '',
     loadComponent: () => import('./features/home/home').then((m) => m.Home),
-    title: 'We Love Silicon — CPUs, GPUs and AI',
+    title: 'Etch — CPUs, GPUs and AI',
   },
   ...categoryRoutes,
   {
     path: '**',
     loadComponent: () => import('./features/not-found/not-found').then((m) => m.NotFound),
-    title: 'Not found — We Love Silicon',
+    title: 'Not found — Etch',
   },
 ];
