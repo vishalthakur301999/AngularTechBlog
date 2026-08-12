@@ -1,0 +1,78 @@
+<section class="hero gridded">
+  <div class="shell hero__inner">
+    <p class="hero__kicker">
+      <span class="hero__dot" aria-hidden="true"></span>
+      EST. 2021 — CPU · GPU · AI
+    </p>
+
+    <h1 class="hero__title">
+      <span class="hero__line">We Love</span>
+      <span class="hero__line hero__line--accent">Silicon.</span>
+    </h1>
+
+    <p class="hero__lede">
+      Concise writing about processors, graphics cards and the machine learning boom that made
+      everyone care about both.
+    </p>
+
+    <dl class="hero__stats">
+      @for (category of categories; track category.id) {
+        <a class="hero__stat" [routerLink]="['/', category.id]">
+          <dt>{{ category.label }}</dt>
+          <dd>{{ counts()[category.id] || '—' }}</dd>
+        </a>
+      }
+    </dl>
+  </div>
+
+  <div class="hero__ticker" aria-hidden="true">
+    <span>Zen 5</span><span>Blackwell</span><span>RDNA 4</span><span>Arrow Lake</span>
+    <span>Apple Silicon</span><span>Battlemage</span><span>3D V-Cache</span><span>GDDR7</span>
+    <span>Reasoning models</span><span>Open weights</span>
+  </div>
+</section>
+
+<section class="shell verticals">
+  @for (category of categories; track category.id; let i = $index) {
+    <a class="vertical" [routerLink]="['/', category.id]">
+      <span class="vertical__no" aria-hidden="true">{{ '0' + (i + 1) }}</span>
+      <img
+        class="vertical__image"
+        [src]="category.image"
+        alt=""
+        aria-hidden="true"
+        loading="lazy"
+        decoding="async"
+      />
+      <span class="vertical__overlay">
+        <span class="vertical__tagline">{{ category.tagline }}</span>
+        <span class="vertical__label">{{ category.label }}</span>
+        <span class="vertical__blurb">{{ category.blurb }}</span>
+        <span class="vertical__go">Browse <span aria-hidden="true">→</span></span>
+      </span>
+    </a>
+  }
+</section>
+
+<section class="shell feed">
+  <header class="feed__header">
+    <h2 class="section-title">Latest</h2>
+    <p class="eyebrow">Newest across all three sections</p>
+  </header>
+
+  @if (loading() && latest().length === 0) {
+    <div class="feed__grid" aria-busy="true">
+      @for (placeholder of [1, 2, 3, 4, 5, 6]; track placeholder) {
+        <div class="skeleton" aria-hidden="true"></div>
+      }
+    </div>
+  } @else {
+    <div class="feed__grid">
+      @for (post of latest(); track post.slug; let i = $index) {
+        <app-article-card [article]="post" [showCategory]="true" [index]="i + 1" />
+      } @empty {
+        <p class="feed__empty">Nothing published yet.</p>
+      }
+    </div>
+  }
+</section>

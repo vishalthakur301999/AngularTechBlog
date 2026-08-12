@@ -1,0 +1,122 @@
+@if (article(); as post) {
+  <article class="post">
+    <header class="shell post__header">
+      <p class="eyebrow">
+        <a [routerLink]="['/', post.category]">{{ meta().label }}</a>
+        <span aria-hidden="true">/</span>
+        <span class="post__brand">{{ post.brand }}</span>
+      </p>
+      <h1 class="post__title">{{ post.productName }}</h1>
+      <p class="post__standfirst">{{ post.title }}</p>
+      <p class="post__byline">
+        By {{ post.author }} ·
+        <time [attr.datetime]="post.date">{{ post.date | date: 'd MMMM y' }}</time>
+      </p>
+    </header>
+
+    <div class="shell post__hero">
+      @if (post.image) {
+        <img class="post__image" [src]="post.image" [alt]="post.productName" decoding="async" />
+      } @else {
+        <div class="post__image post__image--generated brand-fill">
+          <span aria-hidden="true">{{ initials() }}</span>
+          <span class="post__hero-name">{{ post.shortName }}</span>
+        </div>
+      }
+    </div>
+
+    @if (post.specs.length) {
+      <section class="shell post__specs" aria-label="Specifications">
+        <p class="specs__caption eyebrow">
+          {{ post.category === 'ai' ? 'Key facts' : 'Specifications' }}
+        </p>
+        <dl class="specs">
+          @for (spec of post.specs; track spec.label) {
+            <div class="specs__row">
+              <dt>{{ spec.label }}</dt>
+              <dd>{{ spec.value }}</dd>
+            </div>
+          }
+        </dl>
+      </section>
+    }
+
+    <div class="shell post__body">
+      @if (showSummary()) {
+        <p class="post__summary">{{ post.summary }}</p>
+      }
+
+      @for (paragraph of post.body; track $index) {
+        <p>{{ paragraph }}</p>
+      }
+
+      @if (post.pros?.length || post.cons?.length) {
+        <div class="judgement">
+          @if (post.pros?.length) {
+            <section class="judgement__col judgement__col--pro">
+              <h2>What's good</h2>
+              <ul>
+                @for (item of post.pros; track $index) {
+                  <li>{{ item }}</li>
+                }
+              </ul>
+            </section>
+          }
+          @if (post.cons?.length) {
+            <section class="judgement__col judgement__col--con">
+              <h2>What isn't</h2>
+              <ul>
+                @for (item of post.cons; track $index) {
+                  <li>{{ item }}</li>
+                }
+              </ul>
+            </section>
+          }
+        </div>
+      }
+
+      @if (post.verdict) {
+        <aside class="verdict">
+          <h2 class="verdict__label">
+            {{ post.category === 'ai' ? 'Why it matters' : 'Verdict' }}
+          </h2>
+          <p>{{ post.verdict }}</p>
+        </aside>
+      }
+
+      <p class="post__tags">
+        @for (tag of post.tags; track tag) {
+          <span class="post__tag">#{{ tag }}</span>
+        }
+      </p>
+
+      <a class="post__link" [href]="post.link" target="_blank" rel="noopener noreferrer">
+        {{ post.linkLabel }} <span aria-hidden="true">↗</span>
+      </a>
+    </div>
+  </article>
+
+  @if (related().length) {
+    <section class="shell post__related">
+      <h2 class="section-title">More {{ meta().label }}</h2>
+      <div class="post__related-grid">
+        @for (other of related(); track other.slug) {
+          <app-article-card [article]="other" />
+        }
+      </div>
+    </section>
+  }
+} @else if (loading()) {
+  <div class="shell post__loading" aria-busy="true">
+    <div class="skeleton skeleton--title"></div>
+    <div class="skeleton skeleton--hero"></div>
+    <div class="skeleton skeleton--line"></div>
+    <div class="skeleton skeleton--line"></div>
+  </div>
+} @else {
+  <div class="shell post__missing">
+    <h1 class="post__title">Not found</h1>
+    <p>There's no {{ meta().label }} article at this address.</p>
+    <a class="post__link" [routerLink]="['/', category()]">Back to {{ meta().label }}</a>
+  </div>
+}

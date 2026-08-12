@@ -1,0 +1,328 @@
+:host {
+  display: block;
+}
+
+/* Header sits on a brand-tinted band with a hairline rule under it. */
+.post__header {
+  padding-block: var(--space-xl) var(--space-m);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-2xs);
+  position: relative;
+}
+
+.eyebrow {
+  display: flex;
+  gap: var(--space-2xs);
+  align-items: center;
+
+  a:hover {
+    color: var(--text);
+  }
+}
+
+.post__brand {
+  color: var(--brand-tint);
+}
+
+.post__title {
+  font-size: var(--step-4);
+  max-width: 22ch;
+  text-transform: uppercase;
+  /* Brand-coloured rule tying the headline to the accent. */
+  border-left: 4px solid var(--brand-tint);
+  padding-left: var(--space-s);
+  margin-left: calc(-1 * var(--space-s) - 4px);
+}
+
+.post__standfirst {
+  font-size: var(--step-1);
+  color: var(--text-muted);
+  max-width: var(--measure);
+}
+
+.post__byline {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  color: var(--text-faint);
+  letter-spacing: 0.04em;
+}
+
+.post__hero {
+  margin-bottom: var(--space-l);
+}
+
+.post__image {
+  width: 100%;
+  aspect-ratio: 21 / 9;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--border);
+}
+
+.post__image--generated {
+  display: grid;
+  place-items: center;
+  align-content: center;
+  gap: var(--space-2xs);
+  font-family: var(--font-display);
+  font-size: var(--step-5);
+  line-height: 0.9;
+  color: hsl(var(--brand-hue) 65% 86%);
+  opacity: 0.92;
+}
+
+.post__hero-name {
+  font-size: var(--step-2);
+  color: hsl(var(--brand-hue) 25% 80%);
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+}
+
+/* ---- Spec sheet -------------------------------------------------------
+   Rows flow through CSS columns rather than sitting in a fixed grid, so any
+   number of specs balances across the columns with no empty cells, and long
+   values wrap inside their own row instead of stretching a cell. */
+
+.post__specs {
+  margin-bottom: var(--space-xl);
+}
+
+.specs__caption {
+  padding-bottom: var(--space-2xs);
+  border-bottom: 1px solid var(--border-strong);
+  margin-bottom: var(--space-2xs);
+}
+
+.specs {
+  margin: 0;
+  columns: 2;
+  column-gap: var(--space-2xl);
+}
+
+.specs__row {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: var(--space-m);
+  padding-block: var(--space-2xs);
+  border-bottom: 1px solid var(--border);
+  /* Keeps a label and its value from splitting across the column break. */
+  break-inside: avoid;
+
+  dt {
+    font-family: var(--font-mono);
+    font-size: var(--step--2);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-faint);
+    white-space: nowrap;
+  }
+
+  dd {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: var(--step-1);
+    line-height: 1.15;
+    text-align: right;
+    /* The value is the number you came for — full contrast. */
+    color: var(--text);
+  }
+}
+
+/* Single column below this width, and stacked rather than label-left /
+   value-right — a long value like "144MB total (64MB 3D V-Cache)" has nowhere
+   to go on a phone if it has to share the line with its label. */
+@media (width < 44rem) {
+  .specs {
+    columns: 1;
+  }
+
+  .specs__row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-3xs);
+    padding-block: var(--space-2xs) var(--space-xs);
+
+    dt {
+      white-space: normal;
+    }
+
+    dd {
+      text-align: left;
+    }
+  }
+}
+
+/* ---- Body ------------------------------------------------------------- */
+
+.post__body {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-m);
+  max-width: var(--measure);
+
+  p {
+    font-size: var(--step-0);
+    line-height: 1.75;
+  }
+}
+
+.post__summary {
+  font-size: var(--step-1) !important;
+  line-height: 1.45 !important;
+  color: var(--text);
+  font-family: var(--font-display);
+  border-left: 3px solid var(--brand-tint);
+  padding-left: var(--space-s);
+}
+
+.judgement {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 15rem), 1fr));
+  gap: var(--space-s);
+}
+
+.judgement__col {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: var(--space-s);
+
+  h2 {
+    font-size: var(--step-0);
+    font-family: var(--font-mono);
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    margin-bottom: var(--space-2xs);
+  }
+
+  ul {
+    margin: 0;
+    padding-left: 1.1em;
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-2xs);
+    color: var(--text-muted);
+    font-size: var(--step--1);
+    line-height: 1.6;
+  }
+
+  &--pro {
+    border-top: 2px solid #3fbf82;
+
+    h2 {
+      color: #3fbf82;
+    }
+  }
+
+  &--con {
+    border-top: 2px solid #e07a52;
+
+    h2 {
+      color: #e07a52;
+    }
+  }
+}
+
+.verdict {
+  background: var(--brand-wash);
+  border: 1px solid var(--brand-tint);
+  border-radius: var(--radius);
+  padding: var(--space-m);
+}
+
+.verdict__label {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  margin-bottom: var(--space-2xs);
+  color: var(--brand-tint);
+}
+
+.post__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2xs);
+}
+
+.post__tag {
+  font-family: var(--font-mono);
+  font-size: var(--step--2);
+  letter-spacing: 0.06em;
+  color: var(--text-faint);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 0.15em 0.6em;
+}
+
+.post__link {
+  align-self: flex-start;
+  font-family: var(--font-display);
+  font-size: var(--step-1);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: var(--space-2xs) var(--space-m);
+  border: 1px solid var(--border-strong);
+  border-radius: var(--radius);
+  transition:
+    border-color 0.15s var(--ease),
+    background 0.15s var(--ease),
+    color 0.15s var(--ease);
+
+  &:hover {
+    border-color: var(--accent);
+    background: var(--accent);
+    color: var(--accent-ink);
+  }
+}
+
+.post__related {
+  margin-top: var(--space-2xl);
+  padding-top: var(--space-l);
+  border-top: 1px solid var(--border-strong);
+}
+
+.post__related-grid {
+  margin-top: var(--space-m);
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 19rem), 1fr));
+  gap: var(--space-m);
+}
+
+.post__missing,
+.post__loading {
+  padding-block: var(--space-2xl);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-s);
+  align-items: flex-start;
+}
+
+.skeleton {
+  width: 100%;
+  border-radius: var(--radius);
+  background: linear-gradient(100deg, var(--surface) 30%, var(--bg-raised) 50%, var(--surface) 70%);
+  background-size: 220% 100%;
+  animation: shimmer 1.4s infinite linear;
+
+  &--title {
+    height: 3rem;
+    max-width: 26rem;
+  }
+
+  &--hero {
+    height: 18rem;
+  }
+
+  &--line {
+    height: 1.2rem;
+  }
+}
+
+@keyframes shimmer {
+  to {
+    background-position: -220% 0;
+  }
+}

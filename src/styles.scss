@@ -1,0 +1,239 @@
+/* We Love Silicon — global stylesheet.
+
+   Design language: a chip datasheet. Hairline rules instead of drop shadows,
+   near-square corners, condensed display type against monospace labels, and a
+   faint PCB grid on the full-bleed surfaces. Keeps the original site's black
+   canvas, Fjalla One display face and brand-coloured sections. */
+
+@font-face {
+  font-family: 'Fjalla One';
+  src: url('/fonts/FjallaOne-Regular.ttf') format('truetype');
+  font-weight: 400;
+  font-display: swap;
+}
+
+:root {
+  /* Type */
+  --font-display: 'Fjalla One', 'Helvetica Neue', Arial, sans-serif;
+  --font-body:
+    ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  --font-mono: ui-monospace, 'SF Mono', 'Cascadia Code', Menlo, monospace;
+
+  /* Fluid type scale */
+  --step--2: clamp(0.69rem, 0.67rem + 0.08vw, 0.74rem);
+  --step--1: clamp(0.79rem, 0.77rem + 0.1vw, 0.85rem);
+  --step-0: clamp(1rem, 0.96rem + 0.2vw, 1.12rem);
+  --step-1: clamp(1.27rem, 1.19rem + 0.4vw, 1.55rem);
+  --step-2: clamp(1.6rem, 1.45rem + 0.75vw, 2.15rem);
+  --step-3: clamp(2.02rem, 1.75rem + 1.35vw, 3rem);
+  --step-4: clamp(2.55rem, 2.06rem + 2.4vw, 4.2rem);
+  --step-5: clamp(3.2rem, 2.1rem + 5.5vw, 7rem);
+
+  /* Space */
+  --space-3xs: 0.25rem;
+  --space-2xs: 0.5rem;
+  --space-xs: 0.75rem;
+  --space-s: 1rem;
+  --space-m: 1.5rem;
+  --space-l: 2.25rem;
+  --space-xl: 3.5rem;
+  --space-2xl: 5.5rem;
+
+  /* Near-square corners — this is instrumentation, not a SaaS dashboard. */
+  --radius: 2px;
+  --radius-lg: 3px;
+
+  --measure: 68ch;
+  --nav-height: 3.75rem;
+  --shell-max: 82rem;
+
+  --ease: cubic-bezier(0.2, 0.7, 0.3, 1);
+  --grid-size: 56px;
+
+  /* Default brand hue; cards and articles override it per brand. */
+  --brand-hue: 190;
+}
+
+/* Dark is the site's native look — the original was black-on-black. */
+:root,
+:root[data-theme='dark'] {
+  color-scheme: dark;
+  --bg: #060709;
+  --bg-raised: #0c0e12;
+  --bg-sunken: #030405;
+  --surface: #0b0d11;
+  --border: #191d25;
+  --border-strong: #2f3541;
+  --text: #eef1f6;
+  --text-muted: #98a1b1;
+  --text-faint: #646c7b;
+  --accent: #4de3ff;
+  --accent-ink: #041016;
+  --grid-line: rgb(255 255 255 / 3.5%);
+  --overlay: rgb(4 5 7 / 68%);
+  --overlay-hover: rgb(4 5 7 / 86%);
+  --brand-tint: hsl(var(--brand-hue) 80% 62%);
+  --brand-wash: hsl(var(--brand-hue) 70% 55% / 12%);
+}
+
+:root[data-theme='light'] {
+  color-scheme: light;
+  --bg: #f4f5f7;
+  --bg-raised: #ffffff;
+  --bg-sunken: #e8eaee;
+  --surface: #ffffff;
+  --border: #d8dce3;
+  --border-strong: #a8b0bd;
+  --text: #0c0f15;
+  --text-muted: #525b6b;
+  --text-faint: #78818f;
+  --accent: #0873a1;
+  --accent-ink: #ffffff;
+  --grid-line: rgb(12 15 21 / 4.5%);
+  --overlay: rgb(6 8 11 / 55%);
+  --overlay-hover: rgb(6 8 11 / 76%);
+  --brand-tint: hsl(var(--brand-hue) 62% 38%);
+  --brand-wash: hsl(var(--brand-hue) 62% 45% / 10%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  font-size: var(--step-0);
+  line-height: 1.65;
+  -webkit-font-smoothing: antialiased;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-family: var(--font-display);
+  font-weight: 400;
+  line-height: 1.02;
+  letter-spacing: 0.005em;
+  margin: 0;
+  text-wrap: balance;
+}
+
+p {
+  margin: 0;
+  text-wrap: pretty;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+button {
+  font: inherit;
+  color: inherit;
+  cursor: pointer;
+}
+
+:focus-visible {
+  outline: 2px solid var(--accent);
+  outline-offset: 2px;
+}
+
+/* Shared layout primitives */
+.shell {
+  width: min(100% - 2 * var(--space-m), var(--shell-max));
+  margin-inline: auto;
+}
+
+/* Monospace kicker used for every label, count and byline on the site. */
+.eyebrow {
+  font-family: var(--font-mono);
+  font-size: var(--step--1);
+  letter-spacing: 0.16em;
+  text-transform: uppercase;
+  color: var(--text-faint);
+}
+
+/* Section heading with the rule-and-marker treatment used site-wide. */
+.section-title {
+  font-size: var(--step-3);
+  text-transform: uppercase;
+  letter-spacing: 0.01em;
+}
+
+.rule {
+  border: 0;
+  border-top: 1px solid var(--border);
+  margin: 0;
+}
+
+/* Faint PCB grid, applied to full-bleed surfaces via ::before. */
+.gridded {
+  position: relative;
+  isolation: isolate;
+}
+
+.gridded::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+  background-image:
+    linear-gradient(var(--grid-line) 1px, transparent 1px),
+    linear-gradient(90deg, var(--grid-line) 1px, transparent 1px);
+  background-size: var(--grid-size) var(--grid-size);
+}
+
+/* Cards without a photograph get a generated brand field instead. It stands in
+   for a product shot, so it stays dark in both themes — with a die-shot style
+   grid and a corner glow in the brand's hue. */
+.brand-fill {
+  position: relative;
+  background:
+    radial-gradient(110% 110% at 12% 0%, hsl(var(--brand-hue) 75% 42% / 80%) 0%, transparent 58%),
+    linear-gradient(155deg, hsl(var(--brand-hue) 40% 14%), #06070a 76%);
+}
+
+.brand-fill::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image:
+    linear-gradient(rgb(255 255 255 / 4%) 1px, transparent 1px),
+    linear-gradient(90deg, rgb(255 255 255 / 4%) 1px, transparent 1px);
+  background-size: 22px 22px;
+  mask-image: radial-gradient(80% 80% at 50% 45%, #000 20%, transparent 78%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  ::view-transition-group(*),
+  ::view-transition-old(*),
+  ::view-transition-new(*) {
+    animation: none !important;
+  }
+}

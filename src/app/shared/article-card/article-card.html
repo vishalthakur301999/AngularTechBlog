@@ -1,0 +1,41 @@
+@let post = article();
+
+<a class="card" [routerLink]="['/', post.category, post.slug]">
+  <div class="card__media">
+    @if (post.image) {
+      <img
+        class="card__image"
+        [src]="post.image"
+        [alt]="post.productName"
+        loading="lazy"
+        decoding="async"
+      />
+    } @else {
+      <span class="card__monogram brand-fill" aria-hidden="true">{{ initials() }}</span>
+    }
+
+    @if (index() !== null) {
+      <span class="card__index" aria-hidden="true">{{ indexLabel() }}</span>
+    }
+
+    <span class="card__short">{{ post.shortName }}</span>
+    <span class="card__bracket card__bracket--tl" aria-hidden="true"></span>
+    <span class="card__bracket card__bracket--br" aria-hidden="true"></span>
+  </div>
+
+  <div class="card__body">
+    <p class="card__meta">
+      <span class="card__brand">{{ post.brand }}</span>
+      @if (showCategory()) {
+        <span class="card__tag">{{ post.category }}</span>
+      }
+      <span class="card__date">{{ post.date | date: 'MMM y' }}</span>
+    </p>
+    <h3 class="card__title">{{ post.title }}</h3>
+    <p class="card__summary">{{ post.summary }}</p>
+    <span class="card__more">
+      Read
+      <span class="card__arrow" aria-hidden="true">→</span>
+    </span>
+  </div>
+</a>

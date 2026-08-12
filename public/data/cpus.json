@@ -1,0 +1,1324 @@
+[
+  {
+    "slug": "amd-ryzen-9-9950x3d",
+    "category": "cpu",
+    "brand": "AMD",
+    "productName": "AMD Ryzen 9 9950X3D",
+    "shortName": "R9 9950X3D",
+    "title": "The compromise finally stopped being a compromise",
+    "summary": "Sixteen Zen 5 cores with 3D V-Cache on one die: the first X3D part you buy without giving up productivity performance.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "Zen 5 (Granite Ridge)"
+      },
+      {
+        "label": "Cores",
+        "value": "16"
+      },
+      {
+        "label": "Threads",
+        "value": "32"
+      },
+      {
+        "label": "Base clock",
+        "value": "4.3 GHz"
+      },
+      {
+        "label": "Boost clock",
+        "value": "5.7 GHz"
+      },
+      {
+        "label": "Cache",
+        "value": "144MB total (64MB 3D V-Cache)"
+      },
+      {
+        "label": "TDP",
+        "value": "170W"
+      },
+      {
+        "label": "Socket",
+        "value": "AM5"
+      }
+    ],
+    "body": [
+      "Every previous 16-core X3D chip asked you to pick a side. The 3D V-Cache sat on one CCD, the higher-clocking cores sat on the other, and Windows had to guess which one your workload wanted. Guess wrong and you paid for it — either in frames or in render times.",
+      "The 9950X3D does not fully eliminate that split, but AMD moved the cache underneath the compute die rather than stacking it on top, which lets the cached CCD keep clocks close to the standard part. The practical result is that the gaming-oriented half no longer runs several hundred megahertz slower than the half you use for compiling, and the scheduler's mistakes cost far less when they happen.",
+      "For gaming alone this is not the value pick — the 9800X3D delivers most of the same frame rates for a lot less money, because games rarely scale past eight cores. What the 9950X3D buys you is not having a second machine. If your day is Blender, Premiere, or a large C++ build and your evening is a CPU-bound sim at 1080p, this is the one part that is genuinely excellent at both.",
+      "Budget for cooling. The 170W rating is a floor rather than a ceiling under sustained all-core load, and thermal headroom is what the boost algorithm converts into clocks. A 280mm AIO or a large dual-tower air cooler is the sensible baseline."
+    ],
+    "pros": [
+      "Top-tier gaming performance and top-tier multi-threaded performance in one socket",
+      "Cache moved below the compute die, so clocks are no longer sacrificed for V-Cache",
+      "AM5 platform longevity — drops into boards that shipped with Ryzen 7000"
+    ],
+    "cons": [
+      "Considerably more expensive than the 9800X3D for little to no gaming gain",
+      "Still a dual-CCD design, so scheduling quirks have not entirely disappeared",
+      "Wants serious cooling to hold its boost clocks"
+    ],
+    "verdict": "The default choice for a machine that has to earn money during the day and play games at night. If it only ever plays games, buy the 9800X3D and spend the difference on the GPU.",
+    "author": "Vishal Thakur",
+    "date": "2025-03-11",
+    "link": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x3d.html",
+    "linkLabel": "Product page",
+    "image": null,
+    "tags": [
+      "zen-5",
+      "x3d",
+      "am5",
+      "flagship"
+    ]
+  },
+  {
+    "slug": "apple-m3-ultra",
+    "category": "cpu",
+    "brand": "Apple",
+    "productName": "Apple M3 Ultra",
+    "shortName": "Apple M3 Ultra",
+    "title": "Half a terabyte of unified memory",
+    "summary": "Two M3 Max dies fused together, with a memory configuration that no consumer GPU can match at any price.",
+    "specs": [
+      {
+        "label": "Process",
+        "value": "TSMC 3nm"
+      },
+      {
+        "label": "CPU cores",
+        "value": "32 (24 performance + 8 efficiency)"
+      },
+      {
+        "label": "GPU cores",
+        "value": "Up to 80"
+      },
+      {
+        "label": "Neural Engine",
+        "value": "32-core"
+      },
+      {
+        "label": "Memory bandwidth",
+        "value": "819 GB/s"
+      },
+      {
+        "label": "Unified memory",
+        "value": "Up to 512GB"
+      }
+    ],
+    "body": [
+      "Apple builds its Ultra chips by bonding two Max dies with a high-bandwidth interconnect, presenting them to software as a single processor. The M3 Ultra is the largest of these, and its headline specification is not the core count — it is the 512GB unified memory ceiling.",
+      "That number is why this chip matters outside of Apple's usual audience. A 512GB configuration can hold model weights that would otherwise require a rack of accelerators, and both CPU and GPU address that pool directly. For running very large models locally — slowly, but locally — there is no comparable single machine at this price.",
+      "For conventional creative work it is a straightforward Mac Studio: enormous multi-core throughput, many simultaneous video streams, and near-silent operation under sustained load.",
+      "The caveats are notable. It is built on the M3 generation rather than M4, so per-core performance trails the newer M4 Max in single-threaded work — an odd inversion where the bigger chip is the older architecture. And memory bandwidth, while huge, is still well below what dedicated HBM accelerators deliver, so throughput on large models is respectable rather than fast."
+    ],
+    "pros": [
+      "Up to 512GB of unified memory — unmatched for local large-model work",
+      "Massive multi-core and GPU throughput in a small, quiet enclosure",
+      "819 GB/s of memory bandwidth shared by CPU and GPU"
+    ],
+    "cons": [
+      "M3-generation cores, so single-threaded speed trails the newer M4 Max",
+      "Maxed configurations are extremely expensive",
+      "Still no CUDA, and bandwidth is far below datacentre accelerators"
+    ],
+    "verdict": "A niche machine that owns its niche completely. If you need enormous addressable memory in one box, nothing else comes close.",
+    "author": "Vishal Thakur",
+    "date": "2025-03-05",
+    "link": "https://www.apple.com/mac-studio/",
+    "linkLabel": "Product page",
+    "image": null,
+    "tags": [
+      "apple-silicon",
+      "arm",
+      "workstation",
+      "local-ai"
+    ]
+  },
+  {
+    "slug": "apple-m4-max",
+    "category": "cpu",
+    "brand": "Apple",
+    "productName": "Apple M4 Max",
+    "shortName": "Apple M4 Max",
+    "title": "Workstation performance inside a laptop's thermal budget",
+    "summary": "Sixteen cores, a 40-core GPU and enough memory bandwidth to make large local models practical on battery.",
+    "specs": [
+      {
+        "label": "Process",
+        "value": "TSMC 3nm (N3E)"
+      },
+      {
+        "label": "CPU cores",
+        "value": "Up to 16 (12 performance + 4 efficiency)"
+      },
+      {
+        "label": "GPU cores",
+        "value": "Up to 40"
+      },
+      {
+        "label": "Neural Engine",
+        "value": "16-core"
+      },
+      {
+        "label": "Memory bandwidth",
+        "value": "Up to 546 GB/s"
+      },
+      {
+        "label": "Unified memory",
+        "value": "Up to 128GB"
+      }
+    ],
+    "body": [
+      "The M-series argument used to be about performance per watt, which is a real advantage that sounds like an excuse. With the M4 Max it is simply about performance. In single-threaded work it competes with the fastest desktop chips available while drawing a fraction of the power, and it does so in a laptop that does not throttle when you unplug it.",
+      "The more interesting number is memory bandwidth. 546 GB/s of unified memory, addressable by both CPU and GPU without copying, is what makes a MacBook Pro a credible machine for running large language models locally. A 128GB configuration will hold models that require multiple discrete GPUs on a PC, and it will do it in a bag.",
+      "Media work is the other clear win. The hardware encode and decode blocks, including ProRes acceleration, make multi-stream 4K and 8K timelines feel unremarkable in a way that raw core counts do not explain.",
+      "The limits are the familiar ones. Memory is soldered, so the configuration you buy is the configuration you keep, and Apple's pricing for extra unified memory is steep. Gaming remains a thin story despite the Game Porting Toolkit, and CUDA-dependent workflows do not run at all."
+    ],
+    "pros": [
+      "Desktop-class CPU performance with laptop power draw, on or off mains",
+      "Huge unified memory pool and bandwidth — excellent for local AI inference",
+      "Outstanding hardware media engines for video work"
+    ],
+    "cons": [
+      "Memory and storage are soldered and expensively upgraded at purchase",
+      "No CUDA, which rules out a lot of ML tooling",
+      "Gaming library remains limited"
+    ],
+    "verdict": "The strongest portable workstation you can buy, and quietly the most practical machine for running large models locally.",
+    "author": "Vishal Thakur",
+    "date": "2024-11-08",
+    "link": "https://www.apple.com/macbook-pro/",
+    "linkLabel": "Product page",
+    "image": null,
+    "tags": [
+      "apple-silicon",
+      "arm",
+      "laptop",
+      "local-ai"
+    ]
+  },
+  {
+    "slug": "amd-ryzen-7-9800x3d",
+    "category": "cpu",
+    "brand": "AMD",
+    "productName": "AMD Ryzen 7 9800X3D",
+    "shortName": "R7 9800X3D",
+    "title": "The easiest recommendation in the whole category",
+    "summary": "Eight Zen 5 cores, 96MB of L3, an unlocked multiplier, and the highest gaming frame rates available at any price.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "Zen 5 (Granite Ridge)"
+      },
+      {
+        "label": "Cores",
+        "value": "8"
+      },
+      {
+        "label": "Threads",
+        "value": "16"
+      },
+      {
+        "label": "Base clock",
+        "value": "4.7 GHz"
+      },
+      {
+        "label": "Boost clock",
+        "value": "5.2 GHz"
+      },
+      {
+        "label": "Cache",
+        "value": "104MB total (64MB 3D V-Cache)"
+      },
+      {
+        "label": "TDP",
+        "value": "120W"
+      },
+      {
+        "label": "Socket",
+        "value": "AM5"
+      }
+    ],
+    "body": [
+      "The 7800X3D was already the gaming CPU to beat, and it beat everything by being weird: enormous cache, modest clocks, locked multiplier, low power draw. The 9800X3D keeps the enormous cache and fixes the other three.",
+      "Relocating the stacked cache beneath the cores instead of above them solved the thermal problem that forced AMD to cap the previous generation. Heat now travels from the cores straight into the heatspreader rather than through a slab of SRAM, so clocks went up roughly half a gigahertz and — for the first time on an X3D part — overclocking is unlocked.",
+      "What that means in practice is a chip that no longer has an obvious weakness. It still wins the cache-sensitive workloads that made X3D famous: large simulation games, strategy titles late in a campaign, anything with a working set that fits in 96MB of L3 and falls off a cliff without it. But it also holds its own in the lightly-threaded and productivity tests where earlier X3D chips gave ground to their non-cached siblings.",
+      "The eight-core count is the honest limitation. If you regularly render, encode, or compile, more cores will serve you better for the money. For gaming, eight fast cores remain more than any current title meaningfully uses."
+    ],
+    "pros": [
+      "Fastest gaming CPU available, often by a wide margin in cache-bound titles",
+      "Unlocked for overclocking, unlike previous X3D parts",
+      "Efficient — real-world gaming power draw stays modest"
+    ],
+    "cons": [
+      "Eight cores caps heavy content-creation throughput",
+      "Commands a real premium over the non-X3D 9700X",
+      "Gains are small if you play GPU-bound at 4K"
+    ],
+    "verdict": "If the machine's job is to play games, this is the CPU. Everything else in the price bracket is a compromise you are choosing on purpose.",
+    "author": "Vishal Thakur",
+    "date": "2024-11-07",
+    "link": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-7-9800x3d.html",
+    "linkLabel": "Product page",
+    "image": null,
+    "tags": [
+      "zen-5",
+      "x3d",
+      "am5",
+      "gaming"
+    ]
+  },
+  {
+    "slug": "intel-core-ultra-7-265k",
+    "category": "cpu",
+    "brand": "Intel",
+    "productName": "Intel Core Ultra 7 265K",
+    "shortName": "Ultra 7 265K",
+    "title": "The Arrow Lake chip that makes sense",
+    "summary": "Nearly all of the 285K's multi-threaded output for substantially less money — the sensible tier of a difficult generation.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "Arrow Lake (Core Ultra 200S)"
+      },
+      {
+        "label": "Cores",
+        "value": "20 (8 P-cores + 12 E-cores)"
+      },
+      {
+        "label": "Threads",
+        "value": "20"
+      },
+      {
+        "label": "Base clock",
+        "value": "3.9 GHz (P-core)"
+      },
+      {
+        "label": "Boost clock",
+        "value": "5.5 GHz"
+      },
+      {
+        "label": "Cache",
+        "value": "30MB L3"
+      },
+      {
+        "label": "Power",
+        "value": "125W base / 250W turbo"
+      },
+      {
+        "label": "Socket",
+        "value": "LGA1851"
+      }
+    ],
+    "body": [
+      "Flagship parts are rarely the good deal, and Arrow Lake is a clear case. The 265K gives up four efficiency cores and 200MHz against the 285K, and in return costs a great deal less. In multi-threaded benchmarks the gap is usually in the single digits.",
+      "It inherits the generation's real strength — efficiency. Compared to the 14700K it replaces, sustained power draw and package temperatures are far lower, which translates into a build that is quieter under load and less demanding of its cooler.",
+      "It also inherits the generation's weakness. Gaming performance is fine in absolute terms and disappointing in relative ones, particularly at 1080p with a fast GPU where memory latency dominates. Fast, low-latency DDR5 helps more here than it does on competing platforms; it is worth budgeting for.",
+      "Aggressive discounting through 2025 pushed the 265K into genuinely good value territory, particularly bundled with a mid-range Z890 board."
+    ],
+    "pros": [
+      "Close to flagship multi-threaded performance for meaningfully less money",
+      "Much better thermals and power than the 14700K",
+      "Frequently discounted, often bundled with a board"
+    ],
+    "cons": [
+      "Gaming still trails AMD's X3D parts clearly",
+      "Requires a new LGA1851 board with limited future upgrades",
+      "Sensitive to memory latency — cheap DDR5 costs you performance"
+    ],
+    "verdict": "The tier of Arrow Lake worth buying. A solid all-rounder for productivity if you are staying on Intel.",
+    "author": "Vishal Thakur",
+    "date": "2024-10-24",
+    "link": "https://www.intel.com/content/www/us/en/products/sku/241061/intel-core-ultra-7-processor-265k-30m-cache-up-to-5-50-ghz/specifications.html",
+    "linkLabel": "Product page",
+    "image": null,
+    "tags": [
+      "arrow-lake",
+      "lga1851",
+      "value"
+    ]
+  },
+  {
+    "slug": "intel-core-ultra-9-285k",
+    "category": "cpu",
+    "brand": "Intel",
+    "productName": "Intel Core Ultra 9 285K",
+    "shortName": "Ultra 9 285K",
+    "title": "A necessary reset, sold at a flagship price",
+    "summary": "Arrow Lake drops Hyper-Threading and the monolithic die, fixes Intel's power problem, and loses the gaming crown doing it.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "Arrow Lake (Core Ultra 200S)"
+      },
+      {
+        "label": "Cores",
+        "value": "24 (8 P-cores + 16 E-cores)"
+      },
+      {
+        "label": "Threads",
+        "value": "24"
+      },
+      {
+        "label": "Base clock",
+        "value": "3.7 GHz (P-core)"
+      },
+      {
+        "label": "Boost clock",
+        "value": "5.7 GHz"
+      },
+      {
+        "label": "Cache",
+        "value": "36MB L3"
+      },
+      {
+        "label": "Power",
+        "value": "125W base / 250W turbo"
+      },
+      {
+        "label": "Socket",
+        "value": "LGA1851"
+      }
+    ],
+    "body": [
+      "Arrow Lake is the largest architectural change Intel has shipped on the desktop in years. The monolithic die is gone, replaced by a disaggregated design with compute, graphics, SoC and I/O built as separate tiles — some of them fabricated at TSMC rather than in Intel's own fabs. Hyper-Threading is gone too, so a 24-core chip presents 24 threads instead of 32.",
+      "The engineering payoff is real. The 13th and 14th generation parts had a deserved reputation for drinking power and, in the worst cases, degrading themselves through excessive voltage. The 285K runs dramatically cooler and quieter than the i9-14900K it replaces, often pulling substantially less power for comparable multi-threaded output.",
+      "The gaming result was the problem. Splitting the chip into tiles added memory latency, and games are exactly the workload that punishes memory latency. At launch the 285K frequently lost to Intel's own previous generation, never mind the X3D competition. Microcode and firmware updates through 2025 recovered a meaningful share of that deficit, but the ranking did not change.",
+      "Where it does well is mixed and productivity work, where the sixteen efficiency cores earn their space, and in any build where acoustics and thermals matter. It also brings a proper NPU to the desktop, though desktop software has been slow to find a use for it.",
+      "The socket change to LGA1851 means a new motherboard, and unlike AM5 its upgrade path has proven short."
+    ],
+    "pros": [
+      "Enormous efficiency improvement over 13th/14th gen — cooler, quieter, lower power",
+      "Strong multi-threaded and mixed-workload performance",
+      "Ends the voltage-degradation saga of the previous generation"
+    ],
+    "cons": [
+      "Gaming performance trails both the X3D competition and, at times, Intel's own 14900K",
+      "New LGA1851 socket with a short upgrade path",
+      "Losing Hyper-Threading costs throughput in some threaded applications"
+    ],
+    "verdict": "The right architecture at the wrong price. Worth it for productivity and efficiency; the wrong buy if frame rates are the point.",
+    "author": "Vishal Thakur",
+    "date": "2024-10-24",
+    "link": "https://www.intel.com/content/www/us/en/products/sku/241060/intel-core-ultra-9-processor-285k-36m-cache-up-to-5-70-ghz/specifications.html",
+    "linkLabel": "Product page",
+    "image": null,
+    "tags": [
+      "arrow-lake",
+      "lga1851",
+      "flagship",
+      "npu"
+    ]
+  },
+  {
+    "slug": "amd-ryzen-9-9950x",
+    "category": "cpu",
+    "brand": "AMD",
+    "productName": "AMD Ryzen 9 9950X",
+    "shortName": "R9 9950X",
+    "title": "A workstation chip wearing a desktop socket",
+    "summary": "Sixteen Zen 5 cores with full AVX-512 throughput — the value case for heavy multi-threaded work on mainstream hardware.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "Zen 5 (Granite Ridge)"
+      },
+      {
+        "label": "Cores",
+        "value": "16"
+      },
+      {
+        "label": "Threads",
+        "value": "32"
+      },
+      {
+        "label": "Base clock",
+        "value": "4.3 GHz"
+      },
+      {
+        "label": "Boost clock",
+        "value": "5.7 GHz"
+      },
+      {
+        "label": "Cache",
+        "value": "80MB total"
+      },
+      {
+        "label": "TDP",
+        "value": "170W"
+      },
+      {
+        "label": "Socket",
+        "value": "AM5"
+      }
+    ],
+    "body": [
+      "Zen 5's headline generational gain was never really about games. It was about the vector units. AMD widened the floating-point path to a full 512-bit AVX-512 implementation, and in the workloads that use it — scientific code, some video encoders, and a growing amount of local model inference — the jump over Zen 4 is far larger than the single-digit percentages the gaming reviews reported.",
+      "That mismatch defined the 9950X's reception. Reviewers ran the standard gaming suite, found modest gains over the 7950X, and called the generation underwhelming. Run a compile farm, a render queue, or a quantised LLM on it and the picture is quite different.",
+      "It also runs cooler than its predecessor at stock settings, and AMD's later firmware updates recovered a chunk of the launch-day performance that had been left on the table by scheduler and branch-prediction issues. Buying one today is a materially better experience than buying one at launch.",
+      "The competition is the 9950X3D, which costs more and adds cache. If your workloads are throughput-bound rather than latency-bound, the extra cache does nothing for you and this is the smarter purchase."
+    ],
+    "pros": [
+      "Excellent multi-threaded throughput for the price and socket",
+      "Full-width AVX-512 is a genuine advantage in vector-heavy code",
+      "Runs cooler and more efficiently than the 7950X it replaces"
+    ],
+    "cons": [
+      "Gaming gains over Zen 4 are small",
+      "Needs a capable cooler and a decent VRM to sustain all-core boost",
+      "Launch-window reviews undersold it; some of that reputation stuck"
+    ],
+    "verdict": "The rational pick for heavy multi-threaded work on AM5. Skip it if games are the priority — the X3D parts exist for that.",
+    "author": "Vishal Thakur",
+    "date": "2024-08-15",
+    "link": "https://www.amd.com/en/products/processors/desktops/ryzen/9000-series/amd-ryzen-9-9950x.html",
+    "linkLabel": "Product page",
+    "image": null,
+    "tags": [
+      "zen-5",
+      "am5",
+      "workstation",
+      "avx-512"
+    ]
+  },
+  {
+    "slug": "qualcomm-snapdragon-x-elite",
+    "category": "cpu",
+    "brand": "Qualcomm",
+    "productName": "Qualcomm Snapdragon X Elite",
+    "shortName": "Snapdragon X Elite",
+    "title": "Windows on Arm finally got a chip worth shipping",
+    "summary": "Twelve custom Oryon cores and a 45 TOPS NPU — the first Arm Windows silicon that competes rather than apologises.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "Oryon (Arm)"
+      },
+      {
+        "label": "Process",
+        "value": "TSMC 4nm"
+      },
+      {
+        "label": "CPU cores",
+        "value": "12"
+      },
+      {
+        "label": "Boost clock",
+        "value": "Up to 4.3 GHz (dual-core)"
+      },
+      {
+        "label": "NPU",
+        "value": "Hexagon, 45 TOPS"
+      },
+      {
+        "label": "Memory",
+        "value": "LPDDR5x, up to 135 GB/s"
+      }
+    ],
+    "body": [
+      "Windows on Arm had been a decade of good intentions and disappointing hardware. The Snapdragon X Elite is the first attempt where the silicon is not the weak link — Qualcomm's Oryon cores, built by the team that designed Apple's early A-series chips, deliver genuinely competitive multi-threaded performance and outstanding battery life in thin laptops.",
+      "The 45 TOPS NPU is the other half of the pitch. It cleared Microsoft's Copilot+ PC threshold, which for a while made these the only Windows machines that could run certain on-device AI features at all — a rare instance of Qualcomm setting the bar that Intel and AMD then had to reach.",
+      "Software compatibility remains the deciding factor. The Prism emulation layer handles most x86 applications acceptably, and the major creative and productivity suites have shipped native Arm builds. But anti-cheat drivers, niche professional plugins, and a great deal of enterprise software still fail or run poorly, and gaming is unreliable in ways that are difficult to predict before you buy.",
+      "The real significance is competitive. Arm is now a credible option in mainstream Windows laptops, and both Intel and AMD responded with far more aggressive efficiency and NPU roadmaps than they had planned."
+    ],
+    "pros": [
+      "Excellent battery life with performance that holds up on battery",
+      "45 TOPS NPU cleared the Copilot+ bar ahead of x86 competitors",
+      "Broke a decade-long stalemate in Windows-on-Arm silicon"
+    ],
+    "cons": [
+      "x86 emulation still fails on anti-cheat, some drivers, and niche software",
+      "Gaming compatibility is inconsistent and hard to verify in advance",
+      "GPU performance trails integrated graphics from Intel and AMD"
+    ],
+    "verdict": "Buy it for battery life and quiet, thin machines — after checking that the specific software you depend on actually runs.",
+    "author": "Vishal Thakur",
+    "date": "2024-06-18",
+    "link": "https://www.qualcomm.com/products/mobile/snapdragon/pcs-and-tablets/snapdragon-x-elite",
+    "linkLabel": "Product page",
+    "image": null,
+    "tags": [
+      "arm",
+      "laptop",
+      "npu",
+      "windows-on-arm"
+    ]
+  },
+  {
+    "slug": "intel-core-i9-14900k",
+    "category": "cpu",
+    "brand": "Intel",
+    "productName": "Intel Core i9-14900K",
+    "shortName": "i9-14900K",
+    "title": "The end of the line, in more ways than one",
+    "summary": "The fastest monolithic Intel desktop chip ever built, and the one whose voltage problems forced a reckoning.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "Raptor Lake Refresh"
+      },
+      {
+        "label": "Cores",
+        "value": "24 (8 P-cores + 16 E-cores)"
+      },
+      {
+        "label": "Threads",
+        "value": "32"
+      },
+      {
+        "label": "Base clock",
+        "value": "3.2 GHz (P-core)"
+      },
+      {
+        "label": "Boost clock",
+        "value": "6.0 GHz"
+      },
+      {
+        "label": "Cache",
+        "value": "36MB L3"
+      },
+      {
+        "label": "Power",
+        "value": "125W base / 253W turbo"
+      },
+      {
+        "label": "Socket",
+        "value": "LGA1700"
+      }
+    ],
+    "body": [
+      "Six gigahertz out of the box was a genuine milestone, and for raw single-threaded speed the 14900K was untouchable when it launched. Thirty-two threads made it a capable content-creation chip too, and LGA1700 was a mature platform with cheap boards and plenty of DDR5 support.",
+      "Then the failures started. Through 2024 a growing number of 13th and 14th generation i9 and i7 owners reported instability — crashes in games and in compilation, escalating over months into chips that would not run stably at stock. Intel eventually identified elevated operating voltage as the cause, shipped microcode fixes, and extended warranties to five years.",
+      "The fixes work on healthy chips. They do not repair a chip that has already degraded, which makes the used market for these parts genuinely risky. If you own one, make sure the board is on current firmware and that it is not running an aggressive motherboard power profile.",
+      "As a new purchase it is largely a historical artifact now. As a lesson it is a significant one: this is the generation whose problems pushed Intel to abandon the monolithic, voltage-hungry approach entirely and reset with Arrow Lake."
+    ],
+    "pros": [
+      "Extremely high single-threaded performance; 6.0 GHz stock boost",
+      "32 threads and a mature, inexpensive LGA1700 platform",
+      "Warranty extended to five years in response to the voltage issue"
+    ],
+    "cons": [
+      "Degradation risk on units run at launch voltages — a serious used-market hazard",
+      "High power draw and heat output under sustained load",
+      "Superseded by a platform it shares no socket with"
+    ],
+    "verdict": "Historically important and technically impressive, but not something to buy new. If you own one, patch the firmware and check your power limits.",
+    "author": "Vishal Thakur",
+    "date": "2023-10-17",
+    "link": "https://www.intel.com/content/www/us/en/products/sku/236773/intel-core-i9-processor-14900k-36m-cache-up-to-6-00-ghz/specifications.html",
+    "linkLabel": "Product page",
+    "image": null,
+    "tags": [
+      "raptor-lake",
+      "lga1700",
+      "archive"
+    ]
+  },
+  {
+    "slug": "amd-ryzen-7-7800x3d",
+    "category": "cpu",
+    "brand": "AMD",
+    "productName": "AMD Ryzen 7 7800X3D",
+    "shortName": "R7 7800X3D",
+    "title": "The chip that made 3D V-Cache mainstream",
+    "summary": "The part that proved cache beats clocks for gaming, and stayed the value champion long after its successor arrived.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "Zen 4 (Raphael)"
+      },
+      {
+        "label": "Cores",
+        "value": "8"
+      },
+      {
+        "label": "Threads",
+        "value": "16"
+      },
+      {
+        "label": "Base clock",
+        "value": "4.2 GHz"
+      },
+      {
+        "label": "Boost clock",
+        "value": "5.0 GHz"
+      },
+      {
+        "label": "Cache",
+        "value": "104MB total (64MB 3D V-Cache)"
+      },
+      {
+        "label": "TDP",
+        "value": "120W"
+      },
+      {
+        "label": "Socket",
+        "value": "AM5"
+      }
+    ],
+    "body": [
+      "For most of two years this was the answer to \"what CPU should I buy for gaming?\" and the answer was not close. Stacking 64MB of extra L3 on top of an eight-core Zen 4 die turned out to matter far more than the several hundred megahertz of clock speed AMD had to give up to make the thermals work.",
+      "The reason is unglamorous: a lot of games are not compute-bound, they are memory-latency-bound. Simulation titles, grand strategy games in the late game, MMOs in crowded areas, and factory builders all thrash the cache. Give them 96MB of L3 and the frame-time graph flattens out in a way that no amount of extra clock speed reproduces.",
+      "It was also remarkably efficient. Gaming power draw regularly landed under 60W, which meant modest coolers, quiet builds, and small-form-factor machines that did not throttle.",
+      "The 9800X3D is faster and unlocked. But the 7800X3D dropped in price once it was superseded, runs in the same AM5 socket, and gives up surprisingly little. As a value purchase it has aged extremely well."
+    ],
+    "pros": [
+      "Outstanding frames-per-dollar, especially after post-launch price cuts",
+      "Very low gaming power draw and easy to cool",
+      "Same AM5 socket, so it upgrades to a 9000-series X3D chip later"
+    ],
+    "cons": [
+      "Locked multiplier — no overclocking",
+      "Clocks are low, so lightly-threaded non-gaming work lags the 7700X",
+      "Eight cores limits heavy content creation"
+    ],
+    "verdict": "Still the smart-money gaming CPU when it is discounted. It defined the category, and the category has not moved far.",
+    "author": "Vishal Thakur",
+    "date": "2023-04-06",
+    "link": "https://www.amd.com/en/products/processors/desktops/ryzen/7000-series/amd-ryzen-7-7800x3d.html",
+    "linkLabel": "Product page",
+    "image": null,
+    "tags": [
+      "zen-4",
+      "x3d",
+      "am5",
+      "value"
+    ]
+  },
+  {
+    "slug": "amd-ryzen-5-3600x",
+    "category": "cpu",
+    "brand": "AMD",
+    "productName": "AMD Ryzen 5 3600X",
+    "shortName": "R5 3600X",
+    "title": "Best Last Gen Gaming CPU",
+    "summary": "Out of the box, the Ryzen 5 3600X is the best processor in its price range for gaming and productivity, marking a massive shift in the mid-range. At stock settings…",
+    "specs": [
+      {
+        "label": "Generation",
+        "value": "3"
+      },
+      {
+        "label": "Cores",
+        "value": "6"
+      },
+      {
+        "label": "Threads",
+        "value": "12"
+      },
+      {
+        "label": "Base clock",
+        "value": "3.8 GHz"
+      },
+      {
+        "label": "Boost clock",
+        "value": "4.4 GHz"
+      },
+      {
+        "label": "TDP",
+        "value": "95W"
+      }
+    ],
+    "body": [
+      "Out of the box, the Ryzen 5 3600X is the best processor in its price range for gaming and productivity, marking a massive shift in the mid-range. At stock settings, the Ryzen 5 3600X regularly beat the more expensive Core i5-9600K in both categories, albeit by slim margins in gaming, reversing the long-held trend of Ryzen being best for productivity while Intel ruled the gaming roost.",
+      "If you're into overclocking, the Intel processors are going to deliver more performance, but you'll have to provide your own beefy cooler to get there, significantly adding to the cost, while AMD includes a capable, attractive cooler in the box. The majority of enthusiasts looking for a fast set-it-and-forget-it processor that can handle common computing tasks with relative ease will find incredible value in the Ryzen 5 3600X."
+    ],
+    "author": "Vishal Thakur",
+    "date": "2021-04-14",
+    "link": "https://www.amd.com/en/products/cpu/amd-ryzen-5-3600x",
+    "linkLabel": "Product page",
+    "image": "assets/img/CPU/Amd/3600.jpg",
+    "tags": [
+      "archive",
+      "amd"
+    ]
+  },
+  {
+    "slug": "amd-ryzen-5-5600x",
+    "category": "cpu",
+    "brand": "AMD",
+    "productName": "AMD Ryzen 5 5600X",
+    "shortName": "R5 5600X",
+    "title": "Best CPU for Gamers",
+    "summary": "The AMD Ryzen 5 5600X takes the top spot in the gaming PC market with a solid blend of Intel-beating performance in both gaming and application workloads…",
+    "specs": [
+      {
+        "label": "Generation",
+        "value": "5"
+      },
+      {
+        "label": "Cores",
+        "value": "6"
+      },
+      {
+        "label": "Threads",
+        "value": "12"
+      },
+      {
+        "label": "Base clock",
+        "value": "4.1 GHz"
+      },
+      {
+        "label": "Boost clock",
+        "value": "4.8 GHz"
+      },
+      {
+        "label": "TDP",
+        "value": "65W"
+      }
+    ],
+    "body": [
+      "The AMD Ryzen 5 5600X takes the top spot in the gaming PC market with a solid blend of Intel-beating performance in both gaming and application workloads. The six-core 12-thread chip lands at $299, a $50 price hike over its previous-gen counterpart, but brings more than enough extra gaming and application performance to justify the premium. The Ryzen 5 5600X even beats the Intel Core i9-10900K at gaming, which is an incredible feat given its price point. Not to mention that it's the most power-efficient desktop PC processor we've ever tested.",
+      "AMD's Zen 3 microarchitecture results in a stunning 19% increase in IPC, which floats all boats in terms of performance in gaming, single-threaded, and multi-threaded applications. In fact, the chip generally matches the gaming performance of its more-expensive sibling, the $449 Ryzen 7 5800X. That makes the 5600X an incredibly well-rounded chip that can handle any type of gaming, from competitive-class performance with high refresh rate monitors to streaming, while also serving up more than enough performance for day-to-day application workloads.",
+      "The Ryzen 5 5600X has a 3.7 GHz base and 4.6 GHz boost clock, but with the right cooling and motherboard, you can expect higher short-term boosts. The chip also has a 65W TDP rating, meaning it runs exceptionally cool and quiet given its capabilities (the previous-gen model was 95W). Existing AMD owners with a 500-series motherboard will breathe a sigh of relief as the 5600X drops right into existing 500-series motherboards. You can also drop the chips right into 400-series motherboards. If you need a new motherboard to support the chip, both 400- and 500-series motherboards are plentiful and relatively affordable, with the B550 lineup offering the best overall value for this class of chip."
+    ],
+    "author": "Vishal Thakur",
+    "date": "2021-04-14",
+    "link": "https://www.amd.com/en/products/cpu/amd-ryzen-5-5600x",
+    "linkLabel": "Product page",
+    "image": "assets/img/CPU/Amd/5600.jpg",
+    "tags": [
+      "archive",
+      "amd"
+    ]
+  },
+  {
+    "slug": "amd-ryzen-7-5800x",
+    "category": "cpu",
+    "brand": "AMD",
+    "productName": "AMD Ryzen 7 5800X",
+    "shortName": "R7 5800X",
+    "title": "Awkward Middle Child",
+    "summary": "AMD's Ryzen 7 5800X slots into AMD's Zen 3-powered product stack with eight cores and sixteen threads…",
+    "specs": [
+      {
+        "label": "Generation",
+        "value": "5"
+      },
+      {
+        "label": "Cores",
+        "value": "8"
+      },
+      {
+        "label": "Threads",
+        "value": "16"
+      },
+      {
+        "label": "Base clock",
+        "value": "3.8 GHz"
+      },
+      {
+        "label": "Boost clock",
+        "value": "4.7 GHz"
+      },
+      {
+        "label": "TDP",
+        "value": "105W"
+      }
+    ],
+    "body": [
+      "AMD's Ryzen 7 5800X slots into AMD's Zen 3-powered product stack with eight cores and sixteen threads, serving as the mainstream workhorse of the Ryzen 5000 series processors that have taken our list of Best CPUs by storm and realigned our CPU Benchmarks Hierarchy. Powered by the Zen 3 architecture that delivers a ~19% increase in instruction per cycle (IPC) throughput, the Ryzen 7 5800X delivers the impressive gains over the previous-gen models that we've come to expect, resetting our performance expectations for an eight-core processor.",
+      "However, balancing a product stack is all about selecting the right price point for any given chip, and the Ryzen 7 5800X's relatively high price point ($50 more than the previous-gen model) not only puts it into contention with bruising competition from within AMD's own product stack, it also allows Intel's $374 Core i7-10700K to slot in as a value alternative.",
+      "AMD's cooler-less Ryzen 5000 series models require a 280mm AIO cooler (or equivalent air cooler), adding plenty of cost into the equation. That will likely dissuade gaming-focused enthusiasts from dropping the extra cash for the 5800X's two additional cores that don't deliver meaningful gaming performance gains over the Ryzen 5 5600X."
+    ],
+    "author": "Vishal Thakur",
+    "date": "2021-04-14",
+    "link": "https://www.amd.com/en/products/cpu/amd-ryzen-7-5800x",
+    "linkLabel": "Product page",
+    "image": "assets/img/CPU/Amd/5800.jpg",
+    "tags": [
+      "archive",
+      "amd"
+    ]
+  },
+  {
+    "slug": "amd-ryzen-9-3950x",
+    "category": "cpu",
+    "brand": "AMD",
+    "productName": "AMD Ryzen 9 3950X",
+    "shortName": "R9 3950X",
+    "title": "16 core Gaming and Productivity Beast",
+    "summary": "AMD's Ryzen 9 3950X lands today, bringing the ultimate threaded performance to the mainstream desktop with an industry-leading and unprecedented 16 cores and 32 threads…",
+    "specs": [
+      {
+        "label": "Generation",
+        "value": "3"
+      },
+      {
+        "label": "Cores",
+        "value": "16"
+      },
+      {
+        "label": "Threads",
+        "value": "32"
+      },
+      {
+        "label": "Base clock",
+        "value": "3.5 GHz"
+      },
+      {
+        "label": "Boost clock",
+        "value": "4.7 GHz"
+      },
+      {
+        "label": "TDP",
+        "value": "105W"
+      }
+    ],
+    "body": [
+      "AMD's Ryzen 9 3950X lands today, bringing the ultimate threaded performance to the mainstream desktop with an industry-leading and unprecedented 16 cores and 32 threads, paired with the bandwidth-doubling PCIe 4.0 interface for $749. The CPU upsets Intel's positioning in mainstream desktops and disrupts it's vaunted high-end desktop (HEDT) lineup in the process.",
+      "AMD's Ryzen family has completely redefined our expectations for desktop processors, and Intel has struggled to respond. The company has slowly dialed up the frequency of its aging 14nm process and added more cores, but those tweaks can't offset the reality that AMD has moved onto a denser and more efficient 7nm process that enables higher core counts. Of course, process technology doesn't solve all the challenges of fielding a competitive chip, but that advantage is hard to beat when paired with a solid microarchitecture like AMD's Zen 2.",
+      "Cooling comes into play, though. The 3950X comes with an AMD-defined 105W TDP just like the 3900X, but the four extra active cores require a more robust cooling solution. As a result, the 3950X doesn't come with a bundled cooler, a first for AMD's mainstream Ryzen chips in this generation. AMD recommends a beefy 280mm AIO cooler as the entry-level solution, but as you'll see, better cooling yields better performance."
+    ],
+    "author": "Vishal Thakur",
+    "date": "2021-04-14",
+    "link": "https://www.amd.com/en/products/cpu/amd-ryzen-9-3950x",
+    "linkLabel": "Product page",
+    "image": "assets/img/CPU/Amd/3950.jpg",
+    "tags": [
+      "archive",
+      "amd"
+    ]
+  },
+  {
+    "slug": "amd-ryzen-9-5900x",
+    "category": "cpu",
+    "brand": "AMD",
+    "productName": "AMD Ryzen 9 5900X",
+    "shortName": "R9 5900X",
+    "title": "12 Core Champ",
+    "summary": "If you’re truly only concerned about the best gaming CPU and basic productivity tasks, you should go with the Ryzen 5 5600X and save yourself some money…",
+    "specs": [
+      {
+        "label": "Generation",
+        "value": "5"
+      },
+      {
+        "label": "Cores",
+        "value": "12"
+      },
+      {
+        "label": "Threads",
+        "value": "24"
+      },
+      {
+        "label": "Base clock",
+        "value": "3.7 GHz"
+      },
+      {
+        "label": "Boost clock",
+        "value": "4.8 GHz"
+      },
+      {
+        "label": "TDP",
+        "value": "105W"
+      }
+    ],
+    "body": [
+      "If you’re truly only concerned about the best gaming CPU and basic productivity tasks, you should go with the Ryzen 5 5600X and save yourself some money. But if you’re looking for the uncontested fastest gaming chip on the market, or thinking of getting into game streaming, occasionally edit video, or just like the idea of having more threads available when you need them, AMD’s Ryzen 9 5900X is an incredible value.",
+      "The 12-core 24-thread Ryzen 9 5900X is rated for a 3.7 GHz base and 4.8 GHz boost, but we clocked it in at 5.0 GHz during our own testing. The 5900X offers the ultimate in gaming performance - it is the uncontested gaming chip on the market, but it is a bit overkill if gaming is all you do. However, if you feel the need for speed in productivity workloads, this chip's 12 cores will chew through those workloads with aplomb.",
+      "There’s also support for PCIe 4.0 and overclockability to consider. The Ryzen 9 5900X drops into existing 500-series and 400-series motherboards. You'll need to bring your own cooler, and the bigger the better - cooling definitely has an impact on performance with the higher-end Ryzen 5000 processors. However, if you're looking at the no-compromise chip for gaming, this is your chip."
+    ],
+    "author": "Vishal Thakur",
+    "date": "2021-04-14",
+    "link": "https://www.amd.com/en/products/cpu/amd-ryzen-9-5900x",
+    "linkLabel": "Product page",
+    "image": "assets/img/CPU/Amd/5900.jpg",
+    "tags": [
+      "archive",
+      "amd"
+    ]
+  },
+  {
+    "slug": "amd-ryzen-9-5950x",
+    "category": "cpu",
+    "brand": "AMD",
+    "productName": "AMD Ryzen 9 5950X",
+    "shortName": "R9 5950X",
+    "title": "16 core Gaming and Productivity Beast",
+    "summary": "High end desktop processors have long offered the ultimate in performance, as long as you were willing to pay the price. Aside from high MSRPs…",
+    "specs": [
+      {
+        "label": "Generation",
+        "value": "5"
+      },
+      {
+        "label": "Cores",
+        "value": "16"
+      },
+      {
+        "label": "Threads",
+        "value": "32"
+      },
+      {
+        "label": "Base clock",
+        "value": "3.4 GHz"
+      },
+      {
+        "label": "Boost clock",
+        "value": "4.9 GHz"
+      },
+      {
+        "label": "TDP",
+        "value": "105W"
+      }
+    ],
+    "body": [
+      "High end desktop processors have long offered the ultimate in performance, as long as you were willing to pay the price. Aside from high MSRPs, the chips also require expensive accommodations, like beefy motherboards and the added cost of fully populating quad-channel memory controllers. Add in the inevitable trade-offs, like reduced performance in lightly-threaded applications and games, and any cost-conscious users who could benefit from the threaded horsepower of a HEDT chip just settle for mainstream offerings.",
+      "AMD's Ryzen 9 5950X, with 16 cores and 32 threads, expands on its predecessors' mission of bringing HEDT-class performance to mainstream motherboards, lowering the bar for entry. The 5950X carries a $799 price tag, but that’s downright affordable compared to competing HEDT processors that don't offer the same class of performance.",
+      "We generally don't recommend HEDT processors for enthusiasts that are only interested in gaming. Gamers are best served by mainstream processors (with fewer cores and higher clocks) that are often faster in games; the Ryzen 9 5950X also falls into the same category - AMD's lesser 5000-series models are a better value for gamers. However, if you're after a chip and platform that can do serious work seriously fast, but still be nimble enough to deliver high-refresh gameplay at the end of the day, the Ryzen 9 5950X fits the bill like no other CPU before it."
+    ],
+    "author": "Vishal Thakur",
+    "date": "2021-04-14",
+    "link": "https://www.amd.com/en/products/cpu/amd-ryzen-9-5950x",
+    "linkLabel": "Product page",
+    "image": "assets/img/CPU/Amd/5950.jpg",
+    "tags": [
+      "archive",
+      "amd"
+    ]
+  },
+  {
+    "slug": "apple-silicon-m1",
+    "category": "cpu",
+    "brand": "Apple",
+    "productName": "Apple Silicon M1",
+    "shortName": "Apple M1",
+    "title": "The Game Changer",
+    "summary": "The Apple Silicon M1 System on a Chip (SOC), combined with some brilliant software from Apple…",
+    "specs": [
+      {
+        "label": "Generation",
+        "value": "1"
+      },
+      {
+        "label": "Cores",
+        "value": "8"
+      },
+      {
+        "label": "Threads",
+        "value": "8"
+      },
+      {
+        "label": "Base clock",
+        "value": "3.2 GHz"
+      },
+      {
+        "label": "Boost clock",
+        "value": "3.2 GHz"
+      },
+      {
+        "label": "TDP",
+        "value": "12W"
+      }
+    ],
+    "body": [
+      "The Apple Silicon M1 System on a Chip (SOC), combined with some brilliant software from Apple, allows the new MacBook Pro to do things that no Intel-based laptop I've ever owned could do.",
+      "The fans almost never turn on, the chassis stays cool to the touch during the most extreme benchmarks, and every app we used, weather it was optimized for Apple Silicon or being emulated in real-time by Apple's Rosetta 2 software performed better than we expected.",
+      "Apple is much further ahead than anybody expected them to be with these 1st generation Apple Silicon devices. Rosetta 2 emulation is so good it's practically invisible, performance exceeds price point by a lot (at least by Apple standards), and efficiency is absolutely mind-blowing. I hoped for \"good\" with the ARM-based apps, and \"Usable\" with non-optimized apps; I did not expect improved performance at 1/4 the power draw and 3/4 the price.",
+      "But whether you need a new Mac right away or you're willing to wait and see what Apple sticks inside the iMac or next-gen 16-inch MacBook Pro, there's one thing I can say without any hesitation: this changes everything."
+    ],
+    "author": "Vishal Thakur",
+    "date": "2021-04-14",
+    "link": "https://www.apple.com/mac/m1/",
+    "linkLabel": "Product page",
+    "image": "assets/img/m1.jpg",
+    "tags": [
+      "archive",
+      "apple"
+    ]
+  },
+  {
+    "slug": "intel-core-i5-10600k",
+    "category": "cpu",
+    "brand": "Intel",
+    "productName": "Intel Core i5-10600K",
+    "shortName": "i5-10600K",
+    "title": "Buy if you can't find AMD",
+    "summary": "The reality of AMD's chip shortage has proven to be an Achilles heel, as you can't find its $300 Ryzen 5 5600X reliably in stock, which often leads to price gouging…",
+    "specs": [
+      {
+        "label": "Generation",
+        "value": "10"
+      },
+      {
+        "label": "Cores",
+        "value": "6"
+      },
+      {
+        "label": "Threads",
+        "value": "12"
+      },
+      {
+        "label": "Base clock",
+        "value": "4.1 GHz"
+      },
+      {
+        "label": "Boost clock",
+        "value": "4.8 GHz"
+      },
+      {
+        "label": "TDP",
+        "value": "125W"
+      }
+    ],
+    "body": [
+      "The reality of AMD's chip shortage has proven to be an Achilles heel, as you can't find its $300 Ryzen 5 5600X reliably in stock, which often leads to price gouging. That's where Intel's Core i5-10600K steps in. At $270, this speedy little chip doesn't claim outright benchmark supremacy over the Ryzen 5 5600X. Still, you probably won't notice the relatively slight differences in gaming when you pair the chip with a mid-range GPU or play at heightened fidelity settings.",
+      "The Core i5-10600K is incredibly competitive in both gaming and multi-threaded work, and given its friendly price tag, this chip takes our list as the top recommendation for gaming. Also, keep your eye out for the $237 version, the Core i5-10600KF, which comes without integrated graphics. If you plan to use a discrete GPU, this is your chip, as it is functionally the same as the standard model but comes at an absolute steal at $237. That is if you can't find a Ryzen 5 5600X in stock, of course.",
+      "The 10600K boosts to a peak of 4.9 GHz on two cores and can maintain a 4.6 GHz all-core frequency. The chip drops readily into either Z490 or 500-series motherboards and comes with an unlocked multiplier, meaning you are free to overclock. In fact, after tuning, the 10600K matches the Ryzen 5 5600X in gaming. It also supports PCIe 4.0 for the graphics card and a single M.2 slot.",
+      "The catch? The 10600K comes with a 125W PL1 rating, the same as the previous-gen 10600K, but has a 251W PL2, a whopping 69W increase compared to the previous 182W limit. That means you'll need a capable cooler to deal with the extra heat. Intel's K-series chips don't come with a cooler, so you'll have to budget one in if you pick the 11600K and also be willing to overlook its comparatively high power consumption."
+    ],
+    "author": "Vishal Thakur",
+    "date": "2021-04-14",
+    "link": "https://ark.intel.com/content/www/us/en/ark/products/199311/intel-core-i5-10600k-processor-12m-cache-up-to-4-80-ghz.html",
+    "linkLabel": "Product page",
+    "image": "assets/img/CPU/Intel/i510.jpg",
+    "tags": [
+      "archive",
+      "intel"
+    ]
+  },
+  {
+    "slug": "intel-core-i5-11600k",
+    "category": "cpu",
+    "brand": "Intel",
+    "productName": "Intel Core i5-11600K",
+    "shortName": "i5-11600K",
+    "title": "Buy if you can't find AMD",
+    "summary": "The reality of AMD's chip shortage has proven to be an Achilles heel, as you can't find its $300 Ryzen 5 5600X reliably in stock, which often leads to price gouging…",
+    "specs": [
+      {
+        "label": "Generation",
+        "value": "11"
+      },
+      {
+        "label": "Cores",
+        "value": "6"
+      },
+      {
+        "label": "Threads",
+        "value": "12"
+      },
+      {
+        "label": "Base clock",
+        "value": "3.9 GHz"
+      },
+      {
+        "label": "Boost clock",
+        "value": "4.9 GHz"
+      },
+      {
+        "label": "TDP",
+        "value": "125W"
+      }
+    ],
+    "body": [
+      "The reality of AMD's chip shortage has proven to be an Achilles heel, as you can't find its $300 Ryzen 5 5600X reliably in stock, which often leads to price gouging. That's where Intel's Core i5-11600K steps in. At $270, this speedy little chip doesn't claim outright benchmark supremacy over the Ryzen 5 5600X. Still, you probably won't notice the relatively slight differences in gaming when you pair the chip with a mid-range GPU or play at heightened fidelity settings.",
+      "The Core i5-11600K is incredibly competitive in both gaming and multi-threaded work, and given its friendly price tag, this chip takes our list as the top recommendation for gaming. Also, keep your eye out for the $237 version, the Core i5-11600KF, which comes without integrated graphics. If you plan to use a discrete GPU, this is your chip, as it is functionally the same as the standard model but comes at an absolute steal at $237. That is if you can't find a Ryzen 5 5600X in stock, of course.",
+      "The 11600K boosts to a peak of 4.9 GHz on two cores and can maintain a 4.6 GHz all-core frequency. The chip drops readily into either Z490 or 500-series motherboards and comes with an unlocked multiplier, meaning you are free to overclock. In fact, after tuning, the 11600K matches the Ryzen 5 5600X in gaming. It also supports PCIe 4.0 for the graphics card and a single M.2 slot.",
+      "The catch? The 11600K comes with a 125W PL1 rating, the same as the previous-gen 10600K, but has a 251W PL2, a whopping 69W increase compared to the previous 182W limit. That means you'll need a capable cooler to deal with the extra heat. Intel's K-series chips don't come with a cooler, so you'll have to budget one in if you pick the 11600K and also be willing to overlook its comparatively high power consumption."
+    ],
+    "author": "Vishal Thakur",
+    "date": "2021-04-14",
+    "link": "https://ark.intel.com/content/www/us/en/ark/products/212275/intel-core-i5-11600k-processor-12m-cache-up-to-4-90-ghz.html",
+    "linkLabel": "Product page",
+    "image": "assets/img/CPU/Intel/i511.jpg",
+    "tags": [
+      "archive",
+      "intel"
+    ]
+  },
+  {
+    "slug": "intel-core-i7-10700k",
+    "category": "cpu",
+    "brand": "Intel",
+    "productName": "Intel Core i7-10700K",
+    "shortName": "i7-10700K",
+    "title": "Buy if you can't find AMD",
+    "summary": "The Intel Core i7-10700K also comes with a 3.8-GHz base clock that, paired with its 16 threads…",
+    "specs": [
+      {
+        "label": "Generation",
+        "value": "10"
+      },
+      {
+        "label": "Cores",
+        "value": "8"
+      },
+      {
+        "label": "Threads",
+        "value": "16"
+      },
+      {
+        "label": "Base clock",
+        "value": "3.8 GHz"
+      },
+      {
+        "label": "Boost clock",
+        "value": "5.1 GHz"
+      },
+      {
+        "label": "TDP",
+        "value": "125W"
+      }
+    ],
+    "body": [
+      "The Intel Core i7-10700K also comes with a 3.8-GHz base clock that, paired with its 16 threads, improves its standing against price-comparable Ryzen processors in threaded desktop PC applications, while the snappy single-threaded performance gives it an outright win in lightly-threaded apps. The Core i7-10700K also proves to be a nimble overclocker that doesn't generate an untenable amount of excess heat, so off-the-shelf water coolers can unlock big gains.",
+      "Overall, the Core i7-10700K gives you nearly the same gaming performance as the Core i9-10900K, but for $110 less, and overclocking eliminates any meaningful difference in gaming performance between the chips. You also get extremely competitive single-threaded performance at stock settings.",
+      "The Core i7-10700K leads in gaming, but cost-conscious shoppers may prefer Intel's own Core i5-1600K, which is a better value for lower-cost gaming rigs. This leaves the Core i7-10700K as a good choice for high-end gaming machines, and it definitely takes the shine off Intel's Core i9-10900K (and its egregious power consumption) for overclocking enthusiasts and the frame-rate obsessed."
+    ],
+    "author": "Vishal Thakur",
+    "date": "2021-04-14",
+    "link": "https://ark.intel.com/content/www/us/en/ark/products/199335/intel-core-i7-10700k-processor-16m-cache-up-to-5-10-ghz.html",
+    "linkLabel": "Product page",
+    "image": "assets/img/CPU/Intel/i710.jpg",
+    "tags": [
+      "archive",
+      "intel"
+    ]
+  },
+  {
+    "slug": "intel-core-i7-11700k",
+    "category": "cpu",
+    "brand": "Intel",
+    "productName": "Intel Core i7-11700K",
+    "shortName": "i7-11700K",
+    "title": "Buy if you can't find AMD",
+    "summary": "The $399 Core i7-11700K slots into the massive pricing gap between the $299 Ryzen 5 5600X and $449 Ryzen 7 5800X…",
+    "specs": [
+      {
+        "label": "Generation",
+        "value": "11"
+      },
+      {
+        "label": "Cores",
+        "value": "8"
+      },
+      {
+        "label": "Threads",
+        "value": "16"
+      },
+      {
+        "label": "Base clock",
+        "value": "3.6 GHz"
+      },
+      {
+        "label": "Boost clock",
+        "value": "5.0 GHz"
+      },
+      {
+        "label": "TDP",
+        "value": "125W"
+      }
+    ],
+    "body": [
+      "The $399 Core i7-11700K slots into the massive pricing gap between the $299 Ryzen 5 5600X and $449 Ryzen 7 5800X. Core counts are no longer the distinction between the Core i9 and Core i7 families — both families come with eight cores and 16 threads. Instead, a few frequency bins separate the chips, courtesy of Intel's ABT and Thermal Velocity Boost tech, and the differences in memory Gear modes that we'll explain below. As such, the 11700K tops out 5 GHz on two cores via Turbo Boost 3 tech, and all cores can stretch up to 4.6 GHz simultaneously. At $399, Intel commands a $25 premium over the previous-gen 10700K."
+    ],
+    "author": "Vishal Thakur",
+    "date": "2021-04-14",
+    "link": "https://ark.intel.com/content/www/us/en/ark/products/212047/intel-core-i7-11700k-processor-16m-cache-up-to-5-00-ghz.html",
+    "linkLabel": "Product page",
+    "image": "assets/img/CPU/Intel/i711.jpg",
+    "tags": [
+      "archive",
+      "intel"
+    ]
+  },
+  {
+    "slug": "intel-core-i9-10900k",
+    "category": "cpu",
+    "brand": "Intel",
+    "productName": "Intel Core i9-10900K",
+    "shortName": "i9-10900K",
+    "title": "Buy if you can't find AMD",
+    "summary": "Once again, Intel aims its flagship chip squarely at enthusiasts and power users, touting the Core i9-10900K as the fastest gaming processor in the world…",
+    "specs": [
+      {
+        "label": "Generation",
+        "value": "10"
+      },
+      {
+        "label": "Cores",
+        "value": "10"
+      },
+      {
+        "label": "Threads",
+        "value": "20"
+      },
+      {
+        "label": "Base clock",
+        "value": "3.7 GHz"
+      },
+      {
+        "label": "Boost clock",
+        "value": "5.3 GHz"
+      },
+      {
+        "label": "TDP",
+        "value": "125W"
+      }
+    ],
+    "body": [
+      "Once again, Intel aims its flagship chip squarely at enthusiasts and power users, touting the Core i9-10900K as the fastest gaming processor in the world. That performance comes mostly via the processor's extra cores and the fact that it basically comes pre-overclocked to an all-core 4.9 GHz, not to mention the peak 5.3 GHz speeds.",
+      "Intel's Core i9-10900K still doesn't match AMD's halo 16-core 32-thread Ryzen 9 3950X in terms of threaded performance. Instead, the 10900K competes with the 12-core 24-thread Ryzen 9 3900X in terms of both performance and price, but Intel's chip has the highest power consumption we've seen recently on the mainstream desktop. Intel pushes the 10900K's TDP envelope up to 125W (a 30W gen-on-gen increase), but that's only a measure of base power consumption. Intel rates the processor for 250W at peak performance, and we even measured peaks as high as 325W at out-of-the-box settings. Naturally, that results in a lot of heat.",
+      "However, provided you have adequate cooling, the Core i9-10900K is unquestionably the fastest gaming processor on the market. It also offers incredibly snappy performance in lightly-threaded apps, and solid performance in heavily-threaded workloads. Despite its insatiable power consumption and high heat output, the 10900K will be sure to find some uptake from performance enthusiasts that are prepared to splurge on a robust motherboard, power supply, and cooler, but most users would be better served with cheaper AMD alternatives, like the Ryzen 9 3900X."
+    ],
+    "author": "Vishal Thakur",
+    "date": "2021-04-14",
+    "link": "https://ark.intel.com/content/www/us/en/ark/products/199332/intel-core-i9-10900k-processor-20m-cache-up-to-5-30-ghz.html",
+    "linkLabel": "Product page",
+    "image": "assets/img/CPU/Intel/i910.jpg",
+    "tags": [
+      "archive",
+      "intel"
+    ]
+  },
+  {
+    "slug": "intel-core-i9-11900k",
+    "category": "cpu",
+    "brand": "Intel",
+    "productName": "Intel Core i9-11900K",
+    "shortName": "i9-11900K",
+    "title": "Buy if you can't find AMD",
+    "summary": "The eight-core Core i9-11900K slots in as the flagship model for the Rocket Lake family. Fast clock speeds are a clear attraction…",
+    "specs": [
+      {
+        "label": "Generation",
+        "value": "11"
+      },
+      {
+        "label": "Cores",
+        "value": "8"
+      },
+      {
+        "label": "Threads",
+        "value": "16"
+      },
+      {
+        "label": "Base clock",
+        "value": "3.5 GHz"
+      },
+      {
+        "label": "Boost clock",
+        "value": "5.3 GHz"
+      },
+      {
+        "label": "TDP",
+        "value": "125W"
+      }
+    ],
+    "body": [
+      "The eight-core Core i9-11900K slots in as the flagship model for the Rocket Lake family. Fast clock speeds are a clear attraction, but they come at the expense of power — two of the chip's cores boost to a peak of 5.3 GHz, and all cores can operate at 4.8 GHz simultaneously. The 11900K has a 125W PL1 power rating (at the base frequency) and a 250W PL2 (boost) rating, both of which are identical to the previous-gen 10900K despite having two fewer cores.",
+      "The Core i9 K and KF models are Intel's first chips to come with Adaptive Boost Technology (ABT), which allows the processors to dynamically boost to higher all-core frequencies based upon available thermal headroom and electrical conditions (a bit more detail below). This new tech will feel decidedly familiar to AMD fans, as it operates in a very similar fashion to AMD's existing boost mechanism that's present in newer Ryzen processors.",
+      "The eight-core 16-thread flagship Core i9-11900K comes with a suggested $539 price tag, a $51 markup over the previous-gen ten-core 10900K. The 11900K slots in for $10 less than the Ryzen 9 5900X, which means we're looking at an eight-core chip taking on a 12-core 24-thread chip that will easily beat it in threaded workloads. Intel's obvious goal here is to beat the 5900X at gaming so it can justify the price tag."
+    ],
+    "author": "Vishal Thakur",
+    "date": "2021-04-14",
+    "link": "https://ark.intel.com/content/www/us/en/ark/products/212325/intel-core-i9-11900k-processor-16m-cache-up-to-5-30-ghz.html",
+    "linkLabel": "Product page",
+    "image": "assets/img/CPU/Intel/i911.jpg",
+    "tags": [
+      "archive",
+      "intel"
+    ]
+  }
+]

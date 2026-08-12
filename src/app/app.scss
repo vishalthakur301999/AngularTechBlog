@@ -1,0 +1,15 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  min-height: 100dvh;
+}
+
+main {
+  flex: 1;
+  /* Clear the fixed navigation bar. */
+  padding-top: var(--nav-height);
+}
+
+main:focus {
+  outline: none;
+}

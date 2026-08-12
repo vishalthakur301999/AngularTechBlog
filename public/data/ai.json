@@ -1,0 +1,632 @@
+[
+  {
+    "slug": "deepseek-r1-shock",
+    "category": "ai",
+    "brand": "DeepSeek",
+    "productName": "DeepSeek-R1",
+    "shortName": "DeepSeek-R1",
+    "title": "The week a Chinese lab wiped $589 billion off Nvidia",
+    "summary": "An openly licensed reasoning model, trained for a reported fraction of the usual cost, broke the assumption that the frontier was expensive to reach.",
+    "specs": [
+      {
+        "label": "Organisation",
+        "value": "DeepSeek (Hangzhou, China)"
+      },
+      {
+        "label": "Released",
+        "value": "20 January 2025"
+      },
+      {
+        "label": "Licence",
+        "value": "MIT — weights and method published"
+      },
+      {
+        "label": "Market impact",
+        "value": "Nvidia fell about 17% on 27 January 2025"
+      }
+    ],
+    "body": [
+      "DeepSeek-V3 had already raised eyebrows in December 2024 with a reported final training run cost in the single-digit millions — orders of magnitude below what a frontier model was assumed to require. R1, released in January 2025, applied reinforcement learning to that base to produce a reasoning model competitive with OpenAI's o1, and published both the weights and the method under an MIT licence.",
+      "The market reaction took a week to arrive and then arrived all at once. On 27 January, Nvidia lost roughly seventeen percent of its value in a single session — around $589 billion, the largest one-day loss in market history at that point — as investors reconsidered whether AI capability really required unbounded quantities of the most expensive accelerators available.",
+      "The caveats were substantial and were widely made. The reported figure covered the final training run, not research, failed runs, staff or the accumulated cost of the base model. Export controls meant DeepSeek was optimising hard against constrained hardware, which is a reason for efficiency rather than evidence that hardware does not matter.",
+      "What was not disputable was the openness. A frontier-class reasoning model with published weights and a described method meant every lab and every startup could build on it immediately. It compressed the gap between the leading closed models and what anyone could run, and it made the assumption of a durable Western lead look considerably weaker."
+    ],
+    "verdict": "The most disruptive single release of the period. It reset assumptions about the cost of the frontier and about who is at it.",
+    "author": "Vishal Thakur",
+    "date": "2025-01-27",
+    "link": "https://github.com/deepseek-ai/DeepSeek-R1",
+    "linkLabel": "DeepSeek-R1 repository",
+    "image": null,
+    "tags": [
+      "open-weights",
+      "reasoning",
+      "china",
+      "2025"
+    ]
+  },
+  {
+    "slug": "compute-buildout",
+    "category": "ai",
+    "brand": "Infrastructure",
+    "productName": "Stargate and the compute build-out",
+    "shortName": "The build-out",
+    "title": "The bottleneck moved from chips to electricity",
+    "summary": "Hundreds of billions committed to data centres, and a grid that cannot deliver power fast enough to fill them.",
+    "specs": [
+      {
+        "label": "Stargate",
+        "value": "Announced January 2025 — OpenAI, Oracle, SoftBank and MGX"
+      },
+      {
+        "label": "Stated scale",
+        "value": "$100 billion initially, up to $500 billion over four years"
+      },
+      {
+        "label": "Hyperscaler capex",
+        "value": "Well over $300 billion combined in 2025"
+      },
+      {
+        "label": "Binding constraint",
+        "value": "Grid interconnection, generation and transformers"
+      }
+    ],
+    "body": [
+      "The Stargate announcement in January 2025 put a number on something that had been building for two years: a joint venture between OpenAI, Oracle, SoftBank and MGX, starting at $100 billion and stated to reach up to $500 billion over four years, to build AI data centre capacity in the United States. Every large cloud provider was making commitments on a similar scale.",
+      "What the announcements ran into was physics and permitting. A gigawatt-class data centre needs a grid connection, and interconnection queues in most markets are measured in years. Transformers and turbines have multi-year lead times. In several regions, utilities began telling prospective customers that power simply was not available before the 2030s.",
+      "The responses have been unconventional. Operators signed long-term power purchase agreements with nuclear plants — including a deal to restart a reactor at Three Mile Island — invested in small modular reactor developers, and in some cases built their own gas generation on site. Electricity has become a competitive input in a way it has not been for the technology industry before, with visible consequences for local grids and consumer prices in the areas absorbing the load.",
+      "Whether the demand justifies the spending is the open question of the period. The bull case is that inference demand grows to fill whatever is built, particularly as agents make many model calls per task. The bear case notes that a good deal of the revenue supporting these commitments is circular — vendors investing in customers who then buy from those vendors — and that depreciation on hardware with a short useful life is a large bill arriving later."
+    ],
+    "verdict": "The stage the industry is in now: the constraint is no longer model quality or chip supply, it is power, land and time.",
+    "author": "Vishal Thakur",
+    "date": "2025-01-21",
+    "link": "https://openai.com/index/announcing-the-stargate-project/",
+    "linkLabel": "Announcing the Stargate Project",
+    "image": null,
+    "tags": [
+      "infrastructure",
+      "energy",
+      "business",
+      "2025"
+    ]
+  },
+  {
+    "slug": "reasoning-models",
+    "category": "ai",
+    "brand": "OpenAI",
+    "productName": "o1, o3 and inference-time reasoning",
+    "shortName": "Reasoning models",
+    "title": "Buying intelligence with thinking time instead of training time",
+    "summary": "Models trained to reason before answering opened a second scaling axis just as pretraining gains were flattening.",
+    "specs": [
+      {
+        "label": "o1-preview",
+        "value": "OpenAI, September 2024"
+      },
+      {
+        "label": "o3 announced",
+        "value": "December 2024"
+      },
+      {
+        "label": "Method",
+        "value": "Reinforcement learning on long chains of thought"
+      },
+      {
+        "label": "Trade-off",
+        "value": "Far higher accuracy on hard problems, much slower and costlier"
+      }
+    ],
+    "body": [
+      "Until 2024 the recipe for a better model was more parameters, more data, more training compute. Returns on that were visibly diminishing and high-quality training text was running short. Reasoning models offered a different lever: train the model, using reinforcement learning, to produce a long internal chain of thought before it answers, and then let it spend more compute at inference time on harder problems.",
+      "The results on problems with verifiable answers were dramatic. o1 moved competition mathematics, competitive programming and graduate-level science questions from failure to strong performance. o3, announced in December 2024, posted scores on the ARC-AGI abstraction benchmark that its designers had expected to stand for years — at a compute cost per task that was extraordinary.",
+      "This changed how AI systems are engineered. Latency and cost became something you dial per request rather than a fixed property of the model, and the sensible architecture became routing: cheap fast models for most traffic, expensive reasoning models for the small fraction of queries that need them.",
+      "It also came with a transparency cost. The reasoning traces are typically hidden from users, and there is no guarantee that the visible summary reflects the computation that produced the answer — which makes these models harder to audit exactly where auditing matters most."
+    ],
+    "verdict": "The second scaling axis. It arrived just as the first was flattening, and it is why capability kept climbing when pretraining alone would have stalled.",
+    "author": "Vishal Thakur",
+    "date": "2024-12-20",
+    "link": "https://openai.com/index/learning-to-reason-with-llms/",
+    "linkLabel": "Learning to reason with LLMs",
+    "image": null,
+    "tags": [
+      "reasoning",
+      "scaling",
+      "openai",
+      "2024"
+    ]
+  },
+  {
+    "slug": "agents-and-mcp",
+    "category": "ai",
+    "brand": "Anthropic",
+    "productName": "Computer use, MCP and the agent era",
+    "shortName": "Agents & MCP",
+    "title": "Models stopped answering and started doing",
+    "summary": "Tool use, a shared protocol for connecting models to systems, and coding agents that run for hours turned chat into automation.",
+    "specs": [
+      {
+        "label": "Computer use",
+        "value": "Anthropic, October 2024 — models operating a screen and keyboard"
+      },
+      {
+        "label": "Model Context Protocol",
+        "value": "Open-sourced November 2024"
+      },
+      {
+        "label": "Adoption",
+        "value": "Adopted across the major AI vendors during 2025"
+      },
+      {
+        "label": "Result",
+        "value": "Agentic coding tools that plan, edit, run and verify"
+      }
+    ],
+    "body": [
+      "The step from a model that answers questions to a system that completes tasks required two things: reliable tool use, and a way to connect models to the software people actually run. Both landed within a few weeks of each other in late 2024.",
+      "Computer use gave models a screen, a cursor and a keyboard — clumsy and slow at first, but a demonstration that the interface problem could be brute-forced when no API existed. The Model Context Protocol addressed the same problem properly: an open standard for exposing tools, data and prompts to any model, so that an integration written once works everywhere. It was open-sourced in November 2024 and adopted by the other major vendors through 2025, which is a rare outcome for a protocol proposed by a single company.",
+      "Software development is where this landed first and hardest. Agentic coding tools moved from suggesting completions to reading a repository, planning a change, editing across many files, running the tests and iterating on failures. The unit of work shifted from the line to the task, and a sizeable share of new code at many companies now originates this way.",
+      "The unsolved parts are the ones that matter for trust. An agent that can act can act wrongly, and giving one access to your systems means it inherits your permissions. Prompt injection — instructions hidden in a web page, a document or an email that the agent then follows — remains an open security problem rather than a solved one, and the industry is still working out what sandboxing, approval and audit should look like."
+    ],
+    "verdict": "The shift from AI as an answer engine to AI as a participant in workflows. It is also where the hard security questions moved from hypothetical to operational.",
+    "author": "Vishal Thakur",
+    "date": "2024-11-25",
+    "link": "https://modelcontextprotocol.io/",
+    "linkLabel": "Model Context Protocol",
+    "image": null,
+    "tags": [
+      "agents",
+      "mcp",
+      "security",
+      "2025"
+    ]
+  },
+  {
+    "slug": "nobel-prizes-2024",
+    "category": "ai",
+    "brand": "Science",
+    "productName": "The 2024 Nobel Prizes in Physics and Chemistry",
+    "shortName": "Two Nobels",
+    "title": "Machine learning wins two Nobel Prizes in two days",
+    "summary": "Hopfield and Hinton took Physics for neural networks; Hassabis, Jumper and Baker took Chemistry for protein structure.",
+    "specs": [
+      {
+        "label": "Physics",
+        "value": "John Hopfield and Geoffrey Hinton, 8 October 2024"
+      },
+      {
+        "label": "Physics citation",
+        "value": "Foundational discoveries enabling machine learning with artificial neural networks"
+      },
+      {
+        "label": "Chemistry",
+        "value": "David Baker, Demis Hassabis and John Jumper, 9 October 2024"
+      },
+      {
+        "label": "Chemistry citation",
+        "value": "Computational protein design and protein structure prediction"
+      }
+    ],
+    "body": [
+      "On consecutive days in October 2024, the Nobel committees recognised machine learning twice. The Physics prize went to John Hopfield for associative memory networks and to Geoffrey Hinton for the Boltzmann machine and the backpropagation work that made deep networks trainable. The Chemistry prize went to David Baker for computational protein design, and jointly to Demis Hassabis and John Jumper for AlphaFold.",
+      "The Physics award was contentious among physicists, some of whom argued the work is computer science wearing borrowed clothes. The committee's position was that these methods came out of statistical physics and now function as instruments across the physical sciences — the argument you would make for any tool-based prize.",
+      "Hinton's response was the more discussed part. He had left Google in 2023 specifically so he could speak freely about the risks of the technology he helped create, and he used the Nobel platform to repeat those warnings rather than to celebrate. It is an unusual thing for a laureate to do and it gave the week a distinctly ambivalent tone.",
+      "The Chemistry prize was the less complicated one. AlphaFold had, by then, been used by well over a million researchers, and the case that it constituted a fundamental advance in structural biology was not seriously disputed."
+    ],
+    "verdict": "Formal recognition that machine learning is now scientific infrastructure — delivered in a week where one of the laureates spent his platform warning about it.",
+    "author": "Vishal Thakur",
+    "date": "2024-10-09",
+    "link": "https://www.nobelprize.org/prizes/physics/2024/summary/",
+    "linkLabel": "Nobel Prize in Physics 2024",
+    "image": null,
+    "tags": [
+      "science",
+      "recognition",
+      "safety",
+      "2024"
+    ]
+  },
+  {
+    "slug": "long-context-era",
+    "category": "ai",
+    "brand": "Anthropic / Google",
+    "productName": "Claude 3 and Gemini 1.5",
+    "shortName": "Long context",
+    "title": "The context window stopped being the constraint",
+    "summary": "Million-token windows and a serious challenge to OpenAI's lead turned 2024 into the first genuinely competitive year.",
+    "specs": [
+      {
+        "label": "Claude 3 family",
+        "value": "Anthropic, March 2024 — Haiku, Sonnet, Opus"
+      },
+      {
+        "label": "Claude 3.5 Sonnet",
+        "value": "June 2024"
+      },
+      {
+        "label": "Gemini 1.5 Pro",
+        "value": "Google, February 2024 — 1 million token context"
+      },
+      {
+        "label": "Practical effect",
+        "value": "Whole codebases and document sets in a single prompt"
+      }
+    ],
+    "body": [
+      "For the first year after ChatGPT, OpenAI's lead was not seriously contested. That ended in 2024. Anthropic's Claude 3 family in March was the first release to beat GPT-4 convincingly on published evaluations, and Claude 3.5 Sonnet in June established a pattern the whole industry adopted — a mid-sized model that outperformed the previous flagship at a fraction of the price.",
+      "Google's contribution was context length. Gemini 1.5 Pro shipped with a one-million-token window, with substantially larger windows demonstrated in research. That is a different kind of capability from a higher benchmark score: it means an entire codebase, a year of meeting transcripts, or a full set of contracts fits in a single prompt without retrieval infrastructure.",
+      "Long context quietly deprecated a lot of engineering. Elaborate chunking and retrieval pipelines built in 2023 became unnecessary for many use cases — not all, since attention over a million tokens is neither cheap nor uniformly reliable, but enough that the default architecture for document-heavy applications changed.",
+      "Competition also collapsed prices. Across 2024 and 2025, the cost per token of a capable model fell by more than an order of magnitude, which is what made agents that call models dozens of times per task economically plausible at all."
+    ],
+    "verdict": "The year the frontier became a race rather than a lead — and the year context length stopped being the thing you designed around.",
+    "author": "Vishal Thakur",
+    "date": "2024-06-20",
+    "link": "https://www.anthropic.com/news/claude-3-family",
+    "linkLabel": "The Claude 3 model family",
+    "image": null,
+    "tags": [
+      "llm",
+      "competition",
+      "anthropic",
+      "2024"
+    ]
+  },
+  {
+    "slug": "nvidia-ai-supercycle",
+    "category": "ai",
+    "brand": "Nvidia",
+    "productName": "The Nvidia AI supercycle",
+    "shortName": "Nvidia's run",
+    "title": "How a graphics company became the most valuable on Earth",
+    "summary": "Data centre revenue overtook gaming, then dwarfed it, and CUDA turned out to be the most valuable moat in computing.",
+    "specs": [
+      {
+        "label": "Key hardware",
+        "value": "A100, H100, then Blackwell B200 and GB200"
+      },
+      {
+        "label": "$1 trillion market cap",
+        "value": "May 2023"
+      },
+      {
+        "label": "$3 trillion market cap",
+        "value": "June 2024"
+      },
+      {
+        "label": "Real moat",
+        "value": "CUDA, NVLink and the surrounding software stack"
+      }
+    ],
+    "body": [
+      "When ChatGPT made large-scale training and inference a business priority for every major technology company, there was effectively one supplier of the hardware to do it. Nvidia's data centre revenue, historically a side business next to gaming, began growing at rates that repeatedly beat analyst estimates by wide margins.",
+      "The market cap milestones followed: a trillion dollars in May 2023, two trillion by February 2024, three trillion that June, when it briefly became the most valuable public company in the world. In 2025 it went past four trillion. These were not incremental repricings — they reflected a genuine reordering of where value sat in the computing stack.",
+      "The durable advantage was never only the silicon. CUDA had eighteen years of accumulated libraries, tooling and trained engineers behind it, and NVLink plus the networking acquired with Mellanox made Nvidia the only vendor selling coherent rack-scale systems rather than parts. Competitors could match a chip specification; matching the ecosystem proved much harder.",
+      "The obvious question is how much of the demand is durable. A meaningful share of purchasing came from a small number of hyperscalers and AI labs, some of it financed in circular ways, and both Google's TPUs and AMD's MI-series have become credible alternatives for inference. The concentration risk is real even if the demand is."
+    ],
+    "verdict": "The clearest measure of how much economic weight moved to AI — and a reminder that in a gold rush the shovels are a very good business.",
+    "author": "Vishal Thakur",
+    "date": "2024-06-18",
+    "link": "https://www.nvidia.com/en-us/data-center/",
+    "linkLabel": "Nvidia data centre",
+    "image": null,
+    "tags": [
+      "hardware",
+      "business",
+      "nvidia",
+      "2024"
+    ]
+  },
+  {
+    "slug": "ai-regulation-arrives",
+    "category": "ai",
+    "brand": "Policy",
+    "productName": "The EU AI Act, Executive Order 14110 and Bletchley Park",
+    "shortName": "Regulation",
+    "title": "Governments catch up, then partly change their minds",
+    "summary": "Within six weeks in late 2023, the US, UK and EU each produced a landmark AI policy — and one of them was rescinded fifteen months later.",
+    "specs": [
+      {
+        "label": "Executive Order 14110",
+        "value": "United States, October 2023 — rescinded January 2025"
+      },
+      {
+        "label": "Bletchley Declaration",
+        "value": "28 countries, November 2023"
+      },
+      {
+        "label": "EU AI Act",
+        "value": "Agreed December 2023, in force August 2024"
+      },
+      {
+        "label": "EU approach",
+        "value": "Risk-tiered obligations, phased over several years"
+      }
+    ],
+    "body": [
+      "Late 2023 was when AI policy stopped being theoretical. In October, the Biden administration issued Executive Order 14110, requiring safety-test reporting for the largest training runs and directing agencies across government to produce AI standards. Days later, twenty-eight countries and the EU signed the Bletchley Declaration at the UK's AI Safety Summit — thin on binding commitments, but notable for including both the US and China.",
+      "In December, EU negotiators reached political agreement on the AI Act, the first comprehensive AI law anywhere. It sorts systems by risk: some uses banned outright, high-risk applications subject to conformity assessment, general-purpose models carrying transparency and — above a compute threshold — systemic-risk obligations. It entered into force in August 2024 with duties phasing in over the following years.",
+      "Then the direction reversed in one jurisdiction. The incoming US administration rescinded Executive Order 14110 in January 2025 and replaced it with a policy oriented toward removing barriers to AI development. The transatlantic gap that opened up — comprehensive statutory regulation in Europe, deregulation and state-level patchwork in the US — is now a permanent feature of the landscape.",
+      "For anyone shipping AI products, the practical consequence is that the EU AI Act functions as the default global compliance baseline, in much the way GDPR did, because building two versions of a product is usually more expensive than meeting the stricter standard."
+    ],
+    "verdict": "The period when AI acquired a compliance surface. The EU AI Act is now the standard most international products are built to meet.",
+    "author": "Vishal Thakur",
+    "date": "2023-12-08",
+    "link": "https://artificialintelligenceact.eu/",
+    "linkLabel": "EU AI Act explorer",
+    "image": null,
+    "tags": [
+      "policy",
+      "regulation",
+      "eu",
+      "2023"
+    ]
+  },
+  {
+    "slug": "open-weight-models",
+    "category": "ai",
+    "brand": "Meta / Mistral",
+    "productName": "Llama, Llama 2 and Mistral 7B",
+    "shortName": "Open weights",
+    "title": "The open-weight ecosystem arrives, mostly by accident",
+    "summary": "Meta's research release leaked, Meta leaned in with a commercial licence, and a French startup proved small models could punch far above their size.",
+    "specs": [
+      {
+        "label": "LLaMA",
+        "value": "Meta, February 2023 — research only, weights leaked within a week"
+      },
+      {
+        "label": "Llama 2",
+        "value": "Meta, July 2023 — released with a commercial licence"
+      },
+      {
+        "label": "Mistral 7B",
+        "value": "Mistral AI, September 2023 — Apache 2.0"
+      },
+      {
+        "label": "Consequence",
+        "value": "Capable models running on consumer hardware"
+      }
+    ],
+    "body": [
+      "Meta released LLaMA in February 2023 to approved researchers. The weights were on public torrent trackers within a week. Rather than a disaster, this turned into the most productive period of open model development yet: quantisation work made the models run on laptops, llama.cpp made them run without a GPU at all, and fine-tuning techniques like LoRA made specialisation cheap.",
+      "Meta's response was to formalise what had already happened. Llama 2 shipped in July 2023 with a licence permitting commercial use, and Meta kept releasing progressively stronger models on those terms. The strategic logic was straightforward — commoditise the layer your competitors are trying to sell.",
+      "Mistral 7B arrived in September under a clean Apache 2.0 licence and demonstrated something else: a well-trained seven-billion-parameter model could outperform much larger ones. Capability was not purely a function of scale, and the gap between what you could run yourself and what you had to rent kept narrowing.",
+      "The practical result was that by the end of 2023, a competent model could run on a gaming PC, offline, with no API key and no per-token cost. That option has constrained frontier pricing ever since and made local AI a real deployment choice for anyone with privacy or cost constraints."
+    ],
+    "verdict": "The counterweight to closed frontier models. Without it, the price and privacy terms of the last few years would look very different.",
+    "author": "Vishal Thakur",
+    "date": "2023-09-27",
+    "link": "https://ai.meta.com/llama/",
+    "linkLabel": "Meta Llama",
+    "image": null,
+    "tags": [
+      "open-weights",
+      "local-ai",
+      "meta",
+      "2023"
+    ]
+  },
+  {
+    "slug": "gpt-4-release",
+    "category": "ai",
+    "brand": "OpenAI",
+    "productName": "GPT-4",
+    "shortName": "GPT-4",
+    "title": "The capability jump that started the safety argument",
+    "summary": "Multimodal input, professional-exam performance, and a technical report that disclosed almost nothing about how it was built.",
+    "specs": [
+      {
+        "label": "Organisation",
+        "value": "OpenAI"
+      },
+      {
+        "label": "Released",
+        "value": "14 March 2023"
+      },
+      {
+        "label": "New capability",
+        "value": "Image input alongside text"
+      },
+      {
+        "label": "Disclosed architecture",
+        "value": "None — no parameter count, data or method"
+      }
+    ],
+    "body": [
+      "GPT-4 was a large enough jump over GPT-3.5 that the comparisons stopped being about benchmarks. It passed professional examinations in the range a competent human would, handled long multi-step reasoning far more reliably, and accepted images as input — a chart, a screenshot, a photograph of a whiteboard.",
+      "The accompanying technical report was notable for what it withheld. Citing competitive pressure and safety, OpenAI declined to disclose parameter counts, architecture, training data or compute. For an organisation founded on a commitment to openness this was a visible reversal, and it set the industry norm: frontier capabilities, closed methods.",
+      "The reaction crystallised the safety debate. Weeks after release, an open letter signed by thousands of researchers and technologists called for a six-month pause on training systems more powerful than GPT-4. It did not happen, and its critics argued it distracted from present-tense harms. But it moved the argument out of research seminars and into legislatures.",
+      "GPT-4 also established the commercial pattern that has held ever since: a frontier model sold through an API, with cheaper distilled versions underneath it, and a competitive cycle measured in months rather than years."
+    ],
+    "verdict": "The model that made frontier AI a policy question, and the point at which the leading labs stopped publishing how they did it.",
+    "author": "Vishal Thakur",
+    "date": "2023-03-14",
+    "link": "https://openai.com/research/gpt-4",
+    "linkLabel": "GPT-4 research page",
+    "image": null,
+    "tags": [
+      "llm",
+      "multimodal",
+      "safety",
+      "2023"
+    ]
+  },
+  {
+    "slug": "chatgpt-launch",
+    "category": "ai",
+    "brand": "OpenAI",
+    "productName": "ChatGPT",
+    "shortName": "ChatGPT",
+    "title": "A research preview that became the fastest-growing app ever",
+    "summary": "OpenAI shipped a chat interface over an existing model as a low-key demo, and the entire industry reorganised around it.",
+    "specs": [
+      {
+        "label": "Organisation",
+        "value": "OpenAI"
+      },
+      {
+        "label": "Launched",
+        "value": "30 November 2022"
+      },
+      {
+        "label": "First million users",
+        "value": "Five days"
+      },
+      {
+        "label": "Underlying model",
+        "value": "GPT-3.5, fine-tuned with RLHF"
+      }
+    ],
+    "body": [
+      "The technology was not new. GPT-3 had been available through an API since 2020, and InstructGPT had already shown that reinforcement learning from human feedback made models far better at following instructions. What ChatGPT added was a text box, a conversation history, and no barrier to entry.",
+      "That turned out to be the entire difference. A million users signed up in five days. By early 2023 it was estimated to have reached around a hundred million monthly users, the fastest consumer adoption curve anyone had recorded at the time.",
+      "The institutional response was immediate and disproportionate. Google declared an internal code red. Microsoft accelerated a multi-billion-dollar investment and started putting the technology into Bing and Office. Schools and universities scrambled to write assessment policies. Within months, every large software company had an AI roadmap it had not had in November.",
+      "It also reset public expectations about what computers do. Talking to software in plain language, and getting a fluent answer that is usually right and occasionally confidently wrong, went from science fiction to ordinary in a single winter."
+    ],
+    "verdict": "The single most consequential product launch of the period. Everything in the five years around it is measured as before or after.",
+    "author": "Vishal Thakur",
+    "date": "2022-11-30",
+    "link": "https://openai.com/blog/chatgpt",
+    "linkLabel": "Introducing ChatGPT",
+    "image": null,
+    "tags": [
+      "llm",
+      "consumer",
+      "openai",
+      "2022"
+    ]
+  },
+  {
+    "slug": "text-to-image-2022",
+    "category": "ai",
+    "brand": "Generative Imagery",
+    "productName": "DALL·E 2, Midjourney and Stable Diffusion",
+    "shortName": "The image year",
+    "title": "Four months that changed what a picture costs",
+    "summary": "Three releases in 2022 took image generation from a research curiosity to something anyone could run — including on their own GPU.",
+    "specs": [
+      {
+        "label": "DALL·E 2",
+        "value": "OpenAI, April 2022"
+      },
+      {
+        "label": "Midjourney",
+        "value": "Open beta, July 2022"
+      },
+      {
+        "label": "Stable Diffusion",
+        "value": "Stability AI and collaborators, August 2022"
+      },
+      {
+        "label": "Key shift",
+        "value": "Stable Diffusion's weights were released publicly"
+      }
+    ],
+    "body": [
+      "DALL·E 2 arrived in April 2022 and made the capability undeniable — coherent, high-resolution images from a sentence. It was gated behind a waitlist and a content filter, which kept it impressive but contained. Midjourney's open beta in July put the same capability into a Discord server, and the aesthetic it produced became instantly recognisable.",
+      "Stable Diffusion in August was the release that actually changed the landscape, because Stability AI and its academic collaborators published the model weights. Anyone with a consumer graphics card could generate images locally, with no filter, no queue and no per-image cost. Within weeks there were forks, fine-tunes, user interfaces and an entire ecosystem that no single company controlled.",
+      "The consequences arrived just as quickly. Artists found their names functioning as style prompts and their work in the training set; lawsuits followed. Stock photography businesses were disrupted almost overnight. Every platform that accepts user-uploaded images had to think about provenance for the first time.",
+      "It also settled an argument about openness by force. Once capable weights were public, the question of whether frontier models should be released openly stopped being hypothetical — the answer was already in the wild, and every subsequent policy debate had to account for that."
+    ],
+    "verdict": "The year generative AI became visible to people who had never read a paper — and the year the training-data question moved from developers to artists.",
+    "author": "Vishal Thakur",
+    "date": "2022-08-22",
+    "link": "https://stability.ai/",
+    "linkLabel": "Stability AI",
+    "image": null,
+    "tags": [
+      "image-generation",
+      "open-weights",
+      "copyright",
+      "2022"
+    ]
+  },
+  {
+    "slug": "alphafold-2-open-sourced",
+    "category": "ai",
+    "brand": "DeepMind",
+    "productName": "AlphaFold 2 and the Protein Structure Database",
+    "shortName": "AlphaFold 2",
+    "title": "A fifty-year-old problem, solved and then given away",
+    "summary": "DeepMind published AlphaFold 2's code and released predicted structures for nearly every known protein, free to anyone.",
+    "specs": [
+      {
+        "label": "Organisation",
+        "value": "DeepMind, with EMBL-EBI"
+      },
+      {
+        "label": "Released",
+        "value": "July 2021"
+      },
+      {
+        "label": "Coverage",
+        "value": "Grew to over 200 million predicted structures"
+      },
+      {
+        "label": "Licence",
+        "value": "Open source code, freely available database"
+      }
+    ],
+    "body": [
+      "Predicting how a protein folds from its amino acid sequence had been an open problem in biology since the 1970s. At the CASP14 assessment in late 2020, AlphaFold 2 produced predictions accurate enough that assessors described the problem as substantially solved — not improved on, solved.",
+      "What made 2021 the more consequential year was the decision about what to do next. In July, DeepMind published the method in Nature, released the source code, and launched a public database of predicted structures built with the European Bioinformatics Institute. It was free, required no licence negotiation, and within a year covered essentially every protein sequence known to science.",
+      "The effect on structural biology was immediate. Work that had meant years of crystallography became a lookup. Research into neglected tropical diseases, enzymes for plastic degradation, and antibiotic resistance all moved faster because the structural bottleneck stopped being a bottleneck.",
+      "It also set an expectation that shaped the decade that followed: that a frontier AI result could be released as public infrastructure rather than a product. Much of what came later did not follow that pattern, which is part of why this one still stands out."
+    ],
+    "verdict": "The clearest demonstration that machine learning could deliver a genuine scientific result, not just a benchmark score — and the work that would take a Nobel Prize three years later.",
+    "author": "Vishal Thakur",
+    "date": "2021-07-22",
+    "link": "https://alphafold.ebi.ac.uk/",
+    "linkLabel": "AlphaFold Protein Structure Database",
+    "image": null,
+    "tags": [
+      "science",
+      "open-source",
+      "deepmind",
+      "2021"
+    ]
+  },
+  {
+    "slug": "github-copilot-preview",
+    "category": "ai",
+    "brand": "GitHub / OpenAI",
+    "productName": "GitHub Copilot",
+    "shortName": "Copilot",
+    "title": "The first time most developers used AI at work",
+    "summary": "An autocomplete that wrote whole functions from a comment — and started a fight about training data that is still running.",
+    "specs": [
+      {
+        "label": "Organisation",
+        "value": "GitHub, built on OpenAI Codex"
+      },
+      {
+        "label": "Technical preview",
+        "value": "June 2021"
+      },
+      {
+        "label": "General availability",
+        "value": "June 2022"
+      },
+      {
+        "label": "Trained on",
+        "value": "Public code repositories"
+      }
+    ],
+    "body": [
+      "Copilot's technical preview landed in June 2021 and did something no previous developer tool had managed: it wrote plausible code from a comment describing intent, in the editor, fast enough to be part of the flow rather than an interruption.",
+      "It was built on OpenAI Codex, a descendant of GPT-3 trained heavily on public source code. The suggestions were frequently wrong in ways that took a moment to spot, which turned out to be the enduring characteristic of the whole category. But the productivity gain on boilerplate, tests and unfamiliar APIs was obvious enough that adoption spread quickly.",
+      "The controversy started just as fast. Copilot had been trained on public repositories including copyleft-licensed code, and it occasionally reproduced recognisable passages verbatim. A class action followed in 2022. The underlying question — whether training on publicly available code and text is fair use — remained unsettled for years and became the template for the copyright litigation that followed across images, text and music.",
+      "Everything since has been a continuation of this product: Cursor, Claude Code, Codex, and the agentic coding tools that write and run whole changes rather than suggesting lines."
+    ],
+    "verdict": "The moment AI stopped being a research demo and became a tool people used every day for money — and the moment the training-data fight began in earnest.",
+    "author": "Vishal Thakur",
+    "date": "2021-06-29",
+    "link": "https://github.com/features/copilot",
+    "linkLabel": "GitHub Copilot",
+    "image": null,
+    "tags": [
+      "developer-tools",
+      "copyright",
+      "openai",
+      "2021"
+    ]
+  }
+]

@@ -1,0 +1,906 @@
+[
+  {
+    "slug": "amd-radeon-rx-9070",
+    "category": "gpu",
+    "brand": "AMD",
+    "productName": "AMD Radeon RX 9070",
+    "shortName": "RX 9070",
+    "title": "The efficient one, and the better overclocker",
+    "summary": "Eighty-four watts less than the XT for a small performance drop — and it closes much of the gap once you tune it.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "RDNA 4 (Navi 48)"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB GDDR6"
+      },
+      {
+        "label": "Memory bus",
+        "value": "256-bit"
+      },
+      {
+        "label": "Cores",
+        "value": "3,584 stream processors, 56 compute units"
+      },
+      {
+        "label": "TDP",
+        "value": "220W"
+      },
+      {
+        "label": "Interface",
+        "value": "PCIe 5.0, DisplayPort 2.1a"
+      }
+    ],
+    "body": [
+      "The 9070 is the same silicon as the XT with fewer compute units and a much lower power target, and the efficiency difference is the interesting part. At 220W it gives up roughly ten percent of the XT's performance while drawing about a quarter less power, which is a trade most builders would take.",
+      "It also has obvious headroom. Raising the power limit and clocks recovers a good portion of the deficit, and because the memory configuration is identical — 16GB on the same 256-bit bus — there is no artificial ceiling on what tuning can achieve.",
+      "For a 1440p high-refresh build in a compact case, this is arguably the better half of the pair. It runs cooler, needs less power supply, and fits designs where a 304W card would be a struggle.",
+      "Whether it is the better buy comes down to street pricing. The two cards launched close enough together that retail markups frequently made the XT the better value, which is an odd position for the cheaper card to be in."
+    ],
+    "pros": [
+      "Significantly more efficient than the XT for a modest performance cost",
+      "Same 16GB memory configuration, with real overclocking headroom",
+      "Well suited to compact builds and smaller power supplies"
+    ],
+    "cons": [
+      "Often priced too close to the XT to make sense",
+      "Same ecosystem gap — no CUDA, FSR 4 needs per-title support",
+      "Stock performance is unremarkable until you tune it"
+    ],
+    "verdict": "The pick for an efficient, compact 1440p build — if you can buy it far enough below the XT to justify the choice.",
+    "author": "Vishal Thakur",
+    "date": "2025-03-06",
+    "link": "https://www.amd.com/en/products/graphics/desktops/radeon/9000-series/amd-radeon-rx-9070.html",
+    "linkLabel": "Product page",
+    "image": null,
+    "tags": [
+      "rdna-4",
+      "fsr-4",
+      "efficiency",
+      "sff"
+    ]
+  },
+  {
+    "slug": "amd-radeon-rx-9070-xt",
+    "category": "gpu",
+    "brand": "AMD",
+    "productName": "AMD Radeon RX 9070 XT",
+    "shortName": "RX 9070 XT",
+    "title": "AMD stopped chasing the crown and got much better",
+    "summary": "RDNA 4 abandons the halo tier, fixes ray tracing, ships a real machine-learning upscaler, and undercuts everything near it.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "RDNA 4 (Navi 48)"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB GDDR6"
+      },
+      {
+        "label": "Memory bus",
+        "value": "256-bit"
+      },
+      {
+        "label": "Cores",
+        "value": "4,096 stream processors, 64 compute units"
+      },
+      {
+        "label": "TDP",
+        "value": "304W"
+      },
+      {
+        "label": "Interface",
+        "value": "PCIe 5.0, DisplayPort 2.1a"
+      }
+    ],
+    "body": [
+      "AMD's decision not to build an RDNA 4 flagship looked like surrender and turned out to be strategy. Without a halo part to justify, the 9070 XT was priced to compete rather than to protect a product stack, and it lands squarely against the 5070 Ti for noticeably less money.",
+      "Two long-standing weaknesses got fixed. Ray tracing throughput improved substantially — Radeon no longer collapses in heavy RT titles the way earlier generations did, even if it still trails Nvidia at the top end. And FSR 4 finally moved to a machine-learning model, closing most of the image-quality gap that made earlier FSR versions a poor substitute for DLSS.",
+      "Sixteen gigabytes on a 256-bit bus is the right amount of memory for the performance class, and unlike some competing cards it does not look constrained a year or two out.",
+      "The remaining gaps are software and ecosystem. CUDA has no equivalent, so professional and AI workflows still push people toward Nvidia, and FSR 4 support has to be added title by title. Launch supply was also tight, with street prices well above the announced figure for the first months."
+    ],
+    "pros": [
+      "Excellent price-to-performance against the 5070 Ti",
+      "Ray tracing is finally competitive rather than a liability",
+      "FSR 4's ML upscaler is a large, visible quality improvement"
+    ],
+    "cons": [
+      "No CUDA equivalent — a real limitation for AI and some professional tools",
+      "FSR 4 needs per-title support and adoption is uneven",
+      "Launch pricing was widely exceeded at retail"
+    ],
+    "verdict": "The best-value high-end card of the generation for gaming. Buy Nvidia if your work needs CUDA; otherwise this is the smarter purchase.",
+    "author": "Vishal Thakur",
+    "date": "2025-03-06",
+    "link": "https://www.amd.com/en/products/graphics/desktops/radeon/9000-series/amd-radeon-rx-9070-xt.html",
+    "linkLabel": "Product page",
+    "image": null,
+    "tags": [
+      "rdna-4",
+      "fsr-4",
+      "1440p",
+      "value"
+    ]
+  },
+  {
+    "slug": "nvidia-geforce-rtx-5070-ti",
+    "category": "gpu",
+    "brand": "Nvidia",
+    "productName": "Nvidia GeForce RTX 5070 Ti",
+    "shortName": "RTX 5070 Ti",
+    "title": "The Blackwell card most people should actually consider",
+    "summary": "16GB of GDDR7 and near-5080 performance at a substantially lower price — the sensible tier of the generation.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "Blackwell (GB203)"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB GDDR7"
+      },
+      {
+        "label": "Memory bus",
+        "value": "256-bit"
+      },
+      {
+        "label": "Cores",
+        "value": "8,960 CUDA, 70 RT, 280 Tensor"
+      },
+      {
+        "label": "TDP",
+        "value": "300W"
+      },
+      {
+        "label": "Interface",
+        "value": "PCIe 5.0, DisplayPort 2.1b"
+      }
+    ],
+    "body": [
+      "The 5070 Ti sits close enough to the 5080 in real games — typically within about ten to fifteen percent — that the price gap between them is hard to justify. It carries the same 16GB of GDDR7 on the same 256-bit bus, which matters more for longevity than the shader count does.",
+      "At 1440p it is comfortably overkill, holding high refresh rates with ray tracing enabled in most titles. At 4K it is capable with DLSS doing some of the work, which given the state of modern game optimisation is how most people play at that resolution anyway.",
+      "300W is manageable with a good 750W supply, and partner cards run cool without the physical bulk that the higher tiers demand. It fits in normal cases.",
+      "The catch, as with the whole generation, was availability. MSRP was frequently theoretical during the launch window, and at inflated street prices the value argument against the 5080 weakens considerably. Buy it near list price or wait."
+    ],
+    "pros": [
+      "Most of the 5080's performance for meaningfully less money",
+      "Same 16GB GDDR7 configuration as the tier above",
+      "Reasonable power draw and physically sensible card sizes"
+    ],
+    "cons": [
+      "Supply was poor at launch and street prices ran above MSRP",
+      "Still a modest uplift over the 4070 Ti Super",
+      "No 5070 Ti Founders Edition — partner pricing only"
+    ],
+    "verdict": "The value pick of the 50 series. Excellent at 1440p, capable at 4K, and the tier where the generation's pricing stops being silly.",
+    "author": "Vishal Thakur",
+    "date": "2025-02-20",
+    "link": "https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5070-family/",
+    "linkLabel": "Product page",
+    "image": null,
+    "tags": [
+      "blackwell",
+      "gddr7",
+      "1440p",
+      "value"
+    ]
+  },
+  {
+    "slug": "nvidia-geforce-rtx-5080",
+    "category": "gpu",
+    "brand": "Nvidia",
+    "productName": "Nvidia GeForce RTX 5080",
+    "shortName": "RTX 5080",
+    "title": "A modest step, saved by its software",
+    "summary": "Fast, efficient and well-built — but the smallest generational gain Nvidia has shipped at this tier in years.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "Blackwell (GB203)"
+      },
+      {
+        "label": "Memory",
+        "value": "16GB GDDR7"
+      },
+      {
+        "label": "Memory bus",
+        "value": "256-bit"
+      },
+      {
+        "label": "Cores",
+        "value": "10,752 CUDA, 84 RT, 336 Tensor"
+      },
+      {
+        "label": "TDP",
+        "value": "360W"
+      },
+      {
+        "label": "Interface",
+        "value": "PCIe 5.0, DisplayPort 2.1b"
+      }
+    ],
+    "body": [
+      "The 5080 is a good graphics card and a disappointing product, which is an awkward combination to review. In raw rasterisation it lands only modestly ahead of the 4080 Super it replaces — a generational uplift far smaller than buyers have come to expect between numbered tiers.",
+      "What it does bring is GDDR7 bandwidth, the full Blackwell feature set, and DLSS 4. In titles that support multi frame generation the perceived smoothness jump is large, and the transformer-based upscaling model produces noticeably cleaner image quality than earlier DLSS versions, including on older cards.",
+      "It is also efficient and quiet. 360W is a lot in absolute terms but well-behaved for the performance, and the Founders Edition cooler is genuinely excellent for a two-slot design.",
+      "The recurring complaint is the memory. 16GB is adequate for 4K gaming today and looks thin for a card at this price and expected lifespan, especially with texture budgets rising and local AI work eating VRAM. The 5090 has double it."
+    ],
+    "pros": [
+      "Efficient, cool and quiet for its performance class",
+      "GDDR7 bandwidth and the complete DLSS 4 feature set",
+      "Excellent 4K performance in practice"
+    ],
+    "cons": [
+      "Smallest generational uplift at this tier in recent memory",
+      "16GB looks limiting for the price and the card's expected life",
+      "Frequently sold well above MSRP"
+    ],
+    "verdict": "A strong 4K card that is hard to get excited about. Worth buying from a 30-series or older card; a poor upgrade from a 4080.",
+    "author": "Vishal Thakur",
+    "date": "2025-01-30",
+    "link": "https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5080/",
+    "linkLabel": "Product page",
+    "image": null,
+    "tags": [
+      "blackwell",
+      "gddr7",
+      "4k",
+      "dlss-4"
+    ]
+  },
+  {
+    "slug": "nvidia-geforce-rtx-5090",
+    "category": "gpu",
+    "brand": "Nvidia",
+    "productName": "Nvidia GeForce RTX 5090",
+    "shortName": "RTX 5090",
+    "title": "Unmatched, unaffordable, and unusually thirsty",
+    "summary": "32GB of GDDR7 and 575W of Blackwell — the fastest consumer GPU ever built, with a power connector you should respect.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "Blackwell (GB202)"
+      },
+      {
+        "label": "Memory",
+        "value": "32GB GDDR7"
+      },
+      {
+        "label": "Memory bus",
+        "value": "512-bit"
+      },
+      {
+        "label": "Cores",
+        "value": "21,760 CUDA, 170 RT, 680 Tensor"
+      },
+      {
+        "label": "TDP",
+        "value": "575W"
+      },
+      {
+        "label": "Interface",
+        "value": "PCIe 5.0, DisplayPort 2.1b"
+      }
+    ],
+    "body": [
+      "There is no argument about which consumer graphics card is fastest. The 5090 wins every rasterisation test, every ray tracing test, and every professional rendering benchmark, usually by a margin that makes the comparison uninteresting. Thirty-two gigabytes of GDDR7 on a 512-bit bus also makes it the obvious card for local AI work, video production and high-resolution 3D.",
+      "The generational story is more complicated than the benchmark charts. A large share of the improvement over the 4090 comes from having a much bigger, much hungrier chip rather than from a more efficient architecture. Performance per watt improved far less than performance did.",
+      "DLSS 4's multi frame generation is the software headline, and it is genuinely impressive at producing smooth motion. It does not reduce input latency the way real frames do, so the frame-rate numbers in Nvidia's marketing and the responsiveness you actually feel are different measurements. Judge it with your own eyes before paying for it.",
+      "Take the power delivery seriously. 575W through a single 12V-2x6 connector demands that the cable is fully seated and not sharply bent — the melting connector failures of the previous generation were largely a seating problem, and the margins here are thinner, not wider. Budget for a 1000W-class supply and a case with real airflow."
+    ],
+    "pros": [
+      "Comfortably the fastest consumer GPU available, in everything",
+      "32GB of fast memory makes it superb for local AI, rendering and video",
+      "DLSS 4 multi frame generation delivers very smooth motion"
+    ],
+    "cons": [
+      "575W draw needs a serious PSU, cooling and case",
+      "Efficiency gains are modest — most of the speed came from a bigger chip",
+      "Priced far beyond what gaming alone can justify; street prices ran well above MSRP"
+    ],
+    "verdict": "If the workload genuinely needs it — rendering, video, local models — it is the only option. As a gaming card it is a luxury purchase, and priced like one.",
+    "author": "Vishal Thakur",
+    "date": "2025-01-30",
+    "link": "https://www.nvidia.com/en-us/geforce/graphics-cards/50-series/rtx-5090/",
+    "linkLabel": "Product page",
+    "image": null,
+    "tags": [
+      "blackwell",
+      "gddr7",
+      "flagship",
+      "dlss-4"
+    ]
+  },
+  {
+    "slug": "intel-arc-b580",
+    "category": "gpu",
+    "brand": "Intel",
+    "productName": "Intel Arc B580",
+    "shortName": "Arc B580",
+    "title": "The budget card that embarrassed the budget cards",
+    "summary": "12GB of memory at a sub-$250 price, from the third player nobody expected to get the value tier right.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "Battlemage (Xe2, BMG-G21)"
+      },
+      {
+        "label": "Memory",
+        "value": "12GB GDDR6"
+      },
+      {
+        "label": "Memory bus",
+        "value": "192-bit"
+      },
+      {
+        "label": "Cores",
+        "value": "20 Xe2 cores, 160 XMX engines, 20 RT units"
+      },
+      {
+        "label": "TDP",
+        "value": "190W"
+      },
+      {
+        "label": "Interface",
+        "value": "PCIe 4.0 x8, DisplayPort 2.1"
+      }
+    ],
+    "body": [
+      "Intel's first generation of Arc cards was a mess of driver bugs and broken older games. Battlemage is the generation where the software caught up with the intent, and the B580 arrived at a price that made both Nvidia and AMD look inattentive to the bottom of the market.",
+      "Twelve gigabytes of memory on a 192-bit bus, at a price where the competition was still shipping eight, is the whole argument. Eight-gigabyte cards had started running out of memory at 1080p in demanding titles — not running slowly, but stuttering and dropping textures. The B580 simply does not have that problem.",
+      "XeSS 2 is a competent upscaler, hardware AV1 encoding is included, and ray tracing performance is respectable for the class. Driver quality for current games is now genuinely fine; older DirectX 9 and 11 titles remain the weak spot, though translation-layer work has improved them considerably.",
+      "One real caveat surfaced after launch: the card leans on the host CPU more than its rivals do, so pairing it with an older budget processor can cost a surprising amount of performance. It wants a reasonably modern CPU and a system with Resizable BAR enabled."
+    ],
+    "pros": [
+      "12GB at a price where competitors shipped 8GB",
+      "Excellent value at 1080p and capable at 1440p",
+      "Hardware AV1 encode and a solid XeSS 2 upscaler"
+    ],
+    "cons": [
+      "Notable CPU overhead — poor pairing with older budget processors",
+      "Older DirectX 9/11 titles still lag on Arc drivers",
+      "Requires Resizable BAR for expected performance"
+    ],
+    "verdict": "The best budget graphics card in years, and proof that a third competitor is worth having. Pair it with a modern CPU.",
+    "author": "Vishal Thakur",
+    "date": "2024-12-13",
+    "link": "https://www.intel.com/content/www/us/en/products/sku/241598/intel-arc-b580-graphics/specifications.html",
+    "linkLabel": "Product page",
+    "image": null,
+    "tags": [
+      "battlemage",
+      "budget",
+      "1080p",
+      "xess"
+    ]
+  },
+  {
+    "slug": "amd-radeon-rx-7900-xtx",
+    "category": "gpu",
+    "brand": "AMD",
+    "productName": "AMD Radeon RX 7900 XTX",
+    "shortName": "RX 7900 XTX",
+    "title": "Twenty-four gigabytes, at a price Nvidia wouldn't match",
+    "summary": "RDNA 3's flagship won on rasterisation per dollar and memory capacity, and lost on ray tracing and upscaling.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "RDNA 3 (Navi 31)"
+      },
+      {
+        "label": "Memory",
+        "value": "24GB GDDR6"
+      },
+      {
+        "label": "Memory bus",
+        "value": "384-bit"
+      },
+      {
+        "label": "Cores",
+        "value": "6,144 stream processors, 96 compute units"
+      },
+      {
+        "label": "TDP",
+        "value": "355W"
+      },
+      {
+        "label": "Interface",
+        "value": "PCIe 4.0, DisplayPort 2.1"
+      }
+    ],
+    "body": [
+      "AMD's first chiplet-based consumer GPU put 24GB of memory on a 384-bit bus at a price well below Nvidia's flagship, and in pure rasterisation it delivered — competitive with the 4080 in most traditional rendering, sometimes ahead, and consistently cheaper.",
+      "Ray tracing was where the argument fell apart. In heavy RT titles the deficit against Ada was large enough to change which settings you could realistically use, and FSR 2 and 3 could not match DLSS on image quality. As ray tracing moved from an optional extra to a default in major releases, that gap mattered more each year.",
+      "The 24GB has aged well, though. It is plenty for 4K texture budgets and enough to be genuinely useful for local AI work, where ROCm support on Linux has improved steadily even if it remains a rougher path than CUDA.",
+      "As a used purchase it is now good value — provided you accept that RT-heavy games will ask you to turn things down, and that FSR 4's better upscaler is an RDNA 4 feature you will not get."
+    ],
+    "pros": [
+      "24GB of memory on a wide bus, at a price Nvidia did not match",
+      "Strong traditional rasterisation performance for the money",
+      "Ages well for 4K textures and usable for local AI on ROCm"
+    ],
+    "cons": [
+      "Ray tracing performance falls well behind equivalent Nvidia cards",
+      "FSR 2/3 image quality trails DLSS noticeably; FSR 4 needs RDNA 4",
+      "Early reference cards had well-documented vapour chamber cooling issues"
+    ],
+    "verdict": "A good used buy for rasterisation and VRAM. Look elsewhere if ray tracing is a priority.",
+    "author": "Vishal Thakur",
+    "date": "2022-12-13",
+    "link": "https://www.amd.com/en/products/graphics/desktops/radeon/7000-series/amd-radeon-rx-7900xtx.html",
+    "linkLabel": "Product page",
+    "image": null,
+    "tags": [
+      "rdna-3",
+      "4k",
+      "archive",
+      "value"
+    ]
+  },
+  {
+    "slug": "nvidia-geforce-rtx-4090",
+    "category": "gpu",
+    "brand": "Nvidia",
+    "productName": "Nvidia GeForce RTX 4090",
+    "shortName": "RTX 4090",
+    "title": "The generational leap that actually was one",
+    "summary": "Ada Lovelace's flagship redefined 4K gaming and then found a second career running AI models at home.",
+    "specs": [
+      {
+        "label": "Architecture",
+        "value": "Ada Lovelace (AD102)"
+      },
+      {
+        "label": "Memory",
+        "value": "24GB GDDR6X"
+      },
+      {
+        "label": "Memory bus",
+        "value": "384-bit"
+      },
+      {
+        "label": "Cores",
+        "value": "16,384 CUDA, 128 RT, 512 Tensor"
+      },
+      {
+        "label": "TDP",
+        "value": "450W"
+      },
+      {
+        "label": "Interface",
+        "value": "PCIe 4.0, DisplayPort 1.4a"
+      }
+    ],
+    "body": [
+      "The jump from the 3090 to the 4090 was the largest single-generation improvement in years — often somewhere between sixty and eighty percent faster at 4K, and dramatically more efficient per frame despite the higher power rating. TSMC's 4N process did most of the work.",
+      "It also became something Nvidia did not entirely plan for. Twenty-four gigabytes of VRAM and full CUDA support made the 4090 the default card for people fine-tuning and running language models at home, which kept demand and prices high for its entire life and well past its replacement.",
+      "The one real design failure was the 12VHPWR connector. Cards melted, and the root cause was mostly incomplete insertion combined with tight cable bends near the connector. The revised 12V-2x6 standard improved the tolerances; the handling advice still applies.",
+      "The 5090 is faster. But 24GB, mature drivers, PCIe 4.0 sufficiency and a used market that finally softened make the 4090 one of the better second-hand buys in the category — provided you inspect the power connector before you hand over money."
+    ],
+    "pros": [
+      "Genuinely enormous generational performance leap at 4K",
+      "24GB and CUDA make it a workhorse for local AI and rendering",
+      "Very efficient per frame despite its 450W rating"
+    ],
+    "cons": [
+      "12VHPWR connector failures — inspect carefully when buying used",
+      "Physically huge; many cases and coolers cannot take it",
+      "Held its price far longer than a superseded flagship normally does"
+    ],
+    "verdict": "The most important consumer GPU of the last five years, and still a strong buy used if the connector is clean.",
+    "author": "Vishal Thakur",
+    "date": "2022-10-12",
+    "link": "https://www.nvidia.com/en-us/geforce/graphics-cards/40-series/rtx-4090/",
+    "linkLabel": "Product page",
+    "image": null,
+    "tags": [
+      "ada-lovelace",
+      "4k",
+      "local-ai",
+      "archive"
+    ]
+  },
+  {
+    "slug": "amd-rx-6700-xt",
+    "category": "gpu",
+    "brand": "AMD",
+    "productName": "AMD RX 6700 XT",
+    "shortName": "RX 6700XT",
+    "title": "Good 1440p Mid-Range Card but Bit Overpriced.",
+    "summary": "So I bought this GPU to see what this thing offers over the 5700xt. It is a upgrade when it comes down to Frame Rates, and 1440p gaming…",
+    "specs": [
+      {
+        "label": "Memory",
+        "value": "12GB GDDR6"
+      },
+      {
+        "label": "Cores",
+        "value": "2560 Stream, 40 Ray, 40 Compute"
+      },
+      {
+        "label": "TDP",
+        "value": "230W"
+      }
+    ],
+    "body": [],
+    "pros": [
+      "Runs smoother than my 5700xt and higher frames. -12gb memory for those AAA games that are coming soon. Battlefield, FarCry, etc.-Runs 1440p great."
+    ],
+    "cons": [
+      "Raytracing is not really optimal, and not worth purchasing this card just to have raytracing. -temps can run high but no shut downs/crashes with this card yet.-Streaming on this thing is better than my 5700xt, but it still has problems when the final output is put on twitch. It can have blocky, or pixelated anomalies. (could be my CPU)-2.9 slots used in PC, so you need a large case and I recommend a ATX vs ITX board. -I don't know how to use RGB software from ASUS, usually the program cannot detect the card and will not allow me to change the default RGB settings. -If you want to run this card in Crossfire with the same exact card, you may not be able to fit second card on to motherboard due to headers and wiring near 2nd PCIE slot and bottom of mother board. -Price is too high"
+    ],
+    "verdict": "So I bought this GPU to see what this thing offers over the 5700xt. It is a upgrade when it comes down to Frame Rates, and 1440p gaming. The Ray Tracing causes loss in frame rate and not really a useful thing in this card. I think of it as, a way to see whether you like raytracing or not. IDK. I play a lot of Rainbow Six Siege, and it was running a lot smoother and faster then my 5700xt. My mouse feels like I have changed my DPI or sensitivity settings. Feels good. I would also like to mention that Newegg did say the memory had a bandwidth of 256bit, but it is 192bit like every other 6700xt. I threw my 5700xt in my rig to see if it fits and I was able to have 2 GPU's running in my system, but not in Crossfire. Everything ran but it was a close fit. I would recommend this card to a friend if the price was right. But not for the current MSRP. But for other brand 6700xt's, buy it, if that is what you can get right now.",
+    "author": "Vishal Thakur",
+    "date": "2021-04-14",
+    "link": "https://www.amd.com/en/products/graphics/amd-radeon-rx-6700-xt",
+    "linkLabel": "Product page",
+    "image": "assets/img/GPU/AMD/6700xt.jpg",
+    "tags": [
+      "archive",
+      "amd"
+    ]
+  },
+  {
+    "slug": "amd-rx-6800",
+    "category": "gpu",
+    "brand": "AMD",
+    "productName": "AMD RX 6800",
+    "shortName": "RX 6800",
+    "title": "Good at everything except Ray Tracing",
+    "summary": "I would recommend this to anyone looking to game 1440p 60 ultra on current AAA SP titles and 144hz on AAA multiplayer titles at High settings. - Esports games (CSGO, valorant…",
+    "specs": [
+      {
+        "label": "Memory",
+        "value": "16GB GDDR6"
+      },
+      {
+        "label": "Cores",
+        "value": "3840 Stream, 60 Ray, 60 Compute"
+      },
+      {
+        "label": "TDP",
+        "value": "250W"
+      }
+    ],
+    "body": [],
+    "pros": [
+      "Shipped within a day, arrived within 3 Days\n- Very good performance out of the box and with a mild OC on top of that able to get very good performance out of this card\n- runs very cool, no thermal issues\n- solid build quality"
+    ],
+    "cons": [
+      "Fans get very loud at high speeds\n- I'm not a hug fan of the aesthetics\n- very thick card, basically a triple slot design, ended up blocking 2 of my SATA ports"
+    ],
+    "verdict": "I would recommend this to anyone looking to game 1440p 60 ultra on current AAA SP titles and 144hz on AAA multiplayer titles at High settings.\n- Esports games (CSGO, valorant, RL) easily hitting 1440p 144hz max settings\n- I am honestly surprised at how well this card performs, I was originally looking for a 6800XT or 3080, but this was what I actually got ordered and delivered and I am not disappointed. The card is a beast, especially coming from a RX 480.",
+    "author": "Vishal Thakur",
+    "date": "2021-04-14",
+    "link": "https://www.amd.com/en/products/graphics/amd-radeon-rx-6800",
+    "linkLabel": "Product page",
+    "image": "assets/img/GPU/AMD/6800.png",
+    "tags": [
+      "archive",
+      "amd"
+    ]
+  },
+  {
+    "slug": "amd-rx-6800-xt",
+    "category": "gpu",
+    "brand": "AMD",
+    "productName": "AMD RX 6800 XT",
+    "shortName": "RX 6800XT",
+    "title": "Great Overall Card, But lags behind in RT",
+    "summary": "amazing card , But only buy if you can't get the 3080.",
+    "specs": [
+      {
+        "label": "Memory",
+        "value": "16GB GDDR6"
+      },
+      {
+        "label": "Cores",
+        "value": "4608 Stream, 72 Ray, 72 Compute"
+      },
+      {
+        "label": "TDP",
+        "value": "300W"
+      }
+    ],
+    "body": [],
+    "pros": [
+      "this card is a absolute monster and looks pretty nice. got it boosting over 24000mhz. I am getting on average 90 to 100 fps on cyberpunk with setting everything to high in 1440p. Over the 155 fps I can display on my 155hz on apex and valorant. I have literally cranked every game to max settings and this card with a 5800x absolutely power through anything I throw at it."
+    ],
+    "cons": [
+      "the RGB software you have to use to change the led and colors on the card can be a little glitchy and at times not even recognize the card."
+    ],
+    "verdict": "amazing card , But only buy if you can't get the 3080.",
+    "author": "Vishal Thakur",
+    "date": "2021-04-14",
+    "link": "https://www.amd.com/en/products/graphics/amd-radeon-rx-6800-xt",
+    "linkLabel": "Product page",
+    "image": "assets/img/GPU/AMD/6800xt.png",
+    "tags": [
+      "archive",
+      "amd"
+    ]
+  },
+  {
+    "slug": "amd-rx-6900-xt",
+    "category": "gpu",
+    "brand": "AMD",
+    "productName": "AMD RX 6900 XT",
+    "shortName": "RX 6900XT",
+    "title": "It is big, powerful, and surprisingly quiet",
+    "summary": "Overall Review: In the current market where cards are hard to come by it is hard to be choosy. I was looking to upgrade to either the RTX 3090, 3080, AMD 6900xt, and 6800xt…",
+    "specs": [
+      {
+        "label": "Memory",
+        "value": "16GB GDDR6"
+      },
+      {
+        "label": "Cores",
+        "value": "5120 Stream, 80 Ray, 80 Compute"
+      },
+      {
+        "label": "TDP",
+        "value": "300W"
+      }
+    ],
+    "body": [],
+    "pros": [
+      "The current top end of AMD GPUs. In many games this card trades blows with the RTX 3090.\n- This XFX card is one of the fastest out of the box 6900xts.\n- This card's fans are surprisingly quiet. I had a EVGA RTX 2080 Ti before this and that card's fans were much louder. The RTX fans would spool up and make a loud whooshing sound when starting up the PC. The XFX 6900xt was silent to the point I thought the card was DOA.\n- The card does look pretty cool. The shroud, fans, and backplate are also very solid.\n- The AMD drivers have come a long way since the last time I had an AMD card. These drivers were smart enough to automatically detect and set the proper screen resolution and refresh rate for my monitor.\n- The AMD Radeon Software can do neat things like tell you average FPS in each game you play, grade how good the card performs, and advise you to turn up the settings or dial them back. You can also overclock the card, and monitor temperatures with AMD's own software.."
+    ],
+    "cons": [
+      "The card is quite long. The case I have has two fans in the front, I had to remove one to fit this card.\n- Not as fast as Nvidia's RTX cards in games that utilize ray tracing.\n- Like other cards this one is not easy to obtain.\n- A bit on the pricey side."
+    ],
+    "verdict": "Overall Review: In the current market where cards are hard to come by it is hard to be choosy. I was looking to upgrade to either the RTX 3090, 3080, AMD 6900xt, and 6800xt. When this one popped up as available I quickly jumped on it. So far I am not regretting my decision.",
+    "author": "Vishal Thakur",
+    "date": "2021-04-14",
+    "link": "https://www.amd.com/en/products/graphics/amd-radeon-rx-6900-xt",
+    "linkLabel": "Product page",
+    "image": "assets/img/GPU/AMD/6900.png",
+    "tags": [
+      "archive",
+      "amd"
+    ]
+  },
+  {
+    "slug": "nvidia-rtx-2080-ti",
+    "category": "gpu",
+    "brand": "Nvidia",
+    "productName": "Nvidia RTX 2080 Ti",
+    "shortName": "RTX 2080Ti",
+    "title": "Great Performance, But Last Gen Performance",
+    "summary": "At this price point, this card will be obsolete long before it becomes affordable or starts offering value to anyone, even on a sizable budget.",
+    "specs": [
+      {
+        "label": "Memory",
+        "value": "11GB GDDR6"
+      },
+      {
+        "label": "Cores",
+        "value": "4352 Cuda, 68 RT, 544 Tensor"
+      },
+      {
+        "label": "TDP",
+        "value": "260W"
+      }
+    ],
+    "body": [],
+    "pros": [
+      "Cannot push this card to exceed 65c. Granted, it is cold here yet the cooler is remarkable, this is my first GPU to routinely idle in the high 20's. If you have an AIO on your CPU, the noise from the GPU will blend in with your case fans, only at very high fan speed does it become audible, in my case at least. It will stay just above 2GHz under load, the cooler it is, the higher it goes above 2GHz. My card peaks at 2160 MHz but continuously it can't hold past 2.1 GHz."
+    ],
+    "cons": [
+      "All of the 3rd party GPU utilities lack in area or another. To perfectly adjust the settings and appearance, one would have to mix and match between 3 different apps. -Docking a point for the price. Above MSRP gouging needs to stop."
+    ],
+    "verdict": "At this price point, this card will be obsolete long before it becomes affordable or starts offering value to anyone, even on a sizable budget.",
+    "author": "Vishal Thakur",
+    "date": "2021-04-14",
+    "link": "https://www.nvidia.com/en-in/geforce/graphics-cards/rtx-2080-ti/",
+    "linkLabel": "Product page",
+    "image": "assets/img/GPU/Nvidia/2080ti.jpg",
+    "tags": [
+      "archive",
+      "nvidia"
+    ]
+  },
+  {
+    "slug": "nvidia-rtx-3060",
+    "category": "gpu",
+    "brand": "Nvidia",
+    "productName": "Nvidia RTX 3060",
+    "shortName": "RTX 3060",
+    "title": "A Truly Impressive Little Package",
+    "summary": "Aside from a few nit-picky things (see cons) it's an absolute bargain if you can get it at around MSRP. Granted this particular EVGA models price is a bit inflated…",
+    "specs": [
+      {
+        "label": "Memory",
+        "value": "12GB GDDR6"
+      },
+      {
+        "label": "Cores",
+        "value": "3584 Cuda, 28 RT, 112 Tensor"
+      },
+      {
+        "label": "TDP",
+        "value": "170W"
+      }
+    ],
+    "body": [],
+    "pros": [
+      "You get the performance of a 2060 Super and don't have to pay nearly as much for it. -Small form factor so it fits in just about every build.-I will always recommend EVGA products, they have perhaps the best customer support and warranty track record of any company I've dealt with in the PC component arena.-A great over clocker with plenty of headroom for enthusiasts-They blacked out the 'red clown lips' these cards came with initially (thank you for listening EVGA) looks so much better this way."
+    ],
+    "cons": [
+      "Thermals are bit higher than I’d like to see, even without an overclock, it's going to need really good airflow to keep those temps down (in-game it was common to see 70C-75C without an overclock) my case has below average airflow so something like a meshify or similar will most definitely see better temps-No RGB anywhere on the card (this may be a pro in some people's eyes but I prefer having the option and it’s a shame it wasn't available on this model)"
+    ],
+    "verdict": "Aside from a few nit-picky things (see cons) it's an absolute bargain if you can get it at around MSRP. Granted this particular EVGA models price is a bit inflated, I consider it worth it due to the fact that EVGA is so good at resolving any potential issues you might experience down the road and paying EVGAs asking price is much more palatable than paying a scalper",
+    "author": "Vishal Thakur",
+    "date": "2021-04-14",
+    "link": "https://www.nvidia.com/en-in/geforce/graphics-cards/30-series/rtx-3060-3060ti/",
+    "linkLabel": "Product page",
+    "image": "assets/img/GPU/Nvidia/3060.jpg",
+    "tags": [
+      "archive",
+      "nvidia"
+    ]
+  },
+  {
+    "slug": "nvidia-rtx-3060-ti",
+    "category": "gpu",
+    "brand": "Nvidia",
+    "productName": "Nvidia RTX 3060 Ti",
+    "shortName": "RTX 3060Ti",
+    "title": "Good Card, Worth The Money.",
+    "summary": "I think it's a great card with a sleek look, not excessively large like a lot of others. It can most likely fit in most cases…",
+    "specs": [
+      {
+        "label": "Memory",
+        "value": "8GB GDDR6"
+      },
+      {
+        "label": "Cores",
+        "value": "4864 Cuda, 38 RT, 152 Tensor"
+      },
+      {
+        "label": "TDP",
+        "value": "200W"
+      }
+    ],
+    "body": [],
+    "pros": [
+      "I really enjoyed the box opening process (as everyone does), I got this card back in late November, just never got around to writing a review. Another good thing about the card is the noise level. It is a very quiet card with great performance and no technical issues upon putting it in my system, running games and applications, and installing drivers, as long as you uninstall all of your previous drivers before installation you should experience the same thing."
+    ],
+    "cons": [
+      "Not really much of a con but there's no LED or RGB on the card. Not sure if that's a dealbreaker for you, but if it is then I wouldn't recommend this one."
+    ],
+    "verdict": "I think it's a great card with a sleek look, not excessively large like a lot of others. It can most likely fit in most cases, considering my case is between small and medium sized. But I would definitely say to purchase this card as it has a great value and great performance to match. (If you can get your hands on it that is)",
+    "author": "Vishal Thakur",
+    "date": "2021-04-14",
+    "link": "https://www.nvidia.com/en-in/geforce/graphics-cards/30-series/rtx-3060-3060ti/",
+    "linkLabel": "Product page",
+    "image": "assets/img/GPU/Nvidia/3060ti.jpg",
+    "tags": [
+      "archive",
+      "nvidia"
+    ]
+  },
+  {
+    "slug": "nvidia-rtx-3070",
+    "category": "gpu",
+    "brand": "Nvidia",
+    "productName": "Nvidia RTX 3070",
+    "shortName": "RTX 3070",
+    "title": "The Real Deal!",
+    "summary": "The cooler is overkill and I'm backed by the EVGA warranty so I give the product itself a 5 star rating…",
+    "specs": [
+      {
+        "label": "Memory",
+        "value": "8GB GDDR6"
+      },
+      {
+        "label": "Cores",
+        "value": "5888 Cuda, 46 RT, 184 Tensor"
+      },
+      {
+        "label": "TDP",
+        "value": "220W"
+      }
+    ],
+    "body": [],
+    "pros": [
+      "When I got the RTX 3070 I decided to stick it in an older system that has an i5-6600k with 16gb of RAM, 1080p 144hz monitor. Man.... did the 6600k ever BOTTLENECK. I tried playing FFXV and not only was the CPU usage pegged at or near 100% constantly, but the framerates would drop about every 30 seconds. After seeing a few other games suffer with the 6600k, I put the 3070 in another system with an i7-8086k @ 5.2ghz -2 AVX. Most of the time the GPU usage was around 60% to 70%. Intel's illustrious Quad-Core era is truly DEAD.\nEVGA card with the famous EVGA warranty. I've had to file a few RMA's with multiple companies over the years and EVGA is probably the best company to deal with. Lays waste to 1080p gaming. There's not really a better card for the job.\nThe cooler is probably overkill for the GPU..... but that's the way I like it. When I buy Graphics cards I tend to keep them around for a very long time and I'll pass them off to other family members.\nNvidia drivers are always stable for the most part. I don't mind AMD cards, but if I put an AMD card in my brother's computer then the drivers will eventually mess up and I have to go over to his place and fix the drivers. We don't live in the same city so having to do this is a PITA."
+    ],
+    "cons": [
+      "The one thing I don't like about the RTX 3070 in general is the GTX/RTX XX70 series is usually within a good range of value for the dollar, but the RTX 3070 isn't. Oddly, This time around the RTX 3060ti is the better value. The RTX 3070 is kinda like the old GTX 580, 680, and 980 where paying the extra money for it didn't make sense from a value perspective. In a perfect world, or the old world that lacked miners and stock was abundant, I would tell anyone to either pay more for the RTX 3080 or get the RTX 3060ti. Right now it's every man for himself and get whatever you can get.\nI really don't think 8gb of VRAM is enough for the long term. Just look at the 3gb GTX 1060 if you want an example because that card was obsolete 2 years ago. In many ways the RX 6800 might be the better card, but at least the RTX 3070 is better with Ray Tracing and DLSS."
+    ],
+    "verdict": "The cooler is overkill and I'm backed by the EVGA warranty so I give the product itself a 5 star rating. The RTX 3070 by itself I give a 3.5 out of 5 star for the lack of VRAM and being a poor value in comparison to the 3060ti. I'll betcha that by the end of the Ampere run in 2022, the early adopters will be laughed because 8gb of VRAM will only be enough for 1080p and there will be a Super series that has 16gb of VRAM in the 3070. The people who say 8gb or 10gb is enough will be eating their words.....Nom, Nom, Nom",
+    "author": "Vishal Thakur",
+    "date": "2021-04-14",
+    "link": "https://www.nvidia.com/en-in/geforce/graphics-cards/30-series/rtx-3070/",
+    "linkLabel": "Product page",
+    "image": "assets/img/GPU/Nvidia/3070.jpg",
+    "tags": [
+      "archive",
+      "nvidia"
+    ]
+  },
+  {
+    "slug": "nvidia-rtx-3080",
+    "category": "gpu",
+    "brand": "Nvidia",
+    "productName": "Nvidia RTX 3080",
+    "shortName": "RTX 3080",
+    "title": "The Real Deal!",
+    "summary": "I waited patiently for my 3080 for close to 2 months after I had the rest of my brand new 2020 build ready and just sitting there waiting for a GPU…",
+    "specs": [
+      {
+        "label": "Memory",
+        "value": "10GB GGDDR6X"
+      },
+      {
+        "label": "Cores",
+        "value": "8704 Cuda, 68 RT, 272 Tensor"
+      },
+      {
+        "label": "TDP",
+        "value": "320W"
+      }
+    ],
+    "body": [],
+    "pros": [
+      "Runs exceptionally cool and quiet with great OC support - People complain about the massive RGB strip on the card but honestly it looks really cool and if it bothers you, Precision X1 software can be used to disable it completely"
+    ],
+    "cons": [
+      "Slightly on the heavier side because of the massive cooler but that is really not a con. If you are too concerned about the weight and GPU sag, you can get a vertical support bracket for it."
+    ],
+    "verdict": "I waited patiently for my 3080 for close to 2 months after I had the rest of my brand new 2020 build ready and just sitting there waiting for a GPU. The frustration of not getting a GPU is real and I must admit my patience was wearing thin so in the end I never really had a particular 3080 card in mind, it was get what you can. And I was lucky enough to snag this baby one evening just randomly refreshing on Newegg and boy am I glad I got this one! FTW3 Ultra is top of the line without a doubt. I have had no problems with this card whatsoever. My card shipped without with ugly red lip which was an added bonus",
+    "author": "Vishal Thakur",
+    "date": "2021-04-14",
+    "link": "https://www.nvidia.com/en-in/geforce/graphics-cards/30-series/rtx-3080/",
+    "linkLabel": "Product page",
+    "image": "assets/img/GPU/Nvidia/3080.jpg",
+    "tags": [
+      "archive",
+      "nvidia"
+    ]
+  },
+  {
+    "slug": "nvidia-rtx-3090",
+    "category": "gpu",
+    "brand": "Nvidia",
+    "productName": "Nvidia RTX 3090",
+    "shortName": "RTX 3090",
+    "title": "The Beast among Graphic Cards.",
+    "summary": "Better performance than I ever expected! I run an ROG SWIFT 1440P 165hz monitor and games like Cyberpunk 2077 with EVERYTHING maxed out runs 65-100 FPS! I was also able to overcloc…",
+    "specs": [
+      {
+        "label": "Memory",
+        "value": "24GB GGDDR6X"
+      },
+      {
+        "label": "Cores",
+        "value": "10,496 Cuda, 82 RT, 328 Tensor"
+      },
+      {
+        "label": "TDP",
+        "value": "350W"
+      }
+    ],
+    "body": [],
+    "pros": [
+      "The performance is amazing! Coming from a Asus Strix 2080ti it is about 50%-60% performance uplift in games. More with ray tracing enabled. - The cooler on the FTW3 version is the highest quality cooler of the EVGA 3090 cards and it SHOWS! I overclocked this thing to 2.1ghz and it stays below 74 degrees! ( Make sure you have a good airflow case!)"
+    ],
+    "cons": [
+      "About a 3 slot card! - Requires ALOT of power. This card requires 3 SEPERATE PCIE power cables running from your PSU. You CAN NOT daisy chain. I have a UPS and I can read that this card sometimes spikes up to 600WATTS while under load! I have a Corsair HXI1200W Platinum PSU so I have the headroom. Make sure you do as well or your PSU will not make it."
+    ],
+    "verdict": "Better performance than I ever expected! I run an ROG SWIFT 1440P 165hz monitor and games like Cyberpunk 2077 with EVERYTHING maxed out runs 65-100 FPS! I was also able to overclock this thing fairly high. Around 2ghz and 2.01ghz are the max STABLE that I got. That was 150 core/800 on the memory. Your mileage my vary of course. Overall this card seems overkill for even 1440p/165hz gaming as every other game I've played is maxed and not dropping below 60hz FULLY maxed! At 4K this card also kills everything. This is the best of the best! Hell it can play Doom eternal at 8K!!!",
+    "author": "Vishal Thakur",
+    "date": "2021-04-14",
+    "link": "https://www.nvidia.com/en-in/geforce/graphics-cards/30-series/rtx-3090/",
+    "linkLabel": "Product page",
+    "image": "assets/img/GPU/Nvidia/3090.jpg",
+    "tags": [
+      "archive",
+      "nvidia"
+    ]
+  }
+]

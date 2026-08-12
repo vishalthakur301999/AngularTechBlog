@@ -1,27 +1,57 @@
-# Techblog
+# We Love Silicon
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.9.
+A concise tech blog about CPUs, GPUs and AI. Originally built on Angular 11 in 2021,
+rebuilt on Angular 22.
 
-## Development server
+## Requirements
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Node `^22.22.3 || ^24.15.0 || >=26.0.0` (see `.nvmrc`). Angular 22's CLI will refuse
+to run on older releases.
 
-## Code scaffolding
+```bash
+nvm use
+npm install
+```
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Scripts
 
-## Build
+| Command          | What it does                                        |
+| ---------------- | --------------------------------------------------- |
+| `npm start`      | Dev server on http://localhost:4200                 |
+| `npm run build`  | Production build into `dist/techblog`               |
+| `npm test`       | Unit tests (Vitest)                                 |
+| `npm run lint`   | ESLint over TypeScript and templates                |
+| `npm run format` | Prettier over `src`                                 |
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
+## How it's put together
 
-## Running unit tests
+- **Standalone components throughout.** There are no `NgModule`s; `main.ts` calls
+  `bootstrapApplication` and each component declares its own `imports`.
+- **Zoneless.** Angular 22 does not ship `zone.js`, and state changes propagate
+  through signals instead.
+- **Signals for all state.** `ContentStore` exposes articles, counts and loading
+  state as signals; the catalog's search and brand filters are `computed` over them.
+- **`httpResource` for data.** Each vertical's JSON is fetched reactively, keeping
+  the content out of the JS bundle and giving loading/error state for free.
+- **Route-driven inputs.** `withComponentInputBinding()` binds `:slug` path params
+  and route `data` straight to `input()` signals, so no component injects
+  `ActivatedRoute`.
+- **Lazy routes.** Every page is a `loadComponent`, generated from the `CATEGORIES`
+  table in `core/models/article.ts`.
+- **One list and one detail component** serve all three verticals. CPUs, GPUs and
+  AI stories share the `Article` shape.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+## Content
 
-## Running end-to-end tests
+Articles live in `public/data/{cpus,gpus,ai}.json` and are served as static files —
+adding a post means adding an object, no rebuild of component code required.
 
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
+Every article uses the same schema (see the `Article` interface). Hardware posts
+tend to carry `specs`, `pros`, `cons` and a `verdict`; AI posts use `specs` for key
+facts and `verdict` for why the story mattered. `image` is optional — posts without
+one render a generated card in the brand's accent colour.
 
-## Further help
+## Adding a vertical
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+Add an entry to `CATEGORIES`, drop a JSON file in `public/data/`, and register it in
+`ContentStore`. Routes, navigation and the footer all read from that table.

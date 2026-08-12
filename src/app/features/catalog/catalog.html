@@ -1,0 +1,76 @@
+@let info = meta();
+
+<div class="catalog__masthead gridded">
+  <header class="shell catalog__header">
+    <p class="eyebrow catalog__tagline">{{ info.tagline }}</p>
+    <h1 class="catalog__title">{{ info.label }}</h1>
+    <p class="catalog__total" aria-hidden="true">{{ total() }}</p>
+    <p class="catalog__blurb">{{ info.blurb }}</p>
+  </header>
+</div>
+
+<section class="shell catalog__controls" aria-label="Filter articles">
+  <div class="search">
+    <label class="search__label" for="catalog-search">Search</label>
+    <input
+      class="search__input"
+      id="catalog-search"
+      type="search"
+      autocomplete="off"
+      placeholder="Model, brand, or keyword…"
+      [value]="query()"
+      (input)="onQuery($event)"
+    />
+  </div>
+
+  <div class="brands" role="group" aria-label="Filter by brand">
+    @for (option of brands(); track option.name) {
+      <button
+        class="brands__chip"
+        type="button"
+        [style]="option.style"
+        [class.brands__chip--on]="brand() === option.name"
+        [attr.aria-pressed]="brand() === option.name"
+        (click)="selectBrand(option.name)"
+      >
+        {{ option.name }}
+        <span class="brands__count">{{ option.count }}</span>
+      </button>
+    }
+  </div>
+</section>
+
+<section class="shell catalog__results">
+  @if (failed()) {
+    <div class="notice notice--error" role="alert">
+      <p>Couldn't load the {{ info.label }} articles.</p>
+      <button class="notice__action" type="button" (click)="retry()">Try again</button>
+    </div>
+  } @else if (loading()) {
+    <div class="catalog__grid" aria-busy="true">
+      @for (placeholder of [1, 2, 3, 4, 5, 6]; track placeholder) {
+        <div class="skeleton" aria-hidden="true"></div>
+      }
+    </div>
+  } @else {
+    <p class="catalog__count" role="status">
+      {{ results().length }} {{ results().length === 1 ? 'article' : 'articles' }}
+      @if (isFiltered()) {
+        <button class="catalog__clear" type="button" (click)="clearFilters()">Clear filters</button>
+      }
+    </p>
+
+    <div class="catalog__grid">
+      @for (post of results(); track post.slug; let i = $index) {
+        <app-article-card [article]="post" [index]="i + 1" />
+      } @empty {
+        <div class="notice">
+          <p>No {{ info.label }} articles match that search.</p>
+          <button class="notice__action" type="button" (click)="clearFilters()">
+            Show everything
+          </button>
+        </div>
+      }
+    </div>
+  }
+</section>

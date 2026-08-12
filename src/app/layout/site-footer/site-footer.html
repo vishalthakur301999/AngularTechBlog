@@ -1,0 +1,19 @@
+<footer class="footer">
+  <div class="shell footer__inner">
+    <div>
+      <p class="footer__wordmark">We Love Silicon</p>
+      <p class="footer__note">Concise tech writing about the parts that do the work.</p>
+    </div>
+
+    <nav class="footer__nav" aria-label="Sections">
+      @for (category of categories; track category.id) {
+        <a [routerLink]="['/', category.id]">{{ category.label }}</a>
+      }
+    </nav>
+  </div>
+
+  <p class="shell footer__legal">
+    © {{ year }} Vishal Thakur. Specifications and prices change — check the manufacturer's page
+    before you buy.
+  </p>
+</footer>
