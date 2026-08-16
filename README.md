@@ -26,6 +26,28 @@ npm install
 | `npm run lint`   | ESLint over TypeScript and templates                |
 | `npm run format` | Prettier over `src`                                 |
 
+## Local OrbStack deployment
+
+OrbStack must be running and selected as the active Docker context. Build and
+start the production container with:
+
+```bash
+./deploy-local.sh
+```
+
+The app is then available on the Mac at `https://etch.local` using OrbStack's
+locally trusted HTTPS certificate, and at `http://localhost:8080`. If OrbStack's
+"Expose ports to LAN" setting is enabled, other devices can also reach port 8080
+using the Mac's LAN address. The `etch.local` address is local to the Mac; LAN DNS
+and network-wide HTTPS will be configured separately.
+
+To inspect or stop it:
+
+```bash
+docker compose logs --follow
+docker compose down
+```
+
 ## How it's put together
 
 - **Standalone components throughout.** There are no `NgModule`s; `main.ts` calls

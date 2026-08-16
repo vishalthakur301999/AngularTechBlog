@@ -1,0 +1,10 @@
+.git
+.github
+.claude
+.vscode
+dist
+node_modules
+npm-debug.log*
+Dockerfile*
+compose*.yaml
+README.md

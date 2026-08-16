@@ -1,0 +1,14 @@
+name: etch
+
+services:
+  web:
+    image: local/etch:latest
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    labels:
+      dev.orbstack.domains: etch.local
+      dev.orbstack.http-port: "80"
